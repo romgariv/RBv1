@@ -1,0 +1,292 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.7.6, pytest-5.3.5, py-1.8.1, pluggy-0.13.1
+rootdir: /Users/romanrivera/Dropbox/RBv1/share/tests
+plugins: hypothesis-5.5.4, arraydiff-0.3, remotedata-0.3.2, openfiles-0.4.0, doctestplus-0.5.0, astropy-header-0.1.2
+collected 110 items
+
+test_assign_unique_ids_functions.py .............                        [ 11%]
+test_clean_functions.py .....                                            [ 16%]
+test_clean_name_utils.py ...                                             [ 19%]
+test_clean_utils.py ......                                               [ 24%]
+test_general_utils.py ............................................       [ 64%]
+test_merge_functions.py ............                                     [ 75%]
+test_unit_history_functions.py ...........................               [100%]
+
+=============================== warnings summary ===============================
+/Users/romanrivera/anaconda3/lib/python3.7/site-packages/numexpr/expressions.py:21
+/Users/romanrivera/anaconda3/lib/python3.7/site-packages/numexpr/expressions.py:21
+  /Users/romanrivera/anaconda3/lib/python3.7/site-packages/numexpr/expressions.py:21: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    _np_version_forbids_neg_powint = LooseVersion(numpy.__version__) >= LooseVersion('1.12.0b1')
+
+/Users/romanrivera/anaconda3/lib/python3.7/site-packages/scipy/fft/__init__.py:97
+  /Users/romanrivera/anaconda3/lib/python3.7/site-packages/scipy/fft/__init__.py:97: DeprecationWarning: The module numpy.dual is deprecated.  Instead of using dual, use the functions directly from numpy or scipy.
+    from numpy.dual import register_func
+
+/Users/romanrivera/anaconda3/lib/python3.7/site-packages/scipy/sparse/sputils.py:17
+/Users/romanrivera/anaconda3/lib/python3.7/site-packages/scipy/sparse/sputils.py:17
+/Users/romanrivera/anaconda3/lib/python3.7/site-packages/scipy/sparse/sputils.py:17
+/Users/romanrivera/anaconda3/lib/python3.7/site-packages/scipy/sparse/sputils.py:17
+/Users/romanrivera/anaconda3/lib/python3.7/site-packages/scipy/sparse/sputils.py:17
+/Users/romanrivera/anaconda3/lib/python3.7/site-packages/scipy/sparse/sputils.py:17
+/Users/romanrivera/anaconda3/lib/python3.7/site-packages/scipy/sparse/sputils.py:17
+/Users/romanrivera/anaconda3/lib/python3.7/site-packages/scipy/sparse/sputils.py:17
+/Users/romanrivera/anaconda3/lib/python3.7/site-packages/scipy/sparse/sputils.py:17
+/Users/romanrivera/anaconda3/lib/python3.7/site-packages/scipy/sparse/sputils.py:17
+/Users/romanrivera/anaconda3/lib/python3.7/site-packages/scipy/sparse/sputils.py:17
+/Users/romanrivera/anaconda3/lib/python3.7/site-packages/scipy/sparse/sputils.py:17
+/Users/romanrivera/anaconda3/lib/python3.7/site-packages/scipy/sparse/sputils.py:17
+/Users/romanrivera/anaconda3/lib/python3.7/site-packages/scipy/sparse/sputils.py:17
+/Users/romanrivera/anaconda3/lib/python3.7/site-packages/scipy/sparse/sputils.py:17
+  /Users/romanrivera/anaconda3/lib/python3.7/site-packages/scipy/sparse/sputils.py:17: DeprecationWarning: `np.typeDict` is a deprecated alias for `np.sctypeDict`.
+    supported_dtypes = [np.typeDict[x] for x in supported_dtypes]
+
+/Users/romanrivera/anaconda3/lib/python3.7/site-packages/scipy/special/orthogonal.py:81
+/Users/romanrivera/anaconda3/lib/python3.7/site-packages/scipy/special/orthogonal.py:81
+  /Users/romanrivera/anaconda3/lib/python3.7/site-packages/scipy/special/orthogonal.py:81: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    from numpy import (exp, inf, pi, sqrt, floor, sin, cos, around, int,
+
+test_assign_unique_ids_functions.py::test_resolve_conflicts
+test_assign_unique_ids_functions.py::test_resolve_conflicts
+test_assign_unique_ids_functions.py::test_resolve_conflicts_unresolved
+test_assign_unique_ids_functions.py::test_resolve_conflicts_unresolved
+test_assign_unique_ids_functions.py::test_assign_unique_ids
+test_assign_unique_ids_functions.py::test_assign_unique_ids
+test_assign_unique_ids_functions.py::test_assign_unique_ids_unresolved_distinct
+test_assign_unique_ids_functions.py::test_assign_unique_ids_unresolved_distinct
+test_assign_unique_ids_functions.py::test_assign_unique_ids_unresolved_same
+test_assign_unique_ids_functions.py::test_assign_unique_ids_unresolved_same
+test_assign_unique_ids_functions.py::test_assign_unique_ids_many_nans
+test_assign_unique_ids_functions.py::test_assign_unique_ids_many_nans
+test_assign_unique_ids_functions.py::test_assign_unique_ids_with_one_unique_row
+test_assign_unique_ids_functions.py::test_assign_unique_ids_with_one_unique_row
+test_assign_unique_ids_functions.py::test_assign_unique_ids_with_empty_kd_df
+test_assign_unique_ids_functions.py::test_assign_unique_ids_with_empty_kd_df
+test_assign_unique_ids_functions.py::test_order_aggregate
+test_assign_unique_ids_functions.py::test_order_aggregate
+test_assign_unique_ids_functions.py::test_max_aggregate
+test_assign_unique_ids_functions.py::test_max_aggregate
+test_assign_unique_ids_functions.py::test_mode_aggregate
+test_assign_unique_ids_functions.py::test_mode_aggregate
+test_assign_unique_ids_functions.py::test_mode_aggregate_datetimes
+test_assign_unique_ids_functions.py::test_mode_aggregate_datetimes
+test_assign_unique_ids_functions.py::test_aggregate_data
+test_assign_unique_ids_functions.py::test_aggregate_data
+test_clean_functions.py::test_clean_data
+test_clean_functions.py::test_clean_data
+test_clean_functions.py::test_clean_data_dict
+test_clean_functions.py::test_clean_data_dict
+test_clean_functions.py::test_clean_data_skip
+test_clean_functions.py::test_clean_data_skip
+test_clean_functions.py::test_clean_data_type_dict
+test_clean_functions.py::test_clean_data_type_dict
+test_clean_functions.py::test_clean_data_human_names
+test_clean_functions.py::test_clean_data_human_names
+test_clean_name_utils.py::test_clean
+test_clean_name_utils.py::test_clean
+test_clean_name_utils.py::test_clean_human_names_UMN_True
+test_clean_name_utils.py::test_clean_human_names_UMN_True
+test_clean_name_utils.py::test_clean_human_names_UMN_False
+test_clean_name_utils.py::test_clean_human_names_UMN_False
+test_clean_utils.py::test_DateTimeCleaners_datetimes
+test_clean_utils.py::test_DateTimeCleaners_datetimes
+test_clean_utils.py::test_DateTimeCleaners_dates
+test_clean_utils.py::test_DateTimeCleaners_dates
+test_clean_utils.py::test_DateTimeCleaners_times
+test_clean_utils.py::test_DateTimeCleaners_times
+test_clean_utils.py::test_GeneralCleaners_int
+test_clean_utils.py::test_GeneralCleaners_int
+test_clean_utils.py::test_GeneralCleaners_age
+test_clean_utils.py::test_GeneralCleaners_age
+test_clean_utils.py::test_GeneralCleaners_star
+test_clean_utils.py::test_GeneralCleaners_star
+test_general_utils.py::test_remove_duplicates
+test_general_utils.py::test_remove_duplicates
+test_general_utils.py::test_keep_duplicates
+test_general_utils.py::test_keep_duplicates
+test_general_utils.py::test_keep_conflicts_all
+test_general_utils.py::test_keep_conflicts_all
+test_general_utils.py::test_keep_conflicts_not_all
+test_general_utils.py::test_keep_conflicts_not_all
+test_general_utils.py::test_reshape_data
+test_general_utils.py::test_reshape_data
+test_general_utils.py::test_fill_data
+test_general_utils.py::test_fill_data
+test_general_utils.py::test_collapse_data
+test_general_utils.py::test_collapse_data
+test_general_utils.py::test_expand_data
+test_general_utils.py::test_expand_data
+test_general_utils.py::test_FormatData1
+test_general_utils.py::test_FormatData1
+test_general_utils.py::test_FormatData2
+test_general_utils.py::test_FormatData2
+test_general_utils.py::test_FormatData3
+test_general_utils.py::test_FormatData3
+test_general_utils.py::test_FormatData_add_columns
+test_general_utils.py::test_FormatData_add_columns
+test_general_utils.py::test_FormatData_aggregate
+test_general_utils.py::test_FormatData_aggregate
+test_general_utils.py::test_FormatData_aggregate_inplaceFalse
+test_general_utils.py::test_FormatData_aggregate_inplaceFalse
+test_general_utils.py::test_FormatData_clean
+test_general_utils.py::test_FormatData_clean
+test_general_utils.py::test_FormatData_columns
+test_general_utils.py::test_FormatData_columns
+test_general_utils.py::test_FormatData_copy_col
+test_general_utils.py::test_FormatData_copy_col
+test_general_utils.py::test_FormatData_data
+test_general_utils.py::test_FormatData_data
+test_general_utils.py::test_FormatData_date_to_month_to_datetimeTrue
+test_general_utils.py::test_FormatData_date_to_month_to_datetimeTrue
+test_general_utils.py::test_FormatData_date_to_month_to_datetimeFalse
+test_general_utils.py::test_FormatData_date_to_month_to_datetimeFalse
+test_general_utils.py::test_FormatData_dcolumn
+test_general_utils.py::test_FormatData_dcolumn
+test_general_utils.py::test_FormatData_dropna
+test_general_utils.py::test_FormatData_dropna
+test_general_utils.py::test_FormatData_fill_data
+test_general_utils.py::test_FormatData_fill_data
+test_general_utils.py::test_FormatData_fillna_default
+test_general_utils.py::test_FormatData_fillna_default
+test_general_utils.py::test_FormatData_fillna_valhi
+test_general_utils.py::test_FormatData_fillna_valhi
+test_general_utils.py::test_FormatData_generate_dummy_cols
+test_general_utils.py::test_FormatData_generate_dummy_cols
+test_general_utils.py::test_FormatData_import_data1
+test_general_utils.py::test_FormatData_import_data1
+test_general_utils.py::test_FormatData_import_data2
+test_general_utils.py::test_FormatData_import_data2
+test_general_utils.py::test_FormatData_import_data3
+test_general_utils.py::test_FormatData_import_data3
+test_general_utils.py::test_FormatData_import_data4
+test_general_utils.py::test_FormatData_import_data4
+test_general_utils.py::test_FormatData_import_data5
+test_general_utils.py::test_FormatData_import_data5
+test_general_utils.py::test_FormatData_kcolumn
+test_general_utils.py::test_FormatData_kcolumn
+test_general_utils.py::test_FormatData_lookup
+test_general_utils.py::test_FormatData_lookup
+test_general_utils.py::test_FormatData_map_func
+test_general_utils.py::test_FormatData_map_func
+test_general_utils.py::test_FormatData_map_constant
+test_general_utils.py::test_FormatData_map_constant
+test_general_utils.py::test_FormatData_qfilter
+test_general_utils.py::test_FormatData_qfilter
+test_general_utils.py::test_FormatData_recode
+test_general_utils.py::test_FormatData_recode
+test_general_utils.py::test_FormatData_reshape_long
+test_general_utils.py::test_FormatData_reshape_long
+test_general_utils.py::test_FormatData_reuid
+test_general_utils.py::test_FormatData_reuid
+test_general_utils.py::test_FormatData_set_columns
+test_general_utils.py::test_FormatData_set_columns
+test_general_utils.py::test_FormatData_sort
+test_general_utils.py::test_FormatData_sort
+test_general_utils.py::test_FormatData_uid
+test_general_utils.py::test_FormatData_uid
+test_general_utils.py::test_FormatData_unique
+test_general_utils.py::test_FormatData_unique
+test_general_utils.py::test_FormatData_write_data
+test_general_utils.py::test_FormatData_write_data
+test_merge_functions.py::test_oto
+test_merge_functions.py::test_oto
+test_merge_functions.py::test_event_loc_dfs
+test_merge_functions.py::test_event_loc_dfs
+test_merge_functions.py::test_oto_conflicts
+test_merge_functions.py::test_oto_conflicts
+test_merge_functions.py::test_mtm_conflicts
+test_merge_functions.py::test_mtm_conflicts
+test_merge_functions.py::test_mto_conflicts
+test_merge_functions.py::test_mto_conflicts
+test_merge_functions.py::test_otm_conflicts
+test_merge_functions.py::test_otm_conflicts
+test_merge_functions.py::test_cycle_sup
+test_merge_functions.py::test_cycle_sup
+test_merge_functions.py::test_cycle_ref
+test_merge_functions.py::test_cycle_ref
+test_merge_functions.py::test_cycle_both_supcase
+test_merge_functions.py::test_cycle_both_supcase
+test_merge_functions.py::test_one_to_one_True
+test_merge_functions.py::test_one_to_one_True
+test_merge_functions.py::test_one_to_one_False
+test_merge_functions.py::test_one_to_one_False
+test_merge_functions.py::test_fill_data
+test_merge_functions.py::test_fill_data
+test_unit_history_functions.py::test_combine_histories
+test_unit_history_functions.py::test_combine_histories
+test_unit_history_functions.py::test_to_first_dates_year
+test_unit_history_functions.py::test_to_first_dates_year
+test_unit_history_functions.py::test_to_first_dates_month
+test_unit_history_functions.py::test_to_first_dates_month
+test_unit_history_functions.py::test_to_first_dates_day
+test_unit_history_functions.py::test_to_first_dates_day
+test_unit_history_functions.py::test_expand_history_day
+test_unit_history_functions.py::test_expand_history_day
+test_unit_history_functions.py::test_expand_history_month
+test_unit_history_functions.py::test_expand_history_month
+test_unit_history_functions.py::test_expand_history_year
+test_unit_history_functions.py::test_expand_history_year
+test_unit_history_functions.py::test_history_to_panel_day
+test_unit_history_functions.py::test_history_to_panel_day
+test_unit_history_functions.py::test_history_to_panel_month
+test_unit_history_functions.py::test_history_to_panel_month
+test_unit_history_functions.py::test_history_to_panel_month_allow_dups_False
+test_unit_history_functions.py::test_history_to_panel_month_allow_dups_False
+test_unit_history_functions.py::test_history_to_panel_year
+test_unit_history_functions.py::test_history_to_panel_year
+test_unit_history_functions.py::test_check_overlaps_True
+test_unit_history_functions.py::test_check_overlaps_True
+test_unit_history_functions.py::test_check_overlaps_False
+test_unit_history_functions.py::test_check_overlaps_False
+test_unit_history_functions.py::test_check_overlaps_NaT_True
+test_unit_history_functions.py::test_check_overlaps_NaT_True
+test_unit_history_functions.py::test_check_overlaps_NaT_False
+test_unit_history_functions.py::test_check_overlaps_NaT_False
+test_unit_history_functions.py::test_resolve_units_case1
+test_unit_history_functions.py::test_resolve_units_case1
+test_unit_history_functions.py::test_resolve_units_case2
+test_unit_history_functions.py::test_resolve_units_case2
+test_unit_history_functions.py::test_resolve_units_case3
+test_unit_history_functions.py::test_resolve_units_case3
+test_unit_history_functions.py::test_resolve_units_case4
+test_unit_history_functions.py::test_resolve_units_case4
+test_unit_history_functions.py::test_resolve_units_case5
+test_unit_history_functions.py::test_resolve_units_case5
+test_unit_history_functions.py::test_resolve_units_case6
+test_unit_history_functions.py::test_resolve_units_case6
+test_unit_history_functions.py::test_resolve_units_case7
+test_unit_history_functions.py::test_resolve_units_case7
+test_unit_history_functions.py::test_resolve_units_case8
+test_unit_history_functions.py::test_resolve_units_case8
+test_unit_history_functions.py::test_resolve_units_case9
+test_unit_history_functions.py::test_resolve_units_case9
+test_unit_history_functions.py::test_resolve_units_case10
+test_unit_history_functions.py::test_resolve_units_case10
+test_unit_history_functions.py::test_resolve_units_case11
+test_unit_history_functions.py::test_resolve_units_case11
+test_unit_history_functions.py::test_resolve_units_case12
+test_unit_history_functions.py::test_resolve_units_case12
+  /Users/romanrivera/anaconda3/lib/python3.7/site-packages/pytest_remotedata/plugin.py:65: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    if LooseVersion(pytest.__version__) < LooseVersion("3.6"):
+
+test_general_utils.py::test_FormatData_date_to_month_to_datetimeTrue
+  /Users/romanrivera/Dropbox/RBv1/share/tests/test_general_utils.py:563: FutureWarning: Inferring datetime64[ns] from data containing strings is deprecated and will be removed in a future version. To retain the old behavior explicitly pass Series(data, dtype={value.dtype})
+    '2016-01-01', pd.NaT, pd.NaT, pd.NaT]))})
+
+test_general_utils.py::test_FormatData_date_to_month_to_datetimeFalse
+  /Users/romanrivera/Dropbox/RBv1/share/tests/test_general_utils.py:590: FutureWarning: Inferring datetime64[ns] from data containing strings is deprecated and will be removed in a future version. To retain the old behavior explicitly pass Series(data, dtype={value.dtype})
+    '2016-01-01', pd.NaT, pd.NaT, pd.NaT])})
+
+test_unit_history_functions.py::test_resolve_units_case1
+test_unit_history_functions.py::test_resolve_units_case3
+test_unit_history_functions.py::test_resolve_units_case4
+test_unit_history_functions.py::test_resolve_units_case5
+test_unit_history_functions.py::test_resolve_units_case6
+test_unit_history_functions.py::test_resolve_units_case7
+test_unit_history_functions.py::test_resolve_units_case8
+test_unit_history_functions.py::test_resolve_units_case9
+  /Users/romanrivera/.local/lib/python3.7/site-packages/numpy/core/fromnumeric.py:3162: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+    return asarray(a).ndim
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+====================== 110 passed, 250 warnings in 4.37s =======================
