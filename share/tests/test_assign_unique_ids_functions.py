@@ -1,6 +1,6 @@
 #! usr/bin/env python3
 #
-# Author:   Roman Rivera (Invisible Institute)
+# Author:   Roman Rivera
 
 '''pytest functions in assign_unique_ids_functions that require teardown/setup'''
 

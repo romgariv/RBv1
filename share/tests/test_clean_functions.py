@@ -1,6 +1,6 @@
 #! usr/bin/env python3
 #
-# Author:   Roman Rivera (Invisible Institute)
+# Author:   Roman Rivera
 
 '''pytest functions in clean_functions that require teardown/setup'''
 

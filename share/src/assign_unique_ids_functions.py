@@ -1,6 +1,6 @@
 #!usr/bin/env python3
 #
-# Author(s):  Roman Rivera (Invisible Institute)
+# Author(s):  Roman Rivera
 
 '''script containing functions for assigning unique ids and aggregating data'''
 

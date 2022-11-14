@@ -1,6 +1,6 @@
 #!usr/bin/env python3
 #
-# Author(s):   Roman Rivera (Invisible Institute)
+# Author(s):   Roman Rivera
 
 '''script containing utility functions used for clean name step'''
 
