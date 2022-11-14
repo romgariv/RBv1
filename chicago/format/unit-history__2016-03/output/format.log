@@ -1,0 +1,33 @@
+running src/format.py
+Beginning import_data from file(s): input/Kalven_16-1105_All_Sworn_Employees.xlsx
+Data shape = 114630 rows, 19 columns
+LAST_NME -> last_name , FIRST_NME -> first_name , SEX_CODE_CD -> gender , RACE -> race , CURRAGE -> current_age , APPOINTED_DATE -> appointed_date , CPD_UNIT_ASSIGNED_NO -> unit , EFFECTIVE_DATE -> unit_start_date , END_DATE -> unit_end_date , STAR1 -> star1 , STAR2 -> star2 , STAR3 -> star3 , STAR4 -> star4 , STAR5 -> star5 , STAR6 -> star6 , STAR7 -> star7 , STAR8 -> star8 , STAR9 -> star9 , STAR10 -> star10
+ROWID column inserted
+Column 'ROWID' was not cleaned.
+Column 'gender' cleaned as gender using GeneralCleaners.
+Column 'race' cleaned as race using GeneralCleaners.
+['UNKNOWN'] values not in race_types.yaml file. 5 cases replaced with 'nan'
+Column 'current_age' cleaned as age using GeneralCleaners.
+Column 'appointed_date' cleaned as date using DateTimeCleaners.
+Column 'unit' cleaned as int using GeneralCleaners.
+Column 'unit_start_date' cleaned as date using DateTimeCleaners.
+Column 'unit_end_date' cleaned as date using DateTimeCleaners.
+Column 'star1' cleaned as star using GeneralCleaners.
+Column 'star2' cleaned as star using GeneralCleaners.
+Column 'star3' cleaned as star using GeneralCleaners.
+Column 'star4' cleaned as star using GeneralCleaners.
+Column 'star5' cleaned as star using GeneralCleaners.
+Column 'star6' cleaned as star using GeneralCleaners.
+Column 'star7' cleaned as star using GeneralCleaners.
+Column 'star8' cleaned as star using GeneralCleaners.
+Column 'star9' cleaned as star using GeneralCleaners.
+Column 'star10' cleaned as star using GeneralCleaners.
+Column(s) '('last_name', 'first_name')' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('full_name', 'middle_name', 'human_name', 'second_name')
+Total rows: 114630
+Unique id + conflict rows: 31596
+Conflict rows: 0
+Resolved conflcit UID count: 0
+Total unique ids: 31596
+
+Writing data with 114630 rows to output/unit-history__2016-03.csv.gz with 31596 unique UIDs
