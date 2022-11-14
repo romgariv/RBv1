@@ -1,0 +1,39 @@
+running src/format.py
+Beginning import_data from file(s): input/P058155_-_Kiefer.xlsx
+Data shape = 32446 rows, 25 columns
+Last Name -> last_name , First Name -> first_name , Middle Initital -> middle_initial , Gender -> gender , Race -> race , D.O.B. -> birth_year , Age -> current_age , Status I -> current_status , Appointed Date -> appointed_date , Employee Position Number -> rank_no , Description -> current_rank ,  -> current_unit , Unit Description -> unit_description , Resignation Date -> resignation_date , Star 1 -> star1 , Star 2 -> star2 , Star 3 -> star3 , Star 4 -> star4 , Star 5 -> star5 , Star 6 -> star6 , Star 6.1 -> star7 , Star 7 -> star8 , Star 8 -> star9 , Star 9 -> star10 , Star 10 -> star11
+ROWID column inserted
+Keeping column(s): ['ROWID', 'last_name', 'first_name', 'middle_initial', 'gender', 'race', 'birth_year', 'current_age', 'current_status', 'appointed_date', 'rank_no', 'current_rank', 'current_unit', 'unit_description', 'resignation_date', 'star1', 'star2', 'star3', 'star4', 'star5', 'star6', 'star7', 'star8', 'star9', 'star10']
+Column 'ROWID' was not cleaned.
+Column 'gender' cleaned as gender using GeneralCleaners.
+Column 'race' cleaned as race using GeneralCleaners.
+['UNKNOWN'] values not in race_types.yaml file. 67 cases replaced with 'nan'
+Column 'birth_year' cleaned as int using GeneralCleaners.
+Column 'current_age' cleaned as age using GeneralCleaners.
+Column 'current_status' was not cleaned.
+Column 'appointed_date' cleaned as date using DateTimeCleaners.
+Column 'rank_no' was not cleaned.
+Column 'current_rank' was not cleaned.
+Column 'current_unit' cleaned as int using GeneralCleaners.
+Column 'unit_description' was not cleaned.
+Column 'resignation_date' cleaned as date using DateTimeCleaners.
+Column 'star1' cleaned as star using GeneralCleaners.
+Column 'star2' cleaned as star using GeneralCleaners.
+Column 'star3' cleaned as star using GeneralCleaners.
+Column 'star4' cleaned as star using GeneralCleaners.
+Column 'star5' cleaned as star using GeneralCleaners.
+Column 'star6' cleaned as star using GeneralCleaners.
+Column 'star7' cleaned as star using GeneralCleaners.
+Column 'star8' cleaned as star using GeneralCleaners.
+Column 'star9' cleaned as star using GeneralCleaners.
+Column 'star10' cleaned as star using GeneralCleaners.
+Column(s) '('last_name', 'first_name', 'middle_initial')' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('full_name', 'second_name', 'middle_name', 'human_name')
+14 resolved conflicts. 0 unresolved conflicts
+Total rows: 32446
+Unique id + conflict rows: 32405
+Conflict rows: 14
+Resolved conflcit UID count: 7
+Total unique ids: 32398.0
+
+Writing data with 32446 rows to output/roster_1936-2017_2017-04.csv.gz with 32398 unique UIDs
