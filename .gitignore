@@ -1,0 +1,4 @@
+*.pyc
+chicago/raw_data/*
+share/tests/*.log
+share/hand/storage/*
