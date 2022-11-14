@@ -1,0 +1,59 @@
+running src/format.py
+Beginning import_data from file(s): input/Awards_Data_(New_Copy).csv.gz
+Data shape = 699912 rows, 20 columns
+LAST_NME -> last_name , FIRST_NME -> first_name , MIDDLE_INITIAL -> middle_initial , BIRTH_YEAR -> birth_year , GENDER -> gender , RACE -> race , STAR -> current_star , APPOINTED_DATE -> appointed_date , RANK -> rank , LAST_PROMOTION_DATE -> last_promotion_date , RESIGNATION_DATE -> resignation_date , PPS_AWARD_DETAIL_ID -> pps_award_detail_id , AWARD_TYPE -> award_type , AWARD_REQUEST_DATE -> award_request_date , TRACKING_NO -> rd_no , CURRENT_STATUS -> current_award_status , REQUESTER -> requester_full_name , INCIDENT_START_DATE -> award_start_date , INCIDENT_END_DATE -> award_end_date , CEREMONY_DATE -> ceremony_date
+ROWID column inserted
+Column 'ROWID' was not cleaned.
+Column 'birth_year' cleaned as int using GeneralCleaners.
+Column 'gender' cleaned as gender using GeneralCleaners.
+['X'] values not in gender_types.yaml file. 8 cases replaced with 'nan'
+Column 'race' cleaned as race using GeneralCleaners.
+['UNKNOWN'] values not in race_types.yaml file. 109 cases replaced with 'nan'
+Column 'current_star' cleaned as star using GeneralCleaners.
+Column 'appointed_date' cleaned as date using DateTimeCleaners.
+Column 'rank' was not cleaned.
+Column 'last_promotion_date' cleaned as date using DateTimeCleaners.
+Column 'resignation_date' cleaned as date using DateTimeCleaners.
+Column 'pps_award_detail_id' was not cleaned.
+Column 'award_type' was not cleaned.
+Column 'award_request_date' cleaned as date using DateTimeCleaners.
+Column 'rd_no' was not cleaned.
+Column 'current_award_status' was not cleaned.
+Column 'requester_full_name' was not cleaned.
+Column 'award_start_date' cleaned as date using DateTimeCleaners.
+Some errors in award_start_date. Returned as NaT:
+ 3089    24-JUL-0201 00:00:00
+4939    31-MAY-0200 00:00:00
+4976    17-AUG-1012 00:00:00
+5151    15-AUG-0201 00:00:00
+5186    04-MAR-0200 00:00:00
+Name: award_start_date, dtype: object.
+Column 'award_end_date' cleaned as date using DateTimeCleaners.
+Column 'ceremony_date' cleaned as date using DateTimeCleaners.
+Column(s) '('last_name', 'first_name', 'middle_initial')' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('middle_name', 'human_name', 'full_name', 'second_name')
+3445 resolved conflicts. 0 unresolved conflicts
+Total rows: 699912
+Unique id + conflict rows: 32980
+Conflict rows: 3445
+Resolved conflcit UID count: 3430
+Total unique ids: 32965.0
+
+Replacing award_request_date="2014-11-19" if award_request_date=="2013-11-19" & award_type=="EMBLEM OF RECOGNITION - PHYSICAL FITNESS"
+26818 officers in file
+Cleaning supervisors data
+requester_full_name -> full_name
+Column 'ROWID' was not cleaned.
+Column 'award_request_date' cleaned as date using DateTimeCleaners.
+Column(s) '('full_name',)' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('middle_initial2', 'middle_name', 'human_name', 'second_name')
+5344 rows dropped by filter query: first_name == first_name
+Total rows: 694568
+Unique id + conflict rows: 2226
+Conflict rows: 0
+Resolved conflcit UID count: 0
+Total unique ids: 2226
+
+Writing data with 694568 rows to output/awards-requester_1967-2017_2017-08.csv.gz with 2226 unique UIDs
+Added "likely_sworn_officer" column base on rank and appointed_date
+Writing data with 699912 rows to output/awards_1967-2017_2017-08.csv.gz with 32965 unique UIDs
