@@ -1,0 +1,27 @@
+running src/format.py
+Beginning import_data from file(s): input/FOIA_P052262_-_11221-FOIA-P052262-AllSwornEmployeesWithUOA.xlsx
+Data shape = 115987 rows, 10 columns
+Last Name -> last_name , First Name -> first_name , Middle Initial -> middle_initial , Gender -> gender , Race -> race , Year of Birth -> birth_year , Date of Appointment -> appointed_date , Assigned Unit Num. -> unit , Start Date -> unit_start_date , End Date -> unit_end_date
+ROWID column inserted
+Column 'ROWID' was not cleaned.
+Column 'gender' cleaned as gender using GeneralCleaners.
+Column 'race' cleaned as race using GeneralCleaners.
+['UNKNOWN'] values not in race_types.yaml file. 14 cases replaced with 'nan'
+Column 'birth_year' cleaned as int using GeneralCleaners.
+Column 'appointed_date' cleaned as date using DateTimeCleaners.
+Column 'unit' cleaned as int using GeneralCleaners.
+Column 'unit_start_date' cleaned as date using DateTimeCleaners.
+Column 'unit_end_date' cleaned as date using DateTimeCleaners.
+Column(s) '('last_name', 'first_name', 'middle_initial')' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('human_name', 'second_name', 'full_name', 'middle_name')
+Adding column by exec("self._data["Specify"] = ((self._data["first_name"] == "ROBERT") & (self._data["last_name"] == "SMITH") & (self._data["middle_initial"] == "E") & (self._data["birth_year"] == 1947) & (self._data["unit"].isin([5, 602])))")
+Robert E Smith 1947 1971-02-22 in units [5, 602] specified as singular individual.
+12 resolved conflicts. 0 unresolved conflicts
+Total rows: 115987
+Unique id + conflict rows: 32009
+Conflict rows: 12
+Resolved conflcit UID count: 9
+Total unique ids: 32006.0
+
+Keeping column(s): ['ROWID', 'gender', 'race', 'birth_year', 'appointed_date', 'unit', 'unit_start_date', 'unit_end_date', 'first_name', 'first_name_NS', 'last_name', 'last_name_NS', 'middle_initial', 'middle_initial2', 'suffix_name', 'unit-history__2016-12_ID']
+Writing data with 115987 rows to output/unit-history__2016-12.csv.gz with 32006 unique UIDs
