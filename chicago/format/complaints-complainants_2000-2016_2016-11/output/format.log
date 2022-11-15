@@ -1,0 +1,31 @@
+running src/format.py
+Processing input/p046957_-_report_5.1_-_complainant_(reporting_party)_data.xls file, of FOIA number FOIA # P046957
+Report 5.1
+Complainant  Data
+Incident Date From 01 Jan 2000 to 31 Dec 2007
+Source Data: CRMS, produced on [datetime.datetime(2016, 10, 29, 0, 0)]
+Processing input/p046957_-_report_5.2_-_complainant_(reporting_party)_data.xls file, of FOIA number FOIA # P046957
+Report 5.2
+Complainant  Data
+Incident Date From 01 Jan 2008 to 31 Dec 2011
+Source Data: CRMS, produced on [datetime.datetime(2016, 10, 29, 0, 0)]
+Processing input/p046957_-_report_5.3_-_complainant_(reporting_party)_data.xls file, of FOIA number FOIA # P046957
+Report 5.2
+Complainant  Data
+Incident Date From 01 Jan 2012 to 17 Jun 2016
+Source Data: CRMS, produced on [datetime.datetime(2016, 10, 29, 0, 0)]
+Beginning import_data from dataframe with head(2): 
+     cr_id gender        age   race
+0  1000000      F  48.767123  WHITE
+1  1000001      M  31.641096  BLACK
+Data shape = 48214 rows, 4 columns
+ROWID column inserted
+Column 'ROWID' was not cleaned.
+Column 'cr_id' was not cleaned.
+Column 'gender' cleaned as gender using GeneralCleaners.
+['X'] values not in gender_types.yaml file. 276 cases replaced with 'nan'
+Column 'age' cleaned as age using GeneralCleaners.
+Column 'race' cleaned as race using GeneralCleaners.
+['UNKNOWN'] values not in race_types.yaml file. 2880 cases replaced with 'nan'
+Columns dropped due to all NA values: ()
+Writing data with 48214 rows to output/complaints-complainants_2000-2016_2016-11.csv.gz
