@@ -1,0 +1,36 @@
+running src/format.py
+Processing input/p046957_-_report_3_-_police_officer_witness_data_xi.xls file, of FOIA number FOIA # P046957
+Report 3
+Of All Complaints in CRMS
+Those with Police Officer Witness Data
+Incident Date from 01 Jan 2000 to 17 Jun 2016
+Source Data: CRMS, produced on [datetime.datetime(2016, 10, 29, 0, 0)]
+Beginning import_data from dataframe with head(2): 
+    cr_id          full_name gender race current_star  birth_year  \
+1  259069  DOLCIMASCOLO, NED      M  WHI          NaN      1945.0   
+4  259088     BRYANT, YVONNE      F  BLK          NaN      1956.0   
+
+  appointed_date  
+1     1972-10-23  
+4     1998-08-31  
+Data shape = 27922 rows, 7 columns
+ROWID column inserted
+Column 'ROWID' was not cleaned.
+Column 'cr_id' was not cleaned.
+Column 'gender' cleaned as gender using GeneralCleaners.
+['X'] values not in gender_types.yaml file. 3 cases replaced with 'nan'
+Column 'race' cleaned as race using GeneralCleaners.
+['U'] values not in race_types.yaml file. 59 cases replaced with 'nan'
+Column 'current_star' cleaned as star using GeneralCleaners.
+Column 'birth_year' cleaned as int using GeneralCleaners.
+Column 'appointed_date' cleaned as date using DateTimeCleaners.
+Column(s) '('full_name',)' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('middle_name', 'second_name', 'human_name')
+1367 resolved conflicts. 353 unresolved conflicts
+Total rows: 27922
+Unique id + conflict rows: 12560
+Conflict rows: 1720
+Resolved conflcit UID count: 1326
+Total unique ids: 12166.0
+
+Writing data with 27922 rows to output/complaints-witnesses_2000-2016_2016-11.csv.gz with 12166 unique UIDs
