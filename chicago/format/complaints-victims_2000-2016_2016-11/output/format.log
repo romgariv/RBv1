@@ -1,0 +1,20 @@
+running src/format.py
+Processing input/p046957_-_report_4_-_victim_data.xls file, of FOIA number FOIA # P046957
+Report 4 - Victim  Data
+Incident Date From 01 Jan 2000 to 17 Jun 2016
+Source Data: CRMS, produced on [datetime.datetime(2016, 10, 29, 0, 0)]
+Beginning import_data from dataframe with head(2): 
+     cr_id gender        age            race
+2  1000009      F  37.106849  WHITE HISPANIC
+5  1000015      F  35.410959           BLACK
+Data shape = 20223 rows, 4 columns
+ROWID column inserted
+Column 'ROWID' was not cleaned.
+Column 'cr_id' was not cleaned.
+Column 'gender' cleaned as gender using GeneralCleaners.
+['X'] values not in gender_types.yaml file. 71 cases replaced with 'nan'
+Column 'age' cleaned as age using GeneralCleaners.
+Column 'race' cleaned as race using GeneralCleaners.
+['UNKNOWN'] values not in race_types.yaml file. 1120 cases replaced with 'nan'
+Columns dropped due to all NA values: ()
+Writing data with 20223 rows to output/complaints-victims_2000-2016_2016-11.csv.gz
