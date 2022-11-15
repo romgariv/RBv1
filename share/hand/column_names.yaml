@@ -123,8 +123,9 @@
     CPD_STAR_NO:                    current_star
     LAST_NME:                       ln_drop
     FIRST_NME:                      fn_drop
-
-
+    SUBJECT_NO:                     subject_no
+    SR_NO:                          sr_no
+    SE_NO:                          se_no
 
 'TRR-statuses_2004-2016_2016-09':
     TRR_REPORT_ID:  trr_id
