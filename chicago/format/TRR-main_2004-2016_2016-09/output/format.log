@@ -1,0 +1,57 @@
+running src/format.py
+Beginning import_data from file(s): input/10655-FOIA-P046360-TRRdata_sterilized.xlsx
+Data shape = 67019 rows, 43 columns
+TRR_REPORT_ID -> trr_id , BEAT -> beat , BLK -> block , DIR -> direction , STN -> street , LOC -> location , DTE -> trr_date , TMEMIL -> trr_time , INDOOR_OR_OUTDOOR -> indoor_or_outdoor , LIGHTING_CONDITION -> lighting_condition , WEATHER_CONDITION -> weather_condition , NOTIFY_OEMC -> notify_OEMC , NOTIFY_DIST_SERGEANT -> notify_district_sergeant , NOTIFY_OP_COMMAND -> notify_OP_command , NOTIFY_DET_DIV -> notify_DET_division , NUMBER_OF_WEAPONS_DISCHARGED -> number_of_weapons_discharged , PARTY_FIRED_FIRST -> party_fired_first , POLAST -> last_name , POFIRST -> first_name , POGNDR -> gender , PORACE -> race , POAGE -> age , APPOINTED_DATE -> appointed_date , UNITASSG -> unit , UNITDETAIL -> unit_detail , ASSGNBEAT -> assigned_beat , RANK -> rank , DUTYSTATUS -> duty_status , POINJURED -> injured , MEMBER_IN_UNIFORM -> in_uniform , SUBGNDR -> sub_gender , SUBRACE -> sub_race , SUBAGE -> sub_age , SUBYEARDOB -> sub_birth_year , SUBJECT_ARMED -> sub_armed , SUBJECT_INJURED -> sub_injured , SUBJECT_ALLEGED_INJURY -> sub_alleged_injury , SUBJECT_NO -> subject_no , SR_NO -> sr_no , SE_NO -> se_no , LAST_NME -> ln_drop , FIRST_NME -> fn_drop , CPD_STAR_NO -> current_star
+ROWID column inserted
+Keeping column(s): ['ROWID', 'trr_id', 'beat', 'block', 'direction', 'street', 'location', 'trr_date', 'trr_time', 'indoor_or_outdoor', 'lighting_condition', 'weather_condition', 'notify_OEMC', 'notify_district_sergeant', 'notify_OP_command', 'notify_DET_division', 'number_of_weapons_discharged', 'party_fired_first', 'last_name', 'first_name', 'gender', 'race', 'age', 'appointed_date', 'unit', 'unit_detail', 'assigned_beat', 'rank', 'duty_status', 'injured', 'in_uniform', 'sub_gender', 'sub_race', 'sub_age', 'sub_birth_year', 'sub_armed', 'sub_injured', 'sub_alleged_injury', 'subject_no', 'sr_no', 'se_no', 'current_star']
+Column 'ROWID' was not cleaned.
+Column 'trr_id' was not cleaned.
+Column 'beat' was not cleaned.
+Column 'block' was not cleaned.
+Column 'direction' was not cleaned.
+Column 'street' was not cleaned.
+Column 'location' was not cleaned.
+Column 'trr_date' cleaned as date using DateTimeCleaners.
+Column 'trr_time' cleaned as time using DateTimeCleaners.
+Column 'indoor_or_outdoor' was not cleaned.
+Column 'lighting_condition' was not cleaned.
+Column 'weather_condition' was not cleaned.
+Column 'notify_OEMC' was not cleaned.
+Column 'notify_district_sergeant' was not cleaned.
+Column 'notify_OP_command' was not cleaned.
+Column 'notify_DET_division' was not cleaned.
+Column 'number_of_weapons_discharged' was not cleaned.
+Column 'party_fired_first' was not cleaned.
+Column 'gender' cleaned as gender using GeneralCleaners.
+Column 'race' cleaned as race using GeneralCleaners.
+Column 'age' cleaned as age using GeneralCleaners.
+Column 'appointed_date' cleaned as date using DateTimeCleaners.
+Column 'unit' cleaned as int using GeneralCleaners.
+Column 'unit_detail' was not cleaned.
+Column 'assigned_beat' was not cleaned.
+Column 'rank' was not cleaned.
+Column 'duty_status' was not cleaned.
+Column 'injured' was not cleaned.
+Column 'in_uniform' was not cleaned.
+Column 'sub_gender' cleaned as gender using GeneralCleaners.
+[nan] values not in gender_types.yaml file. 58 cases replaced with 'nan'
+Column 'sub_race' cleaned as race using GeneralCleaners.
+[nan, 'UNKNOWN'] values not in race_types.yaml file. 878 cases replaced with 'nan'
+Column 'sub_age' cleaned as age using GeneralCleaners.
+Column 'sub_birth_year' was not cleaned.
+Column 'sub_armed' was not cleaned.
+Column 'sub_injured' was not cleaned.
+Column 'sub_alleged_injury' was not cleaned.
+Column 'subject_no' was not cleaned.
+Column 'sr_no' was not cleaned.
+Column 'se_no' was not cleaned.
+Column 'current_star' cleaned as star using GeneralCleaners.
+Column(s) '('last_name', 'first_name')' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('second_name', 'full_name', 'middle_name', 'human_name')
+Total rows: 67019
+Unique id + conflict rows: 10926
+Conflict rows: 0
+Resolved conflcit UID count: 0
+Total unique ids: 10926
+
+Writing data with 67019 rows to output/TRR-main_2004-2016_2016-09.csv.gz with 10926 unique UIDs
