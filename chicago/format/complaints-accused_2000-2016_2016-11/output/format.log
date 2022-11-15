@@ -1,0 +1,76 @@
+running src/format.py
+Processing input/p046957_-_report_2.1_-_identified_accused.xls file, of FOIA number FOIA P046957
+Report 2.1
+All Complaints in CRMS with Identified Sworn Accused
+Incident Date from 01 Jan 2000 to 31 Dec 2002
+Source Data: CRMS, produced on [datetime.datetime(2016, 10, 29, 0, 0)]
+final_finding and recommended_finding column values of NA changed to NAF
+Processing input/p046957_-_report_2.2_-_identified_accused.xls file, of FOIA number FOIA P046957
+Report 2.2
+All Complaints in CRMS with Identified Sworn Accused
+Incident Date from 01 Jan 2003 to 31 Dec 2004
+Source Data: CRMS, produced on [datetime.datetime(2016, 10, 29, 0, 0)]
+final_finding and recommended_finding column values of NA changed to NAF
+Processing input/p046957_-_report_2.3_-_identified_accused.xls file, of FOIA number FOIA P046957
+Report 2.3
+All Complaints in CRMS with Identified Sworn Accused
+Incident Date from 01 Jan 2005 to 31 Dec 2007
+Source Data: CRMS, produced on [datetime.datetime(2016, 10, 29, 0, 0)]
+final_finding and recommended_finding column values of NA changed to NAF
+Processing input/p046957_-_report_2.4_-_identified_accused.xls file, of FOIA number FOIA P046957
+Report 2.4
+All Complaints in CRMS with Identified Sworn Accused
+Incident Date from 01 Jan 2008 to 31 Dec 2011
+Source Data: CRMS, produced on [datetime.datetime(2016, 10, 29, 0, 0)]
+final_finding and recommended_finding column values of NA changed to NAF
+Processing input/p046957_-_report_2.5_-_identified_accused.xls file, of FOIA number FOIA P046957
+Report 2.5
+All Complaints in CRMS with Identified Sworn Accused
+Incident Date from 01 Jan 2012 to 17 Jun 2016
+Source Data: CRMS, produced on [datetime.datetime(2016, 10, 29, 0, 0)]
+final_finding and recommended_finding column values of NA changed to NAF
+Adding complaint type column (FPS, OPV, etc.) based on complaint_category
+Beginning import_data from dataframe with head(2): 
+    cr_id           full_name  birth_year gender race appointed_date  \
+0  258996     BARRON, WILLIAM      1949.0      M  WHI     1978-02-27   
+1  258997  C0NNOLLY, KIMBERLY      1965.0      F  BLK     1990-07-30   
+
+  current_unit current_rank  current_star    complaint_category  \
+0          018          SGT           NaN  01A-USE OF PROFANITY   
+1          055          NaN       11026.0  01A-USE OF PROFANITY   
+
+  recommended_finding  recommended_discipline final_finding  final_discipline  \
+0                  NS                   600.0            NS             600.0   
+1                  UN                   600.0            UN             600.0   
+
+  complaint_type  
+0            UFV  
+1            UFV  
+Data shape = 125581 rows, 15 columns
+ROWID column inserted
+Column 'ROWID' was not cleaned.
+Column 'cr_id' was not cleaned.
+Column 'birth_year' cleaned as int using GeneralCleaners.
+Column 'gender' cleaned as gender using GeneralCleaners.
+Column 'race' cleaned as race using GeneralCleaners.
+['U'] values not in race_types.yaml file. 32 cases replaced with 'nan'
+Column 'appointed_date' cleaned as date using DateTimeCleaners.
+Column 'current_unit' cleaned as int using GeneralCleaners.
+Column 'current_rank' was not cleaned.
+Column 'current_star' cleaned as star using GeneralCleaners.
+Column 'complaint_category' was not cleaned.
+Column 'recommended_finding' was not cleaned.
+Column 'recommended_discipline' was not cleaned.
+Column 'final_finding' was not cleaned.
+Column 'final_discipline' was not cleaned.
+Column 'complaint_type' was not cleaned.
+Column(s) '('full_name',)' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('middle_name', 'human_name', 'second_name')
+4 resolved conflicts. 0 unresolved conflicts
+Total rows: 125581
+Unique id + conflict rows: 16022
+Conflict rows: 4
+Resolved conflcit UID count: 3
+Total unique ids: 16021.0
+
+Writing data with 125581 rows to output/complaints-accused_2000-2016_2016-11.csv.gz with 16021 unique UIDs
