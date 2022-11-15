@@ -47,7 +47,7 @@ def read_p046957_file(input_file, original_crid_col,
     FOIA_request : str
     """
 
-    df = pd.read_excel(input_file, rows=20,
+    df = pd.read_excel(input_file, nrows=20,
                        keep_default_na=False, na_values=[''])
 
     col_list = df.columns.tolist()
