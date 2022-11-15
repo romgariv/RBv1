@@ -1,0 +1,87 @@
+running src/format.py
+Beginning import_data from file(s): input/10655-FOIA-P046360-TRRdata_sterilized.xlsx
+Data shape = 523090 rows, 5 columns
+TRR_REPORT_ID -> trr_id , PERSON -> person , Resistance Type -> resistance_type , ACTION -> action , OTHERDESCR -> other_description
+ROWID column inserted
+Column 'ROWID' was not cleaned.
+Column 'trr_id' was not cleaned.
+Column 'person' was not cleaned.
+Column 'resistance_type' was not cleaned.
+Column 'action' was not cleaned.
+Column 'other_description' was not cleaned.
+Columns dropped due to all NA values: ()
+Writing data with 523090 rows to output/TRR-actions-responses_2004-2016_2016-09.csv.gz
+2 rows dropped by filter query: person == person
+271601 rows dropped by filter query: person == "Subject Action"
+Recoding resistance_type to resistance_type
+0 changes: "Active Resister -> active
+1 changes: "Assailant Assault -> assault
+2 changes: "Assailant Battery -> battery
+3 changes: "Assailant Deadly Force -> deadly
+4 changes: "Passive Resister -> passive
+0 values in resistance_type now NA
+Recoding resistance_type to resistance_level
+0 changes: "passive -> 0
+1 changes: "active -> 1
+2 changes: "battery -> 2
+3 changes: "assault -> 3
+4 changes: "deadly -> 4
+0 values in resistance_level now NA
+Dummy cols generated:
+Name = resistance_active, N = 88805
+Name = resistance_passive, N = 99742
+Name = resistance_battery, N = 26747
+Name = resistance_assault, N = 32272
+Name = resistance_deadly, N = 392
+Writing data with 251487 rows to output/TRR-subject-actions_2004-2016_2016-09.csv.gz
+251487 rows dropped by filter query: person == "Member Action"
+Recoding action to type_of_force
+0 changes: "MEMBER PRESENCE -> 1.0
+1 changes: "VERBAL COMMANDS -> 1.0
+2 changes: "ARMBAR -> 2.0
+3 changes: "CONTROL INSTRUMENT -> 2.0
+4 changes: "ESCORT HOLDS -> 2.0
+5 changes: "O.C./CHEMICAL WEAPON -> 2.0
+6 changes: "O.C./CHEMICAL WEAPON W/AUTHORIZATION -> 2.0
+7 changes: "PRESSURE SENSITIVE AREAS -> 2.0
+8 changes: "WRISTLOCK -> 2.0
+9 changes: "CANINE -> 3.0
+10 changes: "OPEN HAND STRIKE -> 3.0
+11 changes: "TAKE DOWN/EMERGENCY HANDCUFFING -> 3.0
+12 changes: "TASER (CONTACT STUN) -> 4.0
+13 changes: "TASER (LASER TARGETED) -> 4.0
+14 changes: "TASER (PROBE DISCHARGE) -> 4.0
+15 changes: "TASER (SPARK DISPLAYED) -> 4.0
+16 changes: "CLOSED HAND STRIKE/PUNCH -> 5.0
+17 changes: "ELBOW STRIKE -> 5.0
+18 changes: "IMPACT MUNITION (DESCRIBE IN ADDITIONAL INFO) -> 5.0
+19 changes: "IMPACT WEAPON (DESCRIBE IN ADDITIONAL INFO) -> 5.0
+20 changes: "KICKS -> 5.0
+21 changes: "KNEE STRIKE -> 5.0
+22 changes: "FIREARM -> 6.0
+11467 values in type_of_force now NA
+Recoding missing/Other actions using other_description
+Recoding 11467 rows to level 2 with strings that contain: LRAD|ESCORT HOLD|ARMBAR|ARM BAR|WRISTLOCK|CONTROL INSTRUMENT|TAKE DWN
+Recoding 10937 rows to level 3 with strings that contain: PRESS?URE|TAKE.?DOWN|OPEN.?HAND|OPENED HAND|PALM|CANINE|OPEN BACKHAND|EMERGENCY [HANDCUFFING|CUFFING|TAK|HANDCUFF]|PHYSICALLY TOOK SUBJECT DOWN|STUN|CHEMICAL|O\.?C|K.?9
+Recoding 8315 rows to level 4 with strings that contain: TA[S|Z]E[R|D]
+Recoding 7803 rows to level 5 with strings that contain: CLOSED HAND|FIST|PUNCH|KNEE|BATON|IMPACT MUNITION|ELBOW|KICK|IMPACT|ASSAILANT|(?<!\w)ASP(?!A-Z)
+Recoding 7045 rows to level 6 with strings that contain: FIREARM|SEMI AUTO|CALIBER|GUN|FIRE|REVOLVER|RIFLE|PISTOL
+6835 NA values in type_of_force filled with 
+Recoding type_of_force to force_level
+0 changes: "6.0 -> firearm
+1 changes: "3.0 -> intermediate
+2 changes: "5.0 -> major
+3 changes: "2.0 -> minor
+4 changes: "0.0 -> missing
+5 changes: "1.0 -> none
+6 changes: "4.0 -> taser
+0 values in force_level now NA
+Dummy cols generated:
+Name = poaction_intermediate, N = 59294
+Name = poaction_none, N = 122762
+Name = poaction_minor, N = 61755
+Name = poaction_major, N = 13182
+Name = poaction_missing, N = 6835
+Name = poaction_firearm, N = 1206
+Name = poaction_taser, N = 656
+Writing data with 271601 rows to output/TRR-member-actions_2004-2016_2016-09.csv.gz
