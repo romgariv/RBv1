@@ -1,0 +1,43 @@
+running src/merge.py
+Beginning import_data from file(s): input/officer-reference.csv.gz
+Data shape = 77545 rows, 21 columns
+Adding column by exec("self._data["current_age_m1"] = self._data["current_age"]")
+Adding column by exec("self._data["current_age_p1"] = self._data["current_age"]")
+Beginning import_data from file(s): input/unit-history__2016-03.csv.gz
+Data shape = 114630 rows, 26 columns
+Aggregated data size = 31596
+Data reshaped wide (31596 rows) to long (45091 rows) by star columns
+Adding column by exec("self._data["current_age_m1"] = self._data["current_age"]")
+Adding column by exec("self._data["current_age_p1"] = self._data["current_age"] + 1")
+Merge Report:
+31589 Total Merged Pairs: 97.38% of ref and 99.98% of sup Merged.
+851 Unmerged in ref. 2.62% Unmerged.
+7 Unmerged in sup. 0.02% Unmerged.
+
+star-first_name_NS-last_name_NS-appointed_date-gender-race-current_unit                                   22522
+first_name_NS-last_name_NS-appointed_date-gender-race-current_unit                                         3758
+star-first_name_NS-last_name_NS-appointed_date-gender-race                                                 2763
+star-first_name_NS-last_name_NS-appointed_date-gender-race-suffix_name-current_unit                        1111
+first_name_NS-last_name_NS-appointed_date-gender-race                                                      1012
+first_name_NS-last_name_NS-appointed_date-gender-race-suffix_name-current_unit                              192
+star-first_name_NS-last_name_NS-appointed_date-gender-race-suffix_name                                      117
+first_name_NS-last_name_NS-appointed_date-gender-race-suffix_name                                            58
+gender=="FEMALE" : first_name_NS-star-gender-race-appointed_date                                             20
+star-first_name_NS-F4LN-appointed_date-gender-race-current_unit                                               7
+star-first_name_NS-last_name_NS-appointed_date-middle_initial-gender-race-current_unit                        6
+first_name_NS-last_name_NS-current_age_p1                                                                     5
+star-first_name_NS-last_name_NS-appointed_date-middle_initial-middle_initial2-gender-race-current_unit        2
+gender=="FEMALE" : first_name_NS-appointed_date-current_unit-gender-race                                      2
+first_name_NS-last_name_NS                                                                                    2
+star-first_name_NS-F4LN-appointed_date-gender-race                                                            2
+star-first_name_NS-last_name_NS-appointed_date-gender                                                         2
+first_name_NS-last_name_NS-appointed_date-middle_initial-gender-race-suffix_name-current_unit                 1
+first_name_NS-last_name_NS-appointed_date-gender-current_unit                                                 1
+first_name_NS-F4LN-appointed_date-gender-race-current_unit                                                    1
+star-first_name_NS-last_name_NS-appointed_date-gender-current_unit                                            1
+star-appointed_date-current_unit-current_age_p1-gender                                                        1
+star-first_name_NS-last_name_NS-appointed_date-gender-suffix_name-current_unit                                1
+star-first_name_NS-last_name_NS-appointed_date-middle_initial-gender-race                                     1
+star-F4FN-last_name_NS-appointed_date-gender-race                                                             1
+Name: matched_on, dtype: int64
+Writing data with 122636 rows to output/officer-reference.csv.gz with 32447 unique UIDs
