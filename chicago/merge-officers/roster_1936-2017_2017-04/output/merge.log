@@ -1,0 +1,15 @@
+running src/merge.py
+Beginning import_data from file(s): input/roster_1936-2017_2017-04.csv.gz
+Data shape = 32446 rows, 30 columns
+650 rows dropped by filter query: first_name != "POLICE" & first_name == first_name
+Total rows: 31796
+Unique id + conflict rows: 31789
+Conflict rows: 0
+Resolved conflcit UID count: 0
+Total unique ids: 31789
+
+Writing data with 32446 rows to output/roster_1936-2017_2017-04.csv.gz with 31789 unique UIDs
+650 rows dropped by filter query: first_name != "POLICE" & first_name == first_name
+Aggregated data size = 31789
+Data reshaped wide (31789 rows) to long (45539 rows) by star columns
+Writing data with 45539 rows to output/officer-reference.csv.gz with 31789 unique UIDs
