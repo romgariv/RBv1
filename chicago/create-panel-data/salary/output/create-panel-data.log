@@ -1,0 +1,2 @@
+running src/create-panel-data.py
+Writing data with 2510640 rows to output/monthly-panel_salary_2002-2017.csv.gz
