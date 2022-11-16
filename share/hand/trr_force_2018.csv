@@ -1,0 +1,44 @@
+type_of_force,response_type,response_type_dtll,force_level
+OTHER DESCRIPTION,Other,other_unknown,0
+MEMBER PRESENCE,Force Mitigation Efforts,mitigation,1
+VERBAL COMMANDS,Force Mitigation Efforts,mitigation,2
+Zone of safety,Force Mitigation Efforts,mitigation,3
+Movement to avoid attack,Force Mitigation Efforts,mitigation,4
+Specialized units,Force Mitigation Efforts,mitigation,5
+Tactical positioning,Force Mitigation Efforts,mitigation,6
+Additional unit member,Force Mitigation Efforts,mitigation,7
+None,Force Mitigation Efforts,mitigation,8
+ESCORT HOLDS,Control Tactics,control,9
+WRISTLOCK,Control Tactics,control,10
+ARMBAR,Control Tactics,control,11
+CONTROL INSTRUMENT,Control Tactics,control,12
+PRESSURE SENSITIVE AREAS,Control Tactics,control,13
+EMERGENCY HANDCUFFING,Control Tactics,control,14
+OPEN HAND STRIKE,Response without weapons,noweapon,15
+TAKE DOWN/EMERGENCY HANDCUFFING,Response without weapons,noweapon,16
+ELBOW STRIKE,Response without weapons,noweapon,17
+CLOSED HAND STRIKE/PUNCH,Response without weapons,noweapon,18
+KNEE STRIKE,Response without weapons,noweapon,19
+KICKS,Response without weapons,noweapon,20
+O.C./CHEMICAL WEAPON,Response with weapons,nonlethal,21
+O.C./CHEMICAL WEAPON W/AUTHORIZATION,Response with weapons,nonlethal,22
+LRAD W/Authorization,Response with weapons,nonlethal,23
+TASER (PROBE DISCHARGE),Response with weapons,taser,24
+TASER (CONTACT STUN),Response with weapons,taser,24
+TASER (LASER TARGETED),Response with weapons,taser,24
+TASER (PROBE DISCHARGE) 1,Response with weapons,taser,24
+TASER (PROBE DISCHARGE) 2,Response with weapons,taser,24
+TASER (SPARK DISPLAYED),Response with weapons,taser,24
+TASER (ARC CYLCLE),Response with weapons,taser,24
+TASER (ARC CYLCLE) 1,Response with weapons,taser,24
+TASER (ARC CYLCLE) 2,Response with weapons,taser,24
+TASER (CONTACT STUN) 1,Response with weapons,taser,24
+TASER (ARC CYLCLE) 3,Response with weapons,taser,24
+TASER (CONTACT STUN) 2,Response with weapons,taser,24
+TASER (CONTACT STUN) 3,Response with weapons,taser,24
+TASER (PROBE DISCHARGE) 3,Response with weapons,taser,24
+TASER (SPARK DISPLAYED) 1,Response with weapons,taser,24
+CANINE,Response with weapons,canine,25
+IMPACT WEAPON (DESCRIBE IN ADDITIONAL INFO),baton,baton,26
+IMPACT MUNITION (DESCRIBE IN ADDITIONAL INFO),Response with weapons,baton,27
+FIREARM,Response with weapons,firearm,28
