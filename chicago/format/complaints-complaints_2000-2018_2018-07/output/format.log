@@ -1,0 +1,29 @@
+running src/format.py
+Beginning import_data from file(s): input/case_info_export.xlsx
+Data shape = 182337 rows, 21 columns
+LOG_NO -> cr_id , INCIDENT_FROMDATE -> incident_start_date , INCIDENT_TODATE -> incident_end_date , COMPLAINT_DATE -> complaint_date , CLOSEDATCOPA_DATETIME -> closed_date , CURRENT_STATUS -> current_status , LOCATION_CODE -> location_type , STREET_NO -> street_number , STREET_DIRECTION -> street_direction , STREET_NME -> street_name , APT_NO -> apt_number , CITY -> city , STATE -> state , ZIP_CD -> zip_code , OCCURANCE_BEAT -> beat , CURRENT_CATEGORY_CODE -> current_category_code , CURRENT_CATEGORY -> current_category , CURRENT_CATEGORY_TYPE -> current_category_type , POLICE_SHOOTING -> police_shooting , COMPLAINANT_TYPE -> complainant_type , INVESTIGATING_AGENCY -> investigating_agency
+ROWID column inserted
+Column 'ROWID' was not cleaned.
+Column 'cr_id' was not cleaned.
+Column 'incident_start_date' cleaned as date using DateTimeCleaners.
+Column 'incident_end_date' cleaned as date using DateTimeCleaners.
+Column 'complaint_date' cleaned as date using DateTimeCleaners.
+Column 'closed_date' cleaned as date using DateTimeCleaners.
+Column 'current_status' was not cleaned.
+Column 'location_type' was not cleaned.
+Column 'street_number' was not cleaned.
+Column 'street_direction' was not cleaned.
+Column 'street_name' was not cleaned.
+Column 'apt_number' was not cleaned.
+Column 'city' was not cleaned.
+Column 'state' was not cleaned.
+Column 'zip_code' was not cleaned.
+Column 'beat' was not cleaned.
+Column 'current_category_code' was not cleaned.
+Column 'current_category' was not cleaned.
+Column 'current_category_type' was not cleaned.
+Column 'police_shooting' was not cleaned.
+Column 'complainant_type' was not cleaned.
+Column 'investigating_agency' was not cleaned.
+Columns dropped due to all NA values: ()
+Writing data with 182337 rows to output/complaints-complaints_2000-2018_2018-07.csv.gz
