@@ -1,0 +1,12 @@
+running src/format.py
+Beginning import_data from file(s): input/10655-FOIA-P046360-TRRdata_sterilized.xlsx
+Data shape = 48389 rows, 4 columns
+TRR_REPORT_ID -> trr_id , WEAPON_TYPE -> weapon_type , FIREARM_CALIBER -> firearm_caliber , WEAPON_DESCRIPTION -> weapon_description
+Parsing columns with _x000D_\n due to error in original file
+Column 'ROWID' was not cleaned.
+Column 'trr_id' was not cleaned.
+Column 'weapon_type' was not cleaned.
+Column 'firearm_caliber' was not cleaned.
+Column 'weapon_description' was not cleaned.
+Columns dropped due to all NA values: ()
+Writing data with 50530 rows to output/TRR-subject-weapons_2004-2016_2016-09.csv.gz
