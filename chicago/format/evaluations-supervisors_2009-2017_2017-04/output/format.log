@@ -1,0 +1,22 @@
+running src/format.py
+Beginning import_data from file(s): input/cpd_officers_170313 NEW.xls
+Data shape = 70252 rows, 21 columns
+Keeping columns: ['FIRST_NAME_S', 'MI_S', 'LAST_NAME_S', 'ASSIGNED_S', 'BIRTH_S', 'SEX_S', 'RACE_S', 'CURRENT_TITLE_S', 'CURRENT_UNIT_S']
+FIRST_NAME_S -> first_name , MI_S -> middle_initial , LAST_NAME_S -> last_name , ASSIGNED_S -> assigned_date , BIRTH_S -> birth_year , SEX_S -> gender , RACE_S -> race , CURRENT_TITLE_S -> current_rank , CURRENT_UNIT_S -> current_unit
+ROWID column inserted
+Column 'ROWID' was not cleaned.
+Column 'assigned_date' cleaned as date using DateTimeCleaners.
+Column 'birth_year' cleaned as int using GeneralCleaners.
+Column 'gender' cleaned as gender using GeneralCleaners.
+Column 'race' cleaned as race using GeneralCleaners.
+Column 'current_rank' was not cleaned.
+Column 'current_unit' cleaned as int using GeneralCleaners.
+Column(s) '('first_name', 'middle_initial', 'last_name')' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('middle_name', 'full_name', 'human_name', 'second_name')
+Total rows: 70252
+Unique id + conflict rows: 1875
+Conflict rows: 0
+Resolved conflcit UID count: 0
+Total unique ids: 1875
+
+Writing data with 70252 rows to output/evaluations-supervisors_2009-2017_2017-04.csv.gz with 1875 unique UIDs

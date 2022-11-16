@@ -1,0 +1,25 @@
+running src/format.py
+Beginning import_data from file(s): input/cpd_officers_170313 NEW.xls
+Data shape = 70252 rows, 21 columns
+Keeping columns: ['EVAL_YEAR', 'FIRST_NAME_O', 'MI_O', 'LAST_NAME_O', 'ASSIGNED_O', 'SEX_O', 'BIRTH_O', 'RACE_O', 'CURRENT_TITLE_O', 'UNIT_O', 'EVAL_UNIT_O']
+EVAL_YEAR -> evaluation_year , FIRST_NAME_O -> first_name , MI_O -> middle_initial , LAST_NAME_O -> last_name , ASSIGNED_O -> assigned_date , SEX_O -> gender , BIRTH_O -> birth_year , RACE_O -> race , CURRENT_TITLE_O -> current_rank , UNIT_O -> current_unit , EVAL_UNIT_O -> evaluation_unit
+ROWID column inserted
+Column 'ROWID' was not cleaned.
+Column 'evaluation_year' was not cleaned.
+Column 'assigned_date' cleaned as date using DateTimeCleaners.
+Column 'gender' cleaned as gender using GeneralCleaners.
+Column 'birth_year' cleaned as int using GeneralCleaners.
+Column 'race' cleaned as race using GeneralCleaners.
+['U'] values not in race_types.yaml file. 5 cases replaced with 'nan'
+Column 'current_rank' was not cleaned.
+Column 'current_unit' cleaned as int using GeneralCleaners.
+Column 'evaluation_unit' was not cleaned.
+Column(s) '('first_name', 'middle_initial', 'last_name')' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('full_name', 'human_name', 'middle_name', 'second_name')
+Total rows: 70252
+Unique id + conflict rows: 12995
+Conflict rows: 0
+Resolved conflcit UID count: 0
+Total unique ids: 12995
+
+Writing data with 70252 rows to output/evaluations-officers_2009-2017_2017-04.csv.gz with 12995 unique UIDs
