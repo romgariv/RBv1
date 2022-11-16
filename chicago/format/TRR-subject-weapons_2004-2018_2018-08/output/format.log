@@ -1,0 +1,12 @@
+running src/format.py
+Beginning import_data from file(s): input/P456008 13094-FOIA-P456008-TRRdata Responsive Record Produced By R&A.xlsx
+Data shape = 53106 rows, 4 columns
+TRR_REPORT_ID -> trr_id , WEAPON_TYPE -> weapon_type , FIREARM_CALIBER -> firearm_caliber , WEAPON_DESCRIPTION -> weapon_description
+Parsing columns with _x000D_\n due to error in original file
+Column 'ROWID' was not cleaned.
+Column 'trr_id' was not cleaned.
+Column 'weapon_type' was not cleaned.
+Column 'firearm_caliber' was not cleaned.
+Column 'weapon_description' was not cleaned.
+Columns dropped due to all NA values: ()
+Writing data with 55248 rows to output/TRR-subject-weapons_2004-2018_2018-08.csv.gz
