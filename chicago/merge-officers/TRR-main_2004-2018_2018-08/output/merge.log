@@ -1,0 +1,24 @@
+running src/merge.py
+Beginning import_data from file(s): input/officer-reference.csv.gz
+Data shape = 241619 rows, 37 columns
+Beginning import_data from file(s): input/TRR-main_2004-2018_2018-08.csv.gz
+Data shape = 75759 rows, 49 columns
+343 rows dropped by filter query: rank != ["DETENTION AIDE", "9122"]
+Unique data size = 11756
+Adding column by exec("self._data["star"]=self._data["current_star"]")
+Merge Report:
+11756 Total Merged Pairs: 34.97% of ref and 100.0% of sup Merged.
+21865 Unmerged in ref. 65.03% Unmerged.
+0 Unmerged in sup. 0.0% Unmerged.
+
+star-first_name_NS-last_name_NS-appointed_date-gender-race                                   10995
+star-first_name_NS-last_name_NS-appointed_date-gender-race-suffix_name                         498
+first_name_NS-last_name_NS-appointed_date-gender-race                                          219
+star-first_name_NS-last_name_NS-appointed_date-gender                                           20
+first_name_NS-last_name_NS-appointed_date-gender-race-suffix_name                               13
+star-first_name_NS-last_name_NS-appointed_date-middle_initial-gender-race                        7
+first_name_NS-last_name_NS-appointed_date-gender                                                 2
+star-first_name_NS-last_name_NS-appointed_date-middle_initial-middle_initial2-gender-race        1
+star-first_name_NS-last_name_NS-appointed_date-gender-suffix_name                                1
+Name: matched_on, dtype: int64
+Writing data with 253375 rows to output/officer-reference.csv.gz with 33621 unique UIDs
