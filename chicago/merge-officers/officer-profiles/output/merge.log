@@ -1,0 +1,10 @@
+running src/merge.py
+Beginning import_data from file(s): input/officer-reference.csv.gz
+Data shape = 320018 rows, 46 columns
+ROWID column inserted
+Adding column by exec("self._data["FOIA_date"] = pd.NaT")
+Adding column by exec("for col in [col for col in self._data.columns if (col.endswith("_ID") and ("WHEN" not in col))]:self._data.loc[self._data[col].notnull(), "FOIA_date"] = (col[-10:-3] + "-01")")
+Aggregated data size = 33635
+Keeping column(s): ['NUID', 'first_name', 'first_name_NS', 'last_name', 'last_name_NS', 'middle_initial', 'middle_initial2', 'suffix_name', 'birth_year', 'race', 'gender', 'appointed_date', 'resignation_date', 'start_date', 'org_hire_date', 'current_rank']
+Adding column by exec("self._data["current_rank"] = self._data["current_rank"].str.upper()")
+Writing data with 33635 rows to output/officer-profiles.csv.gz with 33635 unique UIDs
