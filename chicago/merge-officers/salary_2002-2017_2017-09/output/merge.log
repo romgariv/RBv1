@@ -1,0 +1,32 @@
+running src/merge.py
+Beginning import_data from file(s): input/officer-reference.csv.gz
+Data shape = 161622 rows, 29 columns
+Adding column by exec("self._data["current_age_p1"], self._data["current_age_m1"] = 2017 - self._data["birth_year"], 2016 - self._data["birth_year"]")
+Adding column by exec("self._data['current_age_mp'], self._data['current_age_pm'], self._data['current_age2_mp'], self._data['current_age2_pm'], self._data['current_age2_p1'], self._data['current_age2_m1'], self._data['current_age2_mp2'] = self._data['current_age_p1'], self._data['current_age_m1'], self._data['current_age_p1'], self._data['current_age_m1'], self._data['current_age_p1'], self._data['current_age_m1'], self._data['current_age_p1'] + 1")
+Adding column by exec("self._data['so_max_date'], self._data['so_min_date'] = zip(*self._data['appointed_date'].apply(lambda x: (x,x)))")
+Adding column by exec("self._data['so_max_year'],self._data['so_min_year'], self._data['so_min_year_m1'], self._data['so_max_year_m1'] = zip(*pd.to_datetime(self._data['appointed_date']).dt.year.apply(lambda x: (x,x,x,x)))")
+Adding column by exec("self._data['resignation_year'] = pd.to_datetime(self._data['resignation_date']).dt.year")
+Adding column by exec("self._data['resignation_date2'] = self._data['resignation_date']")
+Beginning import_data from file(s): input/salary_2002-2017_2017-09_profiles.csv.gz
+Data shape = 26205 rows, 28 columns
+ROWID column inserted
+Adding column by exec("self._data['resignation_date2'] = self._data['org_hire_date']")
+Adding column by exec("self._data['current_age2_mp2'] = self._data['current_age_mp']")
+Merge Report:
+19762 Total Merged Pairs: 58.86% of ref and 99.77% of sup Merged.
+13811 Unmerged in ref. 41.14% Unmerged.
+46 Unmerged in sup. 0.23% Unmerged.
+
+first_name_NS-last_name_NS-middle_initial-so_min_date-current_age_mp-gender    7129
+first_name_NS-last_name_NS-middle_initial-so_min_date-current_age_m1-gender    3543
+first_name_NS-last_name_NS-so_min_date-current_age_mp-gender                   3041
+first_name_NS-last_name_NS-so_min_date-current_age_m1-gender                   1735
+first_name_NS-last_name_NS-middle_initial-so_min_date-gender                   1427
+                                                                               ... 
+first_name_NS-F3LN-middle_initial-so_max_date-current_age_mp-gender               1
+first_name_NS-F3LN-middle_initial-so_max_date-gender                              1
+first_name_NS-F3LN-middle_initial-resignation_year-current_age_mp-gender          1
+F4FN-last_name_NS-middle_initial-so_max_date-current_age_m1-gender                1
+middle_initial-last_name_NS-current_age_mp-so_max_date                            1
+Name: matched_on, Length: 110, dtype: int64
+Writing data with 187827 rows to output/officer-reference.csv.gz with 33619 unique UIDs
