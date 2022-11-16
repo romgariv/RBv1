@@ -1,0 +1,25 @@
+running src/merge.py
+Beginning import_data from file(s): input/officer-reference.csv.gz
+Data shape = 203848 rows, 34 columns
+Adding column by exec("self._data["appointed_date2"] = self._data["org_hire_date"]")
+Adding column by exec("self._data["appointed_date3"] = self._data["start_date"]")
+Beginning import_data from file(s): input/TRR-statuses_2004-2016_2016-09.csv.gz
+Data shape = 201401 rows, 19 columns
+884 rows dropped by filter query: rank == rank
+Unique data size = 12895
+Adding column by exec("self._data["appointed_date2"] = self._data["appointed_date"]")
+Adding column by exec("self._data["appointed_date3"] = self._data["appointed_date"]")
+Merge Report:
+12895 Total Merged Pairs: 34.23% of ref and 100.0% of sup Merged.
+22111 Unmerged in ref. 65.77% Unmerged.
+0 Unmerged in sup. 0.0% Unmerged.
+
+star-first_name_NS-last_name_NS-appointed_date-gender-race                                   12341
+star-first_name_NS-last_name_NS-appointed_date-gender-race-suffix_name                         540
+star-first_name_NS-last_name_NS-appointed_date-middle_initial-gender-race                        5
+first_name_NS-last_name_NS-appointed_date2-gender                                                4
+first_name_NS-last_name_NS-appointed_date-gender-race                                            3
+star-first_name_NS-last_name_NS-appointed_date-middle_initial-middle_initial2-gender-race        1
+first_name_NS == "JAMES" & last_name_NS == "ROUSSELL" : first_name_NS-last_name_NS               1
+Name: matched_on, dtype: int64
+Writing data with 216743 rows to output/officer-reference.csv.gz with 33619 unique UIDs
