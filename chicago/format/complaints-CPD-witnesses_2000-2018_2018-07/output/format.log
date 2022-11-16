@@ -1,0 +1,34 @@
+running src/format.py
+Beginning import_data from file(s): input/cpd_witness_export.xlsx
+Data shape = 25390 rows, 18 columns
+LOG_NO -> cr_id , COMPLAINT_DATE -> complaint_date , IAD_OPS -> IAD_OPS , PARTY_TYPE -> witness_type , PARTY_SUBTYPE -> witness_subtype , FIRST_NAME -> first_name , MIDDLE_NAME -> middle_initial , LAST_NAME -> last_name , CPD_EMPLOYEE_ID -> employee_id , RACE -> race , SEX -> gender , BIRTH_YEAR -> birth_year , ASSIGN_UNIT_TIMEOFINCIDENT -> unit , DETAIL_UNIT_TIMEOFINCIDENT -> unit_detail , RANK_TIMEOFINCIDENT -> rank , SWORN_OFFICER_I -> is_sworn_officer , DETAIL_UNIT_CURRENT -> current_unit , ASSIGN_UNIT_CURRENT -> current_unit_detail
+ROWID column inserted
+Column 'ROWID' was not cleaned.
+Column 'cr_id' was not cleaned.
+Column 'complaint_date' cleaned as date using DateTimeCleaners.
+Column 'IAD_OPS' was not cleaned.
+Column 'witness_type' was not cleaned.
+Column 'witness_subtype' was not cleaned.
+Column 'employee_id' was not cleaned.
+Column 'race' cleaned as race using GeneralCleaners.
+['UNKNOWN'] values not in race_types.yaml file. 25 cases replaced with 'nan'
+Column 'gender' cleaned as gender using GeneralCleaners.
+['UNKNOWN'] values not in gender_types.yaml file. 1 cases replaced with 'nan'
+Column 'birth_year' cleaned as int using GeneralCleaners.
+Column 'unit' cleaned as int using GeneralCleaners.
+Column 'unit_detail' was not cleaned.
+Column 'rank' was not cleaned.
+Column 'is_sworn_officer' was not cleaned.
+Column 'current_unit' cleaned as int using GeneralCleaners.
+Column 'current_unit_detail' was not cleaned.
+Column(s) '('first_name', 'middle_initial', 'last_name')' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('second_name', 'full_name', 'human_name', 'middle_name')
+Total rows: 25390
+Unique id + conflict rows: 10424
+Conflict rows: 0
+Resolved conflcit UID count: 0
+Total unique ids: 10424
+
+9934 officers in file
+Added "likely_sworn_officer" column base on rank
+Writing data with 25390 rows to output/complaints-CPD-witnesses_2000-2018_2018-07.csv.gz with 10424 unique UIDs
