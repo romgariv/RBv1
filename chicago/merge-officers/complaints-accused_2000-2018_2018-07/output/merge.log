@@ -1,0 +1,52 @@
+running src/merge.py
+Beginning import_data from file(s): input/officer-reference.csv.gz
+Data shape = 281918 rows, 42 columns
+Adding column by exec("self._data["current_unit_temp"] = self._data["current_unit"]")
+Beginning import_data from file(s): input/complaints-accused_2000-2018_2018-07.csv.gz
+Data shape = 279961 rows, 35 columns
+57556 rows dropped by filter query: likely_sworn_officer == 1 & first_name == first_name
+Unique data size = 31293
+Adding column by exec("self._data["current_unit_temp"] = self._data["unit"]")
+Merge Report:
+15716 Total Merged Pairs: 46.74% of ref and 99.91% of sup Merged.
+17905 Unmerged in ref. 53.26% Unmerged.
+14 Unmerged in sup. 0.09% Unmerged.
+
+star-first_name_NS-last_name_NS-birth_year-middle_initial-gender-race-current_unit_temp                    6326
+star-first_name_NS-last_name_NS-birth_year-middle_initial-gender-race                                      5479
+star-first_name_NS-last_name_NS-birth_year-gender-race-current_unit_temp                                   1422
+star-first_name_NS-last_name_NS-birth_year-gender-race                                                     1208
+star-first_name_NS-last_name_NS-birth_year-middle_initial-gender-race-suffix_name-current_unit_temp         218
+star-first_name_NS-last_name_NS-birth_year-middle_initial-gender-race-suffix_name                           208
+star-first_name_NS-last_name_NS-birth_year-gender-race-suffix_name-current_unit_temp                        156
+first_name_NS-last_name_NS-birth_year-middle_initial-gender-race-current_unit_temp                          151
+first_name_NS-last_name_NS-birth_year-middle_initial-gender-race                                            130
+star-first_name_NS-last_name_NS-birth_year-gender-race-suffix_name                                          107
+first_name_NS-last_name_NS-star                                                                              85
+first_name_NS-last_name_NS-current_unit_temp-star                                                            59
+first_name_NS-last_name_NS-birth_year-gender-race-current_unit_temp                                          40
+first_name_NS-last_name_NS-birth_year-gender-race                                                            35
+gender=="FEMALE" : first_name_NS-middle_initial-star-birth_year                                              22
+first_name_NS-last_name_NS-middle_initial-star                                                               17
+first_name_NS-last_name_NS-middle_initial-race                                                                8
+first_name_NS-last_name_NS-birth_year-middle_initial-gender-race-suffix_name                                  7
+first_name_NS-last_name_NS-suffix_name-star                                                                   5
+first_name_NS-last_name_NS-birth_year-gender-current_unit_temp                                                3
+first_name_NS-last_name_NS-birth_year-gender-race-suffix_name-current_unit_temp                               3
+first_name_NS-last_name_NS-middle_initial                                                                     3
+star-first_name_NS-last_name_NS-birth_year-middle_initial-middle_initial2-gender-race-current_unit_temp       3
+first_name_NS-last_name_NS-birth_year-middle_initial-gender-race-suffix_name-current_unit_temp                3
+star-first_name_NS-F4LN-birth_year-middle_initial-gender-race-current_unit_temp                               3
+first_name_NS-last_name_NS-birth_year-middle_initial-gender-current_unit_temp                                 2
+star-first_name_NS-last_name_NS-birth_year-middle_initial-middle_initial2-gender-race                         2
+star-F4FN-last_name_NS-birth_year-middle_initial-gender-race-current_unit_temp                                2
+star-first_name_NS-last_name_NS-birth_year-middle_initial-gender-current_unit_temp                            2
+first_name_NS-last_name_NS-birth_year-middle_initial-race                                                     1
+first_name_NS-last_name_NS-birth_year-middle_initial-race-suffix_name-current_unit_temp                       1
+star-F4FN-last_name_NS-birth_year-middle_initial-gender-race                                                  1
+star-first_name_NS-F4LN-birth_year-gender-race                                                                1
+star-first_name_NS-F4LN-birth_year-middle_initial-gender-race                                                 1
+star-first_name_NS-last_name_NS-birth_year-gender-current_unit_temp                                           1
+first_name_NS-last_name_NS-current_unit_temp                                                                  1
+Name: matched_on, dtype: int64
+Writing data with 313211 rows to output/officer-reference.csv.gz with 33635 unique UIDs
