@@ -1,0 +1,26 @@
+running src/format.py
+Beginning import_data from file(s): input/P456008 13094-FOIA-P456008-TRRdata Responsive Record Produced By R&A.xlsx
+Data shape = 223657 rows, 11 columns
+TRR_REPORT_ID -> trr_id , STATUS -> status , STATDATETIME -> status_datetime , FIRST_NME -> first_name , LAST_NME -> last_name , STAR -> star , RANK -> rank , SEX -> gender , MEMBERRACE -> race , MEMBERAGE -> age , APPOINTED_DATE -> appointed_date
+ROWID column inserted
+Column 'ROWID' was not cleaned.
+Column 'trr_id' was not cleaned.
+Column 'status' was not cleaned.
+Column 'status_datetime' cleaned as datetime using DateTimeCleaners.
+Column 'star' cleaned as star using GeneralCleaners.
+Column 'rank' was not cleaned.
+Column 'gender' cleaned as gender using GeneralCleaners.
+Column 'race' cleaned as race using GeneralCleaners.
+['UNKNOWN'] values not in race_types.yaml file. 21 cases replaced with 'nan'
+Column 'age' cleaned as age using GeneralCleaners.
+Column 'appointed_date' cleaned as date using DateTimeCleaners.
+Column(s) '('first_name', 'last_name')' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('full_name', 'middle_name', 'human_name', 'second_name')
+3472 resolved conflicts. 21 unresolved conflicts
+Total rows: 223657
+Unique id + conflict rows: 14274
+Conflict rows: 3493
+Resolved conflcit UID count: 3462
+Total unique ids: 14243.0
+
+Writing data with 223657 rows to output/TRR-statuses_2004-2018_2018-08.csv.gz with 14243 unique UIDs
