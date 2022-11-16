@@ -1,0 +1,57 @@
+running src/merge.py
+Beginning import_data from file(s): input/officer-reference.csv.gz
+Data shape = 268057 rows, 40 columns
+Beginning import_data from file(s): input/officer-reference.csv.gz
+Data shape = 268057 rows, 40 columns
+Adding column by exec("self._data.loc[self._data['appointed_date'].isnull(), 'appointed_date'] = self._data.loc[self._data['appointed_date'].isnull(), ['start_date', 'org_hire_date']].apply(pd.to_datetime).apply(np.nanmax,axis=1).dt.date")
+Adding column by exec("self._data['FN2']=self._data['last_name_NS']")
+Adding column by exec("self._data['LN2']=self._data['first_name_NS']")
+Beginning import_data from file(s): input/complaints-witnesses_2000-2016_2016-11.csv.gz
+Data shape = 27922 rows, 16 columns
+292 rows dropped by filter query: first_name_NS == first_name_NS
+762 rows dropped by filter query: appointed_date == appointed_date
+Unique data size = 11602
+Adding column by exec("self._data['FN2']=self._data['first_name_NS']")
+Adding column by exec("self._data['LN2']=self._data['last_name_NS']")
+Adding column by exec("self._data['star']=self._data['current_star']")
+Merge Report:
+11539 Total Merged Pairs: 33.67% of ref and 99.81% of sup Merged.
+22300 Unmerged in ref. 66.33% Unmerged.
+22 Unmerged in sup. 0.19% Unmerged.
+
+star-first_name_NS-last_name_NS-appointed_date-birth_year-gender-race                                   7235
+first_name_NS-last_name_NS-appointed_date-birth_year-gender-race                                        3263
+star-first_name_NS-last_name_NS-appointed_date-birth_year-gender-race-suffix_name                        321
+first_name_NS-star-birth_year-appointed_date                                                             281
+first_name_NS-last_name_NS-appointed_date-birth_year-gender-race-suffix_name                             163
+star-first_name_NS-last_name_NS-appointed_date-gender-race                                                73
+first_name_NS-birth_year-appointed_date                                                                   62
+star-first_name_NS-F4LN-appointed_date-birth_year-gender-race                                             32
+last_name_NS-birth_year-appointed_date-star                                                               13
+first_name_NS-L4LN-birth_year-appointed_date                                                              13
+star-first_name_NS-last_name_NS-appointed_date-birth_year-gender                                          12
+star-F4FN-last_name_NS-appointed_date-birth_year-gender-race                                              11
+first_name_NS-F4LN-appointed_date-birth_year-gender-race                                                   9
+first_name_NS-last_name_NS-appointed_date-birth_year-gender                                                7
+F3FN-last_name_NS-birth_year-appointed_date                                                                7
+F1FN-F4LN-birth_year-appointed_date-gender                                                                 5
+F4LN-birth_year-appointed_date-gender                                                                      4
+first_name_NS-last_name_NS-birth_year                                                                      4
+first_name_NS-last_name_NS-appointed_date-gender-race                                                      3
+F4FN-last_name_NS-appointed_date-birth_year-gender-race                                                    3
+star-first_name_NS-F4LN-appointed_date-gender-race                                                         2
+F1FN-L3FN-birth_year-appointed_date-star                                                                   2
+star-first_name_NS-last_name_NS-appointed_date-birth_year-middle_initial-gender-race                       2
+F4FN-star-birth_year-appointed_date                                                                        2
+star-first_name_NS-last_name_NS-appointed_date-birth_year-middle_initial-middle_initial2-gender-race       1
+F3FN-L3FN-last_name_NS-birth_year-appointed_date-star                                                      1
+FN2-LN2-birth_year-appointed_date-star                                                                     1
+F4FN-last_name_NS-appointed_date-birth_year-gender                                                         1
+first_name_NS-last_name_NS-appointed_date-birth_year-gender-suffix_name                                    1
+star-F4FN-last_name_NS-appointed_date-birth_year-gender                                                    1
+star-first_name_NS-last_name_NS-appointed_date-race                                                        1
+star-first_name_NS-last_name_NS-appointed_date-birth_year-race                                             1
+star-first_name_NS-last_name_NS-appointed_date-birth_year-gender-suffix_name                               1
+first_name_NS-last_name_NS-appointed_date-gender-race-suffix_name                                          1
+Name: matched_on, dtype: int64
+Writing data with 279637 rows to output/officer-reference.csv.gz with 33621 unique UIDs
