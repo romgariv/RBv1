@@ -1,0 +1,30 @@
+running src/merge.py
+Beginning import_data from file(s): input/officer-reference.csv.gz
+Data shape = 227544 rows, 36 columns
+Adding column by exec("self._data["appointed_date2"] = self._data["org_hire_date"]")
+Adding column by exec("self._data["appointed_date3"] = self._data["start_date"]")
+Beginning import_data from file(s): input/TRR-statuses_2004-2018_2018-08.csv.gz
+Data shape = 223657 rows, 19 columns
+1005 rows dropped by filter query: rank == rank
+Unique data size = 14075
+Adding column by exec("self._data["appointed_date2"] = self._data["appointed_date"]")
+Adding column by exec("self._data["appointed_date3"] = self._data["appointed_date"]")
+Merge Report:
+14074 Total Merged Pairs: 36.46% of ref and 99.99% of sup Merged.
+21363 Unmerged in ref. 63.54% Unmerged.
+1 Unmerged in sup. 0.01% Unmerged.
+
+star-first_name_NS-last_name_NS-appointed_date-gender-race                                   13442
+star-first_name_NS-last_name_NS-appointed_date-gender-race-suffix_name                         582
+gender == "FEMALE" : first_name_NS-race-star-appointed_date                                     14
+star-first_name_NS-last_name_NS-appointed_date-gender                                            9
+first_name_NS-last_name_NS-appointed_date-gender-race                                            8
+star-first_name_NS-last_name_NS-appointed_date-middle_initial-gender-race                        6
+first_name_NS-last_name_NS-race-gender-star                                                      4
+star-F4FN-last_name_NS-appointed_date-gender-race                                                3
+first_name_NS-last_name_NS-appointed_date-gender                                                 2
+first_name_NS-last_name_NS-appointed_date2-gender                                                2
+star-first_name_NS-last_name_NS-appointed_date-middle_initial-middle_initial2-gender-race        1
+first_name_NS-last_name_NS-suffix_name-star                                                      1
+Name: matched_on, dtype: int64
+Writing data with 241619 rows to output/officer-reference.csv.gz with 33621 unique UIDs
