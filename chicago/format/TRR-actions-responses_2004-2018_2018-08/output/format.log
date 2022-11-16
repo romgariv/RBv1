@@ -1,0 +1,209 @@
+running src/format.py
+Beginning import_data from file(s): input/P456008 13094-FOIA-P456008-TRRdata Responsive Record Produced By R&A.xlsx
+Data shape = 587538 rows, 5 columns
+TRR_REPORT_ID -> trr_id , PERSON -> person , Resistance Type -> resistance_type , ACTION -> action , OTHERDESCR -> other_description
+ROWID column inserted
+Column 'ROWID' was not cleaned.
+Column 'trr_id' was not cleaned.
+Column 'person' was not cleaned.
+Column 'resistance_type' was not cleaned.
+Column 'action' was not cleaned.
+Column 'other_description' was not cleaned.
+Columns dropped due to all NA values: ()
+Writing data with 587538 rows to output/TRR-actions-responses_2004-2018_2018-08.csv.gz
+5 rows dropped by filter query: person == person
+303362 rows dropped by filter query: person == "Subject Action"
+Recoding resistance_type to resistance_type
+0 changes: "Active Resister -> active
+1 changes: "Assailant Assault -> assault
+2 changes: "Assailant Battery -> battery
+3 changes: "Assailant Deadly Force -> deadly
+4 changes: "Passive Resister -> passive
+0 values in resistance_type now NA
+Recoding resistance_type to resistance_level
+0 changes: "passive -> 0
+1 changes: "active -> 1
+2 changes: "battery -> 2
+3 changes: "assault -> 3
+4 changes: "deadly -> 4
+0 values in resistance_level now NA
+Dummy cols generated:
+Name = resistance_active, N = 100231
+Name = resistance_passive, N = 114304
+Name = resistance_battery, N = 29289
+Name = resistance_assault, N = 36011
+Name = resistance_deadly, N = 433
+Writing data with 284171 rows to output/TRR-subject-actions_2004-2018_2018-08.csv.gz
+Classifying member actions
+Beginning import_data from file(s): hand/trr_force_2018.csv
+Data shape = 43 rows, 4 columns
+284171 rows dropped by filter query: person == "Member Action"
+Recoding action to force_level_6
+0 changes: "MEMBER PRESENCE -> 1.0
+1 changes: "VERBAL COMMANDS -> 1.0
+2 changes: "ARMBAR -> 2.0
+3 changes: "CONTROL INSTRUMENT -> 2.0
+4 changes: "ESCORT HOLDS -> 2.0
+5 changes: "O.C./CHEMICAL WEAPON -> 2.0
+6 changes: "O.C./CHEMICAL WEAPON W/AUTHORIZATION -> 2.0
+7 changes: "PRESSURE SENSITIVE AREAS -> 2.0
+8 changes: "WRISTLOCK -> 2.0
+9 changes: "CANINE -> 3.0
+10 changes: "OPEN HAND STRIKE -> 3.0
+11 changes: "TAKE DOWN/EMERGENCY HANDCUFFING -> 3.0
+12 changes: "TASER (CONTACT STUN) -> 4.0
+13 changes: "TASER (LASER TARGETED) -> 4.0
+14 changes: "TASER (PROBE DISCHARGE) -> 4.0
+15 changes: "TASER (SPARK DISPLAYED) -> 4.0
+16 changes: "CLOSED HAND STRIKE/PUNCH -> 5.0
+17 changes: "ELBOW STRIKE -> 5.0
+18 changes: "IMPACT MUNITION (DESCRIBE IN ADDITIONAL INFO) -> 5.0
+19 changes: "IMPACT WEAPON (DESCRIBE IN ADDITIONAL INFO) -> 5.0
+20 changes: "KICKS -> 5.0
+21 changes: "KNEE STRIKE -> 5.0
+22 changes: "FIREARM -> 6.0
+13528 values in force_level_6 now NA
+Recoding action to force_level_28
+0 changes: "MEMBER PRESENCE -> 1
+1 changes: "VERBAL COMMANDS -> 2
+2 changes: "ESCORT HOLDS -> 9
+3 changes: "WRISTLOCK -> 10
+4 changes: "ARMBAR -> 11
+5 changes: "CONTROL INSTRUMENT -> 12
+6 changes: "PRESSURE SENSITIVE AREAS -> 13
+7 changes: "OPEN HAND STRIKE -> 15
+8 changes: "TAKE DOWN/EMERGENCY HANDCUFFING -> 16
+9 changes: "ELBOW STRIKE -> 17
+10 changes: "CLOSED HAND STRIKE/PUNCH -> 18
+11 changes: "KNEE STRIKE -> 19
+12 changes: "KICKS -> 20
+13 changes: "O.C./CHEMICAL WEAPON -> 21
+14 changes: "O.C./CHEMICAL WEAPON W/AUTHORIZATION -> 22
+15 changes: "TASER (ARC CYLCLE) -> 24
+16 changes: "TASER (ARC CYLCLE) 1 -> 24
+17 changes: "TASER (ARC CYLCLE) 2 -> 24
+18 changes: "TASER (ARC CYLCLE) 3 -> 24
+19 changes: "TASER (CONTACT STUN) -> 24
+20 changes: "TASER (CONTACT STUN) 1 -> 24
+21 changes: "TASER (CONTACT STUN) 2 -> 24
+22 changes: "TASER (CONTACT STUN) 3 -> 24
+23 changes: "TASER (LASER TARGETED) -> 24
+24 changes: "TASER (PROBE DISCHARGE) -> 24
+25 changes: "TASER (PROBE DISCHARGE) 1 -> 24
+26 changes: "TASER (PROBE DISCHARGE) 2 -> 24
+27 changes: "TASER (PROBE DISCHARGE) 3 -> 24
+28 changes: "TASER (SPARK DISPLAYED) -> 24
+29 changes: "TASER (SPARK DISPLAYED) 1 -> 24
+30 changes: "CANINE -> 25
+31 changes: "IMPACT WEAPON (DESCRIBE IN ADDITIONAL INFO) -> 26
+32 changes: "IMPACT MUNITION (DESCRIBE IN ADDITIONAL INFO) -> 27
+33 changes: "FIREARM -> 28
+34 changes: "OTHER (SPECIFY) -> OTHER (SPECIFY)
+0 values in force_level_28 now NA
+Recoding missing/Other actions using other_description
+Recoding 582 of 13010 rows to level 2 with strings that contain: LRAD|ESCORT HOLD|ARMBAR|ARM BAR|WRISTLOCK|CONTROL INSTRUMENT|TAKE DWN
+Recoding 2877 of 12428 rows to level 3 with strings that contain: PRESS?URE|TAKE.?DOWN|OPEN.?HAND|OPENED HAND|PALM|CANINE|OPEN BACKHAND|EMERGENCY [HANDCUFFING|CUFFING|TAK|HANDCUFF]|PHYSICALLY TOOK SUBJECT DOWN|STUN|CHEMICAL|O\.?C|K.?9
+Recoding 616 of 9551 rows to level 4 with strings that contain: TA[S|Z]E[R|D]
+Recoding 828 of 8935 rows to level 5 with strings that contain: CLOSED HAND|FIST|PUNCH|KNEE|BATON|IMPACT MUNITION|ELBOW|KICK|IMPACT|ASSAILANT|(?<!\w)ASP(?!A-Z)
+Recoding 221 of 8107 rows to level 6 with strings that contain: FIREARM|SEMI AUTO|CALIBER|GUN|FIRE|REVOLVER|RIFLE|PISTOL
+8404 NA values in force_level_6 filled with 
+Recoding force_level_6 to type_of_force_6
+0 changes: "6.0 -> firearm
+1 changes: "3.0 -> intermediate
+2 changes: "5.0 -> major
+3 changes: "2.0 -> minor
+4 changes: "0.0 -> missing
+5 changes: "1.0 -> none
+6 changes: "4.0 -> taser
+0 values in type_of_force_6 now NA
+Recoding Other actions using other_description
+166 null rows of other recoded to 0
+Break data into two categories: action in force_2018, and action='OTHER (SPECIFY)''
+Cleaning OTHER (SPECIFY) force types
+Imputing actions where possible
+Beginning import_data from file(s): hand/trr_unclassified_actions_2018.csv
+Data shape = 4047 rows, 2 columns
+Executing: <function <lambda> at 0x7fa430864560> on action
+0 NA values before, now 0
+3421 rows dropped by filter query: action != 'OTHER DESCRIPTION'
+action -> action_imputed
+Recoding action_imputed to force_level_28
+0 changes: "MEMBER PRESENCE -> 1
+1 changes: "VERBAL COMMANDS -> 2
+2 changes: "ESCORT HOLDS -> 9
+3 changes: "CONTROL INSTRUMENT -> 12
+4 changes: "PRESSURE SENSITIVE AREAS -> 13
+5 changes: "OPEN HAND STRIKE -> 15
+6 changes: "TAKE DOWN/EMERGENCY HANDCUFFING -> 16
+7 changes: "ELBOW STRIKE -> 17
+8 changes: "KNEE STRIKE -> 19
+9 changes: "O.C./CHEMICAL WEAPON -> 21
+10 changes: "TASER (PROBE DISCHARGE) -> 24
+11 changes: "CANINE -> 25
+12 changes: "IMPACT WEAPON (DESCRIBE IN ADDITIONAL INFO) -> 26
+13 changes: "FIREARM -> 28
+365 values in force_level_28 now NA
+Values of force_level_28 copied to imputed_action
+Executing: <function <lambda> at 0x7fa4308648c0> on imputed_action
+365 NA values before, now 0
+Recoding 0 rows in imputed data to level 28 with strings that contain: FIREARM|SEMI AUTO|SEMI-AUTO|CALIBER|GUN|FIRE|REVOLVER|RIFLE|PISTOL|SHOTGUN
+Recoding 235 rows in non-imputed data to level 28 with strings that contain: FIREARM|SEMI AUTO|SEMI-AUTO|CALIBER|GUN|FIRE|REVOLVER|RIFLE|PISTOL|SHOTGUN
+Recoding 0 rows in imputed data to level 27 with strings that contain: IMPACT MUNI
+Recoding 0 rows in non-imputed data to level 27 with strings that contain: IMPACT MUNI
+Recoding 13 rows in imputed data to level 26 with strings that contain: BATON|IMPACT WEAP|(?<!\w)ASP(?!A-Z)
+Recoding 492 rows in non-imputed data to level 26 with strings that contain: BATON|IMPACT WEAP|(?<!\w)ASP(?!A-Z)
+Recoding 0 rows in imputed data to level 25 with strings that contain: K.?9|CANINE
+Recoding 31 rows in non-imputed data to level 25 with strings that contain: K.?9|CANINE
+Recoding 53 rows in imputed data to level 24 with strings that contain: TA[S|Z]E[R|D]
+Recoding 664 rows in non-imputed data to level 24 with strings that contain: TA[S|Z]E[R|D]
+Recoding 0 rows in imputed data to level 23 with strings that contain: LRAD
+Recoding 0 rows in non-imputed data to level 23 with strings that contain: LRAD
+Recoding 21 rows in imputed data to level 21 with strings that contain: CHEMICAL|O\.?C
+Recoding 871 rows in non-imputed data to level 21 with strings that contain: CHEMICAL|O\.?C
+Recoding 0 rows in imputed data to level 20 with strings that contain: KICK
+Recoding 65 rows in non-imputed data to level 20 with strings that contain: KICK
+Recoding 0 rows in imputed data to level 19 with strings that contain: KNEE
+Recoding 153 rows in non-imputed data to level 19 with strings that contain: KNEE
+Recoding 0 rows in imputed data to level 18 with strings that contain: CLOSED HAND|FIST|PUNCH|STUN
+Recoding 176 rows in non-imputed data to level 18 with strings that contain: CLOSED HAND|FIST|PUNCH|STUN
+Recoding 0 rows in imputed data to level 17 with strings that contain: ELBOW
+Recoding 13 rows in non-imputed data to level 17 with strings that contain: ELBOW
+Recoding 244 rows in imputed data to level 16 with strings that contain: TAKE.?DOWN|EMERGENCY TAK|TAKE DWN|TOOK*.?DOWN
+Recoding 1028 rows in non-imputed data to level 16 with strings that contain: TAKE.?DOWN|EMERGENCY TAK|TAKE DWN|TOOK*.?DOWN
+Recoding 0 rows in imputed data to level 15 with strings that contain: OPEN.?HAND|OPENED HAND|PALM|OPEN BACKHAND
+Recoding 386 rows in non-imputed data to level 15 with strings that contain: OPEN.?HAND|OPENED HAND|PALM|OPEN BACKHAND
+Recoding 0 rows in imputed data to level 14 with strings that contain: CUFF
+Recoding 1529 rows in non-imputed data to level 14 with strings that contain: CUFF
+Recoding 0 rows in imputed data to level 13 with strings that contain: PRESS?URE
+Recoding 98 rows in non-imputed data to level 13 with strings that contain: PRESS?URE
+Recoding 0 rows in imputed data to level 12 with strings that contain: CONTROL INS|INSTRU
+Recoding 4 rows in non-imputed data to level 12 with strings that contain: CONTROL INS|INSTRU
+Recoding 0 rows in imputed data to level 11 with strings that contain: ARMBAR|ARM BAR
+Recoding 126 rows in non-imputed data to level 11 with strings that contain: ARMBAR|ARM BAR
+Recoding 0 rows in imputed data to level 10 with strings that contain: WRIST
+Recoding 44 rows in non-imputed data to level 10 with strings that contain: WRIST
+Recoding 1 rows in imputed data to level 9 with strings that contain: ESCORT HOLD|ESCORT
+Recoding 184 rows in non-imputed data to level 9 with strings that contain: ESCORT HOLD|ESCORT
+Recoding 0 rows in imputed data to level 8 with strings that contain: NONE
+Recoding 110 rows in non-imputed data to level 8 with strings that contain: NONE
+Recoding 2 rows in imputed data to level 6 with strings that contain: TACT.*?POSI
+Recoding 2 rows in non-imputed data to level 6 with strings that contain: TACT.*?POSI
+Recoding 4 rows in imputed data to level 4 with strings that contain: AVOIDED|MOVE.*?AVO
+Recoding 32 rows in non-imputed data to level 4 with strings that contain: AVOIDED|MOVE.*?AVO
+Recoding 235 rows in imputed data to level 2 with strings that contain: VERBAL|COMMAND|VERB.*?COMM
+Recoding 315 rows in non-imputed data to level 2 with strings that contain: VERBAL|COMMAND|VERB.*?COMM
+Recoding 0 rows in imputed data to level 1 with strings that contain: PRESS?ENCE
+Recoding 20 rows in non-imputed data to level 1 with strings that contain: PRESS?ENCE
+Recoding 0 rows in imputed data to level 0 with strings that contain: OTHER DESCRIPTION
+Recoding 0 rows in non-imputed data to level 0 with strings that contain: OTHER DESCRIPTION
+Dummy cols generated:
+Name = poaction_noweapon, N = 76392
+Name = poaction_mitigation, N = 137646
+Name = poaction_nonlethal, N = 4784
+Name = poaction_control, N = 67524
+Name = poaction_other_unknown, N = 5468
+Name = poaction_baton, N = 2127
+Name = poaction_firearm, N = 1372
+Name = poaction_canine, N = 141
+Name = poaction_taser, N = 11862
+Writing data with 414074 rows to output/TRR-member-actions_2004-2018_2018-08.csv.gz
