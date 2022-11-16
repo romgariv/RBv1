@@ -1,0 +1,33 @@
+running src/merge.py
+Beginning import_data from file(s): input/officer-reference.csv.gz
+Data shape = 45539 rows, 18 columns
+Beginning import_data from file(s): input/unit-history__2016-12.csv.gz
+Data shape = 115987 rows, 16 columns
+Aggregated data size = 32006
+Merge Report:
+31355 Total Merged Pairs: 98.63% of ref and 97.97% of sup Merged.
+434 Unmerged in ref. 1.37% Unmerged.
+651 Unmerged in sup. 2.03% Unmerged.
+
+first_name_NS-last_name_NS-appointed_date-birth_year-middle_initial-gender-race-current_unit                    22124
+first_name_NS-last_name_NS-appointed_date-birth_year-gender-race-current_unit                                    4665
+first_name_NS-last_name_NS-appointed_date-birth_year-middle_initial-gender-race                                  2531
+first_name_NS-last_name_NS-appointed_date-birth_year-middle_initial-gender-race-suffix_name-current_unit          902
+first_name_NS-last_name_NS-appointed_date-birth_year-gender-race                                                  536
+first_name_NS-last_name_NS-appointed_date-birth_year-gender-race-suffix_name-current_unit                         403
+first_name_NS-last_name_NS-appointed_date-birth_year-middle_initial-gender-race-suffix_name                       128
+first_name_NS-last_name_NS-appointed_date-birth_year-gender-race-suffix_name                                       23
+L4FN-birth_year-race-gender-current_unit-appointed_date                                                            15
+first_name_NS-last_name_NS-appointed_date-birth_year-middle_initial-middle_initial2-gender-race-current_unit        7
+first_name_NS-last_name_NS-birth_year-gender                                                                        6
+first_name_NS-F4LN-appointed_date-birth_year-middle_initial-gender-race-current_unit                                4
+first_name_NS-last_name_NS-appointed_date-birth_year-middle_initial-gender-current_unit                             3
+race-gender-birth_year-appointed_date-last_name_NS                                                                  2
+F4FN-last_name_NS-appointed_date-birth_year-gender-race-current_unit                                                1
+first_name_NS-last_name_NS-appointed_date-birth_year-gender-suffix_name-current_unit                                1
+first_name_NS-last_name_NS-appointed_date-middle_initial-gender-race                                                1
+first_name_NS-last_name_NS-appointed_date-middle_initial-gender-race-current_unit                                   1
+first_name_NS-last_name_NS-appointed_date-birth_year-gender-current_unit                                            1
+first_name_NS-last_name_NS-gender-race-current_unit                                                                 1
+Name: matched_on, dtype: int64
+Writing data with 77545 rows to output/officer-reference.csv.gz with 32440 unique UIDs
