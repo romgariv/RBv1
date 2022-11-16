@@ -1,0 +1,336 @@
+running src/format.py
+Beginning import_data from file(s): input/13053 PAC Appeal- Officer's Information Requested 2001.xlsx
+Skipping first 3 rows
+Dropped 1 all nan rows
+Data shape = 347643 rows, 3 columns
+CB Number3 -> cb_no , OFFICER'S NAME -> human_name , APPOINTED DATE -> appointed_date
+ROWID column inserted
+Values of human_name copied to stored_name
+Column 'ROWID' was not cleaned.
+Column 'cb_no' was not cleaned.
+Column 'appointed_date' cleaned as date using DateTimeCleaners.
+Some errors in appointed_date. Returned as NaT:
+ 333    13053
+334      NAR
+Name: appointed_date, dtype: object.
+Column 'stored_name' was not cleaned.
+Column(s) '('human_name',)' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('middle_name',)
+Adding column by exec("self._data["year"] = 2001")
+Beginning import_data from file(s): input/13053 PAC Appeal- Officer's Information Requested 2002.xlsx
+Skipping first 3 rows
+Dropped 1 all nan rows
+Data shape = 328512 rows, 3 columns
+CB Number3 -> cb_no , OFFICER'S NAME -> human_name , APPOINTED DATE -> appointed_date
+ROWID column inserted
+Values of human_name copied to stored_name
+Column 'ROWID' was not cleaned.
+Column 'cb_no' was not cleaned.
+Column 'appointed_date' cleaned as date using DateTimeCleaners.
+Some errors in appointed_date. Returned as NaT:
+ 313    13053
+314      NAR
+Name: appointed_date, dtype: object.
+Column 'stored_name' was not cleaned.
+Column(s) '('human_name',)' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('middle_name',)
+Adding column by exec("self._data["year"] = 2002")
+Beginning import_data from file(s): input/13053 PAC Appeal- Officer's Information Requested 2003.xlsx
+Skipping first 3 rows
+Dropped 1 all nan rows
+Data shape = 346419 rows, 3 columns
+CB Number3 -> cb_no , OFFICER'S NAME -> human_name , APPOINTED DATE -> appointed_date
+ROWID column inserted
+Values of human_name copied to stored_name
+Column 'ROWID' was not cleaned.
+Column 'cb_no' was not cleaned.
+Column 'appointed_date' cleaned as date using DateTimeCleaners.
+Some errors in appointed_date. Returned as NaT:
+ 288    13053
+289      NAR
+Name: appointed_date, dtype: object.
+Column 'stored_name' was not cleaned.
+Column(s) '('human_name',)' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('middle_name',)
+Adding column by exec("self._data["year"] = 2003")
+Beginning import_data from file(s): input/13053 PAC Appeal- Officer's Information Requested 2004.xlsx
+Skipping first 3 rows
+Dropped 1 all nan rows
+Data shape = 369322 rows, 3 columns
+CB Number3 -> cb_no , OFFICER'S NAME -> human_name , APPOINTED DATE -> appointed_date
+ROWID column inserted
+Values of human_name copied to stored_name
+Column 'ROWID' was not cleaned.
+Column 'cb_no' was not cleaned.
+Column 'appointed_date' cleaned as date using DateTimeCleaners.
+Some errors in appointed_date. Returned as NaT:
+ 283    13053
+284      NAR
+Name: appointed_date, dtype: object.
+Column 'stored_name' was not cleaned.
+Column(s) '('human_name',)' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('middle_name',)
+Adding column by exec("self._data["year"] = 2004")
+Beginning import_data from file(s): input/13053 PAC Appeal- Officer's Information Requested 2005.xlsx
+Skipping first 3 rows
+Dropped 1 all nan rows
+Data shape = 366326 rows, 3 columns
+CB Number3 -> cb_no , OFFICER'S NAME -> human_name , APPOINTED DATE -> appointed_date
+ROWID column inserted
+Values of human_name copied to stored_name
+Column 'ROWID' was not cleaned.
+Column 'cb_no' was not cleaned.
+Column 'appointed_date' cleaned as date using DateTimeCleaners.
+Some errors in appointed_date. Returned as NaT:
+ 264    13053
+265      NAR
+Name: appointed_date, dtype: object.
+Column 'stored_name' was not cleaned.
+Column(s) '('human_name',)' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('middle_name',)
+Adding column by exec("self._data["year"] = 2005")
+Beginning import_data from file(s): input/13053 PAC Appeal- Officer's Information Requested 2006.xlsx
+Skipping first 3 rows
+Dropped 1 all nan rows
+Data shape = 361852 rows, 3 columns
+CB Numbers3 -> cb_no , OFFICER'S NAME -> human_name , APPOINTED DATE -> appointed_date
+ROWID column inserted
+Values of human_name copied to stored_name
+Column 'ROWID' was not cleaned.
+Column 'cb_no' was not cleaned.
+Column 'appointed_date' cleaned as date using DateTimeCleaners.
+Some errors in appointed_date. Returned as NaT:
+ 268    13053
+269      NAR
+Name: appointed_date, dtype: object.
+Column 'stored_name' was not cleaned.
+Column(s) '('human_name',)' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('middle_name',)
+Adding column by exec("self._data["year"] = 2006")
+Beginning import_data from file(s): input/13053 PAC Appeal- Officer's Information Requested 2007.xlsx
+Skipping first 3 rows
+Dropped 1 all nan rows
+Data shape = 358372 rows, 3 columns
+CB Number3 -> cb_no , OFFICER'S NAME -> human_name , APPOINTED DATE -> appointed_date
+ROWID column inserted
+Values of human_name copied to stored_name
+Column 'ROWID' was not cleaned.
+Column 'cb_no' was not cleaned.
+Column 'appointed_date' cleaned as date using DateTimeCleaners.
+Some errors in appointed_date. Returned as NaT:
+ 262    13053
+263      NAR
+Name: appointed_date, dtype: object.
+Column 'stored_name' was not cleaned.
+Column(s) '('human_name',)' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('middle_name',)
+Adding column by exec("self._data["year"] = 2007")
+Beginning import_data from file(s): input/13053 PAC Appeal- Officer's Information Requested 2008.xlsx
+Skipping first 3 rows
+Dropped 1 all nan rows
+Data shape = 314460 rows, 3 columns
+CB Number3 -> cb_no , OFFICER'S NAME -> human_name , APPOINTED DATE -> appointed_date
+ROWID column inserted
+Values of human_name copied to stored_name
+Column 'ROWID' was not cleaned.
+Column 'cb_no' was not cleaned.
+Column 'appointed_date' cleaned as date using DateTimeCleaners.
+Some errors in appointed_date. Returned as NaT:
+ 254    13053
+255      NAR
+Name: appointed_date, dtype: object.
+Column 'stored_name' was not cleaned.
+Column(s) '('human_name',)' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('middle_name',)
+Adding column by exec("self._data["year"] = 2008")
+Beginning import_data from file(s): input/13053 PAC Appeal- Officer's Information Requested 2009.xlsx
+Skipping first 3 rows
+Dropped 1 all nan rows
+Data shape = 291675 rows, 3 columns
+CB Number3 -> cb_no , OFFICER'S NAME -> human_name , APPOINTED DATE -> appointed_date
+ROWID column inserted
+Values of human_name copied to stored_name
+Column 'ROWID' was not cleaned.
+Column 'cb_no' was not cleaned.
+Column 'appointed_date' cleaned as date using DateTimeCleaners.
+Some errors in appointed_date. Returned as NaT:
+ 246    13053
+247      NAR
+Name: appointed_date, dtype: object.
+Column 'stored_name' was not cleaned.
+Column(s) '('human_name',)' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('middle_name',)
+Adding column by exec("self._data["year"] = 2009")
+Beginning import_data from file(s): input/13053 PAC Appeal- Officer's Information Requested 2010.xlsx
+Skipping first 3 rows
+Dropped 1 all nan rows
+Data shape = 272677 rows, 3 columns
+CB Number3 -> cb_no , OFFICER'S NAME -> human_name , APPOINTED DATE -> appointed_date
+ROWID column inserted
+Values of human_name copied to stored_name
+Column 'ROWID' was not cleaned.
+Column 'cb_no' was not cleaned.
+Column 'appointed_date' cleaned as date using DateTimeCleaners.
+Some errors in appointed_date. Returned as NaT:
+ 241    13053
+242      NAR
+Name: appointed_date, dtype: object.
+Column 'stored_name' was not cleaned.
+Column(s) '('human_name',)' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('middle_name',)
+Adding column by exec("self._data["year"] = 2010")
+Beginning import_data from file(s): input/13053 PAC Appeal- Officer's Information Requested 2011.xlsx
+Skipping first 3 rows
+Dropped 1 all nan rows
+Data shape = 250131 rows, 3 columns
+CB Number3 -> cb_no , OFFICER'S NAME -> human_name , APPOINTED DATE -> appointed_date
+ROWID column inserted
+Values of human_name copied to stored_name
+Column 'ROWID' was not cleaned.
+Column 'cb_no' was not cleaned.
+Column 'appointed_date' cleaned as date using DateTimeCleaners.
+Some errors in appointed_date. Returned as NaT:
+ 240    13053
+241      NAR
+Name: appointed_date, dtype: object.
+Column 'stored_name' was not cleaned.
+Column(s) '('human_name',)' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('middle_name',)
+Adding column by exec("self._data["year"] = 2011")
+Beginning import_data from file(s): input/13053 PAC Appeal- Officer's Information Requested 2012.xlsx
+Skipping first 3 rows
+Dropped 1 all nan rows
+Data shape = 240241 rows, 3 columns
+CB Number3 -> cb_no , OFFICER'S NAME -> human_name , APPOINTED DATE -> appointed_date
+ROWID column inserted
+Values of human_name copied to stored_name
+Column 'ROWID' was not cleaned.
+Column 'cb_no' was not cleaned.
+Column 'appointed_date' cleaned as date using DateTimeCleaners.
+Some errors in appointed_date. Returned as NaT:
+ 229    13053
+230      NAR
+Name: appointed_date, dtype: object.
+Column 'stored_name' was not cleaned.
+Column(s) '('human_name',)' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('middle_name',)
+Adding column by exec("self._data["year"] = 2012")
+Beginning import_data from file(s): input/13053 PAC Appeal- Officer's Information Requested 2013.xlsx
+Skipping first 3 rows
+Dropped 1 all nan rows
+Data shape = 240141 rows, 3 columns
+CB Number3 -> cb_no , OFFICER'S NAME -> human_name , APPOINTED DATE -> appointed_date
+ROWID column inserted
+Values of human_name copied to stored_name
+Column 'ROWID' was not cleaned.
+Column 'cb_no' was not cleaned.
+Column 'appointed_date' cleaned as date using DateTimeCleaners.
+Some errors in appointed_date. Returned as NaT:
+ 238    13053
+239      NAR
+Name: appointed_date, dtype: object.
+Column 'stored_name' was not cleaned.
+Column(s) '('human_name',)' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('middle_name',)
+Adding column by exec("self._data["year"] = 2013")
+Beginning import_data from file(s): input/13053 PAC Appeal- Officer's Information Requested 2014.xlsx
+Skipping first 3 rows
+Dropped 1 all nan rows
+Data shape = 219295 rows, 3 columns
+CB Number 3 -> cb_no , OFFICER'S NAME -> human_name , APPOINTED DATE -> appointed_date
+ROWID column inserted
+Values of human_name copied to stored_name
+Column 'ROWID' was not cleaned.
+Column 'cb_no' was not cleaned.
+Column 'appointed_date' cleaned as date using DateTimeCleaners.
+Some errors in appointed_date. Returned as NaT:
+ 239    13053
+240      NAR
+Name: appointed_date, dtype: object.
+Column 'stored_name' was not cleaned.
+Column(s) '('human_name',)' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('middle_name',)
+Adding column by exec("self._data["year"] = 2014")
+Beginning import_data from file(s): input/13053 PAC Appeal- Officer's Information Requested 2015.xlsx
+Skipping first 3 rows
+Dropped 1 all nan rows
+Data shape = 193826 rows, 3 columns
+CB Number3 -> cb_no , OFFICER'S NAME -> human_name , APPOINTED DATE -> appointed_date
+ROWID column inserted
+Values of human_name copied to stored_name
+Column 'ROWID' was not cleaned.
+Column 'cb_no' was not cleaned.
+Column 'appointed_date' cleaned as date using DateTimeCleaners.
+Some errors in appointed_date. Returned as NaT:
+ 239    13053
+240      NAR
+Name: appointed_date, dtype: object.
+Column 'stored_name' was not cleaned.
+Column(s) '('human_name',)' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('middle_name',)
+Adding column by exec("self._data["year"] = 2015")
+Beginning import_data from file(s): input/13053 PAC Appeal- Officer's Information Requested 2016.xlsx
+Skipping first 3 rows
+Dropped 1 all nan rows
+Data shape = 148594 rows, 3 columns
+CB Number3 -> cb_no , OFFICER'S NAME -> human_name , APPOINTED DATE -> appointed_date
+ROWID column inserted
+Values of human_name copied to stored_name
+Column 'ROWID' was not cleaned.
+Column 'cb_no' was not cleaned.
+Column 'appointed_date' cleaned as date using DateTimeCleaners.
+Some errors in appointed_date. Returned as NaT:
+ 239    13053
+240      NAR
+Name: appointed_date, dtype: object.
+Column 'stored_name' was not cleaned.
+Column(s) '('human_name',)' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('middle_name',)
+Adding column by exec("self._data["year"] = 2016")
+Beginning import_data from file(s): input/13053 PAC Appeal- Officer's Information Requested 2017.xlsx
+Skipping first 3 rows
+Dropped 1 all nan rows
+Data shape = 147852 rows, 3 columns
+CB Number3 -> cb_no , OFFICER'S NAME -> human_name , APPOINTED DATE -> appointed_date
+ROWID column inserted
+Values of human_name copied to stored_name
+Column 'ROWID' was not cleaned.
+Column 'cb_no' was not cleaned.
+Column 'appointed_date' cleaned as date using DateTimeCleaners.
+Some errors in appointed_date. Returned as NaT:
+ 254    13053
+255      NAR
+Name: appointed_date, dtype: object.
+Column 'stored_name' was not cleaned.
+Column(s) '('human_name',)' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('middle_name',)
+Adding column by exec("self._data["year"] = 2017")
+Beginning import_data from file(s): input/13053 PAC Appeal- Officer's Information Requested 2018.xlsx
+Skipping first 3 rows
+Dropped 1 all nan rows
+Data shape = 90607 rows, 3 columns
+CB Number3 -> cb_no , OFFICER'S NAME -> human_name , APPOINTED DATE -> appointed_date
+ROWID column inserted
+Values of human_name copied to stored_name
+Column 'ROWID' was not cleaned.
+Column 'cb_no' was not cleaned.
+Column 'appointed_date' cleaned as date using DateTimeCleaners.
+Some errors in appointed_date. Returned as NaT:
+ 253    13053
+254      NAR
+Name: appointed_date, dtype: object.
+Column 'stored_name' was not cleaned.
+Column(s) '('human_name',)' cleaned as name(s) using NameCleaners.
+Columns dropped due to all NA values: ('middle_name',)
+Adding column by exec("self._data["year"] = 2018")
+24 resolved conflicts. 0 unresolved conflicts
+Total rows: 4887945
+Unique id + conflict rows: 19760
+Conflict rows: 24
+Resolved conflcit UID count: 20
+Total unique ids: 19756.0
+
+Executing: <function <lambda> at 0x7fa60140cb00> on cb_no
+0 NA values before, now 216
+216 rows dropped by filter query: cb_no==cb_no
+Writing data with 4887729 rows to output/arrests_2001-2018_2018-12.csv.gz with 19753 unique UIDs
