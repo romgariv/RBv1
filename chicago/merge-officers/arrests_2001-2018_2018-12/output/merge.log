@@ -1,0 +1,85 @@
+running src/merge.py
+Beginning import_data from file(s): input/officer-reference.csv.gz
+Data shape = 320018 rows, 46 columns
+Adding column by exec("self._data.loc[self._data['appointed_date'].isnull(), 'appointed_date'] = self._data.loc[self._data['appointed_date'].isnull(), ['start_date', 'org_hire_date']].apply(pd.to_datetime).apply(np.nanmax,axis=1).dt.date")
+Adding column by exec("self._data['appointed_date']=pd.to_datetime(self._data['appointed_date']).dt.date")
+Beginning fill_data() on ref_df for ['first_name_NS', 'last_name_NS', 'middle_initial', 'middle_initial2', 'suffix_name', 'appointed_date'] columns by NUID, with initial rows = 320018
+fill_data() complete, final rows = 36474
+Beginning import_data from file(s): input/arrests_2001-2018_2018-12.csv.gz
+Data shape = 4887729 rows, 13 columns
+4663 rows dropped by filter query: first_name_NS==first_name_NS
+Adding column by exec("self._data['appointed_date']=pd.to_datetime(self._data['appointed_date']).dt.date")
+Beginning fill_data() on ref_df for ['first_name_NS', 'last_name_NS', 'middle_initial', 'middle_initial2', 'suffix_name', 'appointed_date'] columns by arrests_2001-2018_2018-12_ID, with initial rows = 4883066
+fill_data() complete, final rows = 19752
+Merge Report:
+19658 Total Merged Pairs: 58.45% of ref and 99.52% of sup Merged.
+13977 Unmerged in ref. 41.55% Unmerged.
+94 Unmerged in sup. 0.48% Unmerged.
+
+first_name_NS-last_name_NS-appointed_date-middle_initial                    15074
+first_name_NS-last_name_NS-appointed_date                                    3567
+first_name_NS-last_name_NS-appointed_date-middle_initial-suffix_name          520
+first_name_NS-last_name_NS-appointed_date-suffix_name                         312
+first_name_NS-L4LN-appointed_date-middle_initial                              146
+first_name_NS-L4LN-appointed_date                                              24
+first_name_NS-last_name_NS-appointed_date-middle_initial-middle_initial2        6
+F4FN-L4LN-appointed_date                                                        4
+first_name_NS-L4LN-appointed_date-middle_initial-suffix_name                    3
+first_name_NS-F4LN-appointed_date-middle_initial                                1
+first_name_NS-L4LN-appointed_date-suffix_name                                   1
+Name: matched_on, dtype: int64
+Conflicts on: 
+        NUID  arrests_2001-2018_2018-12_ID  \
+2376    5203                       10446.0   
+2377    5204                       10446.0   
+7866   17558                       13071.0   
+7867   17599                       13071.0   
+12750  28924                        9600.0   
+...      ...                           ...   
+1       5204                       10446.0   
+2      17558                       13071.0   
+3      17599                       13071.0   
+4      28924                        9600.0   
+5      28925                        9600.0   
+
+                                              matched_on  
+2376   first_name_NS-last_name_NS-appointed_date-midd...  
+2377   first_name_NS-last_name_NS-appointed_date-midd...  
+7866   first_name_NS-last_name_NS-appointed_date-midd...  
+7867   first_name_NS-last_name_NS-appointed_date-midd...  
+12750  first_name_NS-last_name_NS-appointed_date-midd...  
+...                                                  ...  
+1                               L4FN-L4LN-appointed_date  
+2                               L4FN-L4LN-appointed_date  
+3                               L4FN-L4LN-appointed_date  
+4                               L4FN-L4LN-appointed_date  
+5                               L4FN-L4LN-appointed_date  
+
+[108 rows x 3 columns]
+Conflicts occurred while merging 
+ Ref:         NUID first_name_NS last_name_NS middle_initial middle_initial2  \
+5649    5203         KEVIN      CONNORS              M             NaN   
+5650    5204         KEVIN      CONNORS              M             NaN   
+19081  17558       MICHAEL     MARTINEZ              S             NaN   
+19082  17558       MICHAEL     MARTINEZ              S             NaN   
+19125  17599       MICHAEL     MARTINEZ              S             NaN   
+31429  28924        JOSEPH      TRIPOLI              A             NaN   
+31430  28925        JOSEPH      TRIPOLI              A             NaN   
+
+      suffix_name appointed_date  F4FN  F4LN  L4LN  L4FN  
+5649          NaN     1999-09-13  KEVI  CONN  NORS  EVIN  
+5650          NaN     1999-09-13  KEVI  CONN  NORS  EVIN  
+19081         NaN     2013-06-03  MICH  MART  INEZ  HAEL  
+19082         NaN     2015-04-06  MICH  MART  INEZ  HAEL  
+19125         NaN     2015-04-06  MICH  MART  INEZ  HAEL  
+31429         NaN     1994-07-05  JOSE  TRIP  POLI  SEPH  
+31430         NaN     1994-07-05  JOSE  TRIP  POLI  SEPH   
+ Sup:        arrests_2001-2018_2018-12_ID first_name_NS last_name_NS middle_initial  \
+9599                         9600.0        JOSEPH      TRIPOLI              A   
+10445                       10446.0         KEVIN      CONNORS              M   
+13070                       13071.0       MICHAEL     MARTINEZ              S   
+
+      middle_initial2 suffix_name appointed_date  F4FN  F4LN  L4LN  L4FN  
+9599              NaN         NaN     1994-07-05  JOSE  TRIP  POLI  SEPH  
+10445             NaN         NaN     1999-09-13  KEVI  CONN  NORS  EVIN  
+13070             NaN         NaN     2015-04-06  MICH  MART  INEZ  HAEL  
