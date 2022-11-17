@@ -3,3 +3,6 @@ chicago/raw_data/*
 share/tests/*.log
 share/hand/storage/*
 chicago/format/*/output/*.csv.gz
+chicago/merge-officers/*/output/*.csv.gz
+chicago/*/*/output/*.csv.gz
+chicago/format/TRR-charges*
