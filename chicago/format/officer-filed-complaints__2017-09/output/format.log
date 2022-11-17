@@ -1,0 +1,5 @@
+running src/format.py
+Beginning import_data from file(s): input/tabula-FOIA_P428703_Responsive_Records.csv.gz
+Data shape = 13461 rows, 1 columns
+0 -> cr_id
+Writing data with 13461 rows to output/officer-filed-complaints__2017-09.csv.gz
