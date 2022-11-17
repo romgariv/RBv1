@@ -1,0 +1,678 @@
+running src/create-panel-data.py
+Getting unit history data from file: input/unit-history__2016-12.csv.gz
+Resolved units file (output/unit-history_resolved.csv.gz) already exists. Will not re-resolve.
+Doing history to panel for 50 groups of NUIDs
+Beginning panel creation at 0
+Generating panel data. May take a few minutes.
+Generating panel data took 3 seconds.
+Writing panel #1 with 598 UIDs (1 to 619)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 72 rows
+Some cases of last unit being short in month:
+        NUID       month  unit     index  size
+10       214  1987-04-01  92.0   67960.0   1.0
+67425    214  1987-04-01  91.0   67959.0  28.0
+27       556  1977-04-01   9.0  172071.0   2.0
+170820   556  1977-04-01  50.0  172624.0  26.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 0. Took: 0:01:38.970529
+Beginning panel creation at 598
+Generating panel data. May take a few minutes.
+Generating panel data took 4 seconds.
+Writing panel #2 with 598 UIDs (620 to 1245)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 54 rows
+Done aggregating to months, monthly panels appended
+Finished panel creation at 598. Took: 0:01:46.262120
+Beginning panel creation at 1196
+Generating panel data. May take a few minutes.
+Generating panel data took 4 seconds.
+Writing panel #3 with 598 UIDs (1246 to 1866)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 108 rows
+Some cases of last unit being short in month:
+        NUID       month  unit     index  size
+24      1558  1968-05-01  65.0  115486.0   9.0
+114166  1558  1968-05-01  64.0  115485.0  13.0
+46      1778  1970-04-01  18.0  189578.0   1.0
+187975  1778  1970-04-01  86.0  190011.0  28.0
+50      1809  1968-03-01  22.0  200911.0   2.0
+199224  1809  1968-03-01   2.0  200909.0  27.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 1196. Took: 0:01:54.179959
+Beginning panel creation at 1794
+Generating panel data. May take a few minutes.
+Generating panel data took 4 seconds.
+Writing panel #4 with 598 UIDs (1867 to 2496)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 108 rows
+Some cases of last unit being short in month:
+        NUID       month   unit     index  size
+45      2413  1972-02-01   65.0  194082.0   2.0
+192581  2413  1972-02-01  650.0  194123.0  25.0
+47      2429  1968-02-01   66.0  199552.0   2.0
+197386  2429  1968-02-01   18.0  198890.0  25.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 1794. Took: 0:02:00.225292
+Beginning panel creation at 2392
+Generating panel data. May take a few minutes.
+Generating panel data took 3 seconds.
+Writing panel #5 with 599 UIDs (2497 to 3123)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 108 rows
+Some cases of last unit being short in month:
+        NUID       month   unit     index  size
+11      2656  1977-09-01  142.0   57468.0  14.0
+57026   2656  1977-09-01  172.0   57993.0   2.0
+14      2707  1983-09-01    7.0   77849.0  14.0
+77227   2707  1983-09-01    3.0   77848.0   2.0
+17      2741  1970-05-01  167.0   89516.0   2.0
+88802   2741  1970-05-01   63.0   89498.0  27.0
+37      2911  1970-05-01   24.0  154717.0   2.0
+153568  2911  1970-05-01  152.0  155313.0  27.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 2392. Took: 0:01:59.100652
+Beginning panel creation at 2991
+Generating panel data. May take a few minutes.
+Generating panel data took 4 seconds.
+Writing panel #6 with 598 UIDs (3124 to 3762)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 94 rows
+Some cases of last unit being short in month:
+        NUID       month  unit     index  size
+27      3513  1983-03-01  15.0  129335.0   2.0
+128544  3513  1983-03-01  24.0  129336.0  27.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 2991. Took: 0:01:39.020609
+Beginning panel creation at 3589
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #7 with 598 UIDs (3763 to 4414)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 62 rows
+Some cases of last unit being short in month:
+       NUID       month   unit    index  size
+1      3769  1986-06-01   21.0   2214.0   2.0
+2060   3769  1986-06-01    1.0   1834.0  26.0
+7      3888  1980-04-01  164.0  38391.0   2.0
+37720  3888  1980-04-01  135.0  37830.0  26.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 3589. Took: 0:01:31.064462
+Beginning panel creation at 4187
+Generating panel data. May take a few minutes.
+Generating panel data took 4 seconds.
+Writing panel #8 with 598 UIDs (4415 to 5069)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 72 rows
+Some cases of last unit being short in month:
+       NUID       month  unit    index  size
+2      4467  1983-09-01   2.0  13211.0  14.0
+13138  4467  1983-09-01  21.0  13611.0   2.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 4187. Took: 3:01:07.127927
+Beginning panel creation at 4785
+Generating panel data. May take a few minutes.
+Generating panel data took 3 seconds.
+Writing panel #9 with 598 UIDs (5070 to 5732)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 74 rows
+Some cases of last unit being short in month:
+        NUID       month  unit     index  size
+21      5426  1983-02-01   2.0  109087.0   2.0
+108423  5426  1983-02-01  19.0  109165.0  24.0
+31      5593  1983-03-01   6.0  157126.0   2.0
+155693  5593  1983-03-01   2.0  156720.0  27.0
+32      5600  1986-06-01  13.0  159156.0   2.0
+158267  5600  1986-06-01  17.0  159168.0  26.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 4785. Took: 1:40:25.873294
+Beginning panel creation at 5383
+Generating panel data. May take a few minutes.
+Generating panel data took 3 seconds.
+Writing panel #10 with 599 UIDs (5733 to 6390)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 68 rows
+Some cases of last unit being short in month:
+       NUID       month   unit    index  size
+8      5881  1981-05-01  189.0  42879.0   2.0
+42589  5881  1981-05-01   13.0  42877.0  27.0
+14     5961  1980-04-01    1.0  66993.0   2.0
+66623  5961  1980-04-01   18.0  67097.0  26.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 5383. Took: 0:01:34.100893
+Beginning panel creation at 5982
+Generating panel data. May take a few minutes.
+Generating panel data took 3 seconds.
+Writing panel #11 with 598 UIDs (6392 to 7056)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 56 rows
+Some cases of last unit being short in month:
+        NUID       month   unit     index  size
+18      6823  1983-02-01  151.0  122390.0   2.0
+121114  6823  1983-02-01   15.0  121957.0  24.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 5982. Took: 0:01:31.823666
+Beginning panel creation at 6580
+Generating panel data. May take a few minutes.
+Generating panel data took 3 seconds.
+Writing panel #12 with 598 UIDs (7057 to 7708)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 68 rows
+Some cases of last unit being short in month:
+        NUID       month  unit     index  size
+20      7426  1985-03-01  23.0  113190.0   2.0
+112648  7426  1985-03-01  65.0  113717.0  27.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 6580. Took: 0:01:47.709496
+Beginning panel creation at 7178
+Generating panel data. May take a few minutes.
+Generating panel data took 3 seconds.
+Writing panel #13 with 598 UIDs (7709 to 8359)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 56 rows
+Some cases of last unit being short in month:
+        NUID       month   unit     index  size
+3       7902  1980-04-01   12.0   57646.0   2.0
+56850   7902  1980-04-01    2.0   56934.0  26.0
+9       7955  1981-05-01  620.0   72552.0   2.0
+72102   7955  1981-05-01   54.0   72550.0  27.0
+27      8352  1981-05-01  642.0  190126.0   2.0
+188894  8352  1981-05-01  632.0  190125.0  27.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 7178. Took: 0:01:32.593818
+Beginning panel creation at 7776
+Generating panel data. May take a few minutes.
+Generating panel data took 3 seconds.
+Writing panel #14 with 599 UIDs (8360 to 9009)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 78 rows
+Done aggregating to months, monthly panels appended
+Finished panel creation at 7776. Took: 0:01:30.707055
+Beginning panel creation at 8375
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #15 with 598 UIDs (9010 to 9652)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 70 rows
+Done aggregating to months, monthly panels appended
+Finished panel creation at 8375. Took: 0:01:21.673523
+Beginning panel creation at 8973
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #16 with 598 UIDs (9653 to 10301)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 70 rows
+Some cases of last unit being short in month:
+       NUID       month   unit    index  size
+4      9716  1985-01-01   23.0  20459.0   2.0
+19940  9716  1985-01-01   18.0  20075.0  27.0
+5      9841  1985-03-01    5.0  56913.0   2.0
+56602  9841  1985-03-01  151.0  57327.0  27.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 8973. Took: 0:01:26.582623
+Beginning panel creation at 9571
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #17 with 598 UIDs (10302 to 10959)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 72 rows
+Some cases of last unit being short in month:
+         NUID       month   unit     index  size
+20      10714  1983-03-01    2.0  119628.0   2.0
+119169  10714  1983-03-01  168.0  119952.0  27.0
+23      10751  1983-03-01   17.0  131168.0   2.0
+130511  10751  1983-03-01   50.0  131350.0  27.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 9571. Took: 0:01:27.705693
+Beginning panel creation at 10169
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #18 with 598 UIDs (10960 to 11608)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 78 rows
+Some cases of last unit being short in month:
+         NUID       month   unit     index  size
+37      11606  1983-02-01  151.0  195090.0   2.0
+193341  11606  1983-02-01   23.0  194683.0  24.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 10169. Took: 0:01:37.046289
+Beginning panel creation at 10767
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #19 with 599 UIDs (11610 to 12257)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 70 rows
+Some cases of last unit being short in month:
+        NUID       month   unit    index  size
+15     11884  1992-04-01  189.0  90304.0   1.0
+89824  11884  1992-04-01   93.0  90303.0  28.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 10767. Took: 0:01:34.099585
+Beginning panel creation at 11366
+Generating panel data. May take a few minutes.
+Generating panel data took 3 seconds.
+Writing panel #20 with 598 UIDs (12258 to 12900)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 44 rows
+Some cases of last unit being short in month:
+         NUID       month  unit     index  size
+21      12861  1986-06-01  25.0  184247.0   2.0
+182883  12861  1986-06-01  11.0  183828.0  26.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 11366. Took: 0:01:35.400168
+Beginning panel creation at 11964
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #21 with 598 UIDs (12901 to 13556)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 74 rows
+Some cases of last unit being short in month:
+         NUID       month   unit     index  size
+3       13036  1983-02-01   15.0   38568.0   2.0
+38332   13036  1983-02-01   23.0   38569.0  24.0
+14      13248  1983-03-01   14.0  103112.0   2.0
+102493  13248  1983-03-01   17.0  103113.0  27.0
+29      13383  1978-09-01  140.0  139526.0  14.0
+138651  13383  1978-09-01  142.0  139986.0   2.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 11964. Took: 0:01:36.380344
+Beginning panel creation at 12562
+Generating panel data. May take a few minutes.
+Generating panel data took 3 seconds.
+Writing panel #22 with 598 UIDs (13557 to 14207)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 60 rows
+Some cases of last unit being short in month:
+         NUID       month  unit     index  size
+1       13617  1981-05-01   4.0   17395.0   2.0
+17299   13617  1981-05-01   2.0   17394.0  27.0
+19      13994  1987-05-01   4.0  136787.0   2.0
+135943  13994  1987-05-01  44.0  137048.0  27.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 12562. Took: 0:01:36.590220
+Beginning panel creation at 13160
+Generating panel data. May take a few minutes.
+Generating panel data took 3 seconds.
+Writing panel #23 with 599 UIDs (14208 to 14860)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 74 rows
+Some cases of last unit being short in month:
+         NUID       month  unit     index  size
+22      14575  1983-02-01   7.0  120560.0   2.0
+120039  14575  1983-02-01  22.0  120561.0  24.0
+29      14666  2009-04-01  13.0  150738.0   1.0
+149773  14666  2009-04-01  21.0  150811.0  28.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 13160. Took: 0:01:41.902042
+Beginning panel creation at 13759
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #24 with 598 UIDs (14861 to 15534)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 48 rows
+Some cases of last unit being short in month:
+         NUID       month   unit     index  size
+23      15461  1988-12-01  701.0  181453.0  12.0
+180160  15461  1988-12-01   10.0  180984.0   7.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 13759. Took: 0:01:40.491541
+Beginning panel creation at 14357
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #25 with 598 UIDs (15535 to 16187)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 54 rows
+Done aggregating to months, monthly panels appended
+Finished panel creation at 14357. Took: 0:01:35.040531
+Beginning panel creation at 14955
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #26 with 598 UIDs (16188 to 16837)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 76 rows
+Some cases of last unit being short in month:
+        NUID       month   unit    index  size
+7      16285  1980-04-01   16.0  30169.0   2.0
+30215  16285  1980-04-01  169.0  30441.0  26.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 14955. Took: 0:01:34.487112
+Beginning panel creation at 15553
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #27 with 598 UIDs (16838 to 17496)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 66 rows
+Some cases of last unit being short in month:
+         NUID       month  unit     index  size
+24      17314  1986-06-01  11.0  144393.0   2.0
+143765  17314  1986-06-01  14.0  144424.0  26.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 15553. Took: 0:01:48.150918
+Beginning panel creation at 16151
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #28 with 599 UIDs (17497 to 18146)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 72 rows
+Some cases of last unit being short in month:
+         NUID       month  unit     index  size
+29      18063  1983-03-01  16.0  166266.0   2.0
+164948  18063  1983-03-01   1.0  165860.0  27.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 16151. Took: 0:01:43.838770
+Beginning panel creation at 16750
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #29 with 598 UIDs (18148 to 18804)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 74 rows
+Some cases of last unit being short in month:
+         NUID       month   unit     index  size
+36      18792  1986-06-01   12.0  190814.0   2.0
+189998  18792  1986-06-01  193.0  190815.0  26.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 16750. Took: 0:01:40.226981
+Beginning panel creation at 17348
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #30 with 598 UIDs (18805 to 19461)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 52 rows
+Done aggregating to months, monthly panels appended
+Finished panel creation at 17348. Took: 0:01:36.898040
+Beginning panel creation at 17946
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #31 with 598 UIDs (19462 to 20117)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 88 rows
+Some cases of last unit being short in month:
+        NUID       month   unit    index  size
+17     19755  1983-09-01  176.0  82008.0  14.0
+81456  19755  1983-09-01    6.0  81993.0   2.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 17946. Took: 0:01:42.027513
+Beginning panel creation at 18544
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #32 with 599 UIDs (20118 to 20781)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 70 rows
+Done aggregating to months, monthly panels appended
+Finished panel creation at 18544. Took: 0:01:39.038878
+Beginning panel creation at 19143
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #33 with 598 UIDs (20782 to 21440)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 74 rows
+Done aggregating to months, monthly panels appended
+Finished panel creation at 19143. Took: 0:01:39.353570
+Beginning panel creation at 19741
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #34 with 598 UIDs (21441 to 22091)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 62 rows
+Some cases of last unit being short in month:
+         NUID       month   unit     index  size
+12      21575  1983-09-01  176.0   36018.0  14.0
+35711   21575  1983-09-01   11.0   36003.0   2.0
+30      22085  1983-03-01   17.0  183826.0   2.0
+182709  22085  1983-03-01  701.0  183945.0  27.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 19741. Took: 0:01:25.744368
+Beginning panel creation at 20339
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #35 with 598 UIDs (22092 to 22753)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 58 rows
+Some cases of last unit being short in month:
+        NUID       month   unit    index  size
+10     22317  1985-03-01  701.0  56537.0   2.0
+56161  22317  1985-03-01   11.0  56535.0  27.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 20339. Took: 0:01:23.906907
+Beginning panel creation at 20937
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #36 with 598 UIDs (22754 to 23395)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 68 rows
+Some cases of last unit being short in month:
+         NUID       month   unit     index  size
+4       22861  1986-04-01    3.0   34057.0   2.0
+33948   22861  1986-04-01  192.0   34180.0  26.0
+5       22913  1972-05-01    6.0   50915.0   7.0
+50640   22913  1972-05-01    3.0   50914.0  17.0
+22      23209  1983-09-01   18.0  138700.0  14.0
+137845  23209  1983-09-01   12.0  138699.0   2.0
+26      23285  1985-03-01  141.0  162124.0   2.0
+161124  23285  1985-03-01   11.0  161888.0  27.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 20937. Took: 0:01:29.599163
+Beginning panel creation at 21535
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #37 with 599 UIDs (23396 to 24039)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 66 rows
+Some cases of last unit being short in month:
+        NUID       month  unit    index  size
+10     23713  1980-04-01  14.0  94065.0   2.0
+93466  23713  1980-04-01  25.0  94066.0  26.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 21535. Took: 0:01:25.167499
+Beginning panel creation at 22134
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #38 with 598 UIDs (24040 to 24678)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 66 rows
+Some cases of last unit being short in month:
+         NUID       month  unit     index  size
+5       24129  1967-10-01   1.0   23296.0  10.0
+23173   24129  1967-10-01  61.0   23809.0  11.0
+23      24401  1983-02-01  20.0  101591.0   2.0
+100420  24401  1983-02-01  14.0  101184.0  24.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 22134. Took: 0:01:16.929381
+Beginning panel creation at 22732
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #39 with 598 UIDs (24679 to 25334)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 68 rows
+Some cases of last unit being short in month:
+         NUID       month   unit     index  size
+1       24746  1992-04-01  189.0   22087.0   1.0
+21965   24746  1992-04-01   93.0   22086.0  28.0
+33      25328  1986-03-01   15.0  183556.0   2.0
+182290  25328  1986-03-01  715.0  183570.0  27.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 22732. Took: 0:01:24.648430
+Beginning panel creation at 23330
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #40 with 598 UIDs (25335 to 25989)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 60 rows
+Some cases of last unit being short in month:
+         NUID       month   unit     index  size
+9       25564  2013-02-01  620.0   64772.0  13.0
+64397   25564  2013-02-01  477.0   64771.0   2.0
+18      25755  1983-02-01    7.0  125431.0   2.0
+124273  25755  1983-02-01    1.0  125024.0  24.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 23330. Took: 0:01:29.453112
+Beginning panel creation at 23928
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #41 with 599 UIDs (25990 to 26652)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 80 rows
+Done aggregating to months, monthly panels appended
+Finished panel creation at 23928. Took: 0:01:42.380422
+Beginning panel creation at 24527
+Generating panel data. May take a few minutes.
+Generating panel data took 5 seconds.
+Writing panel #42 with 598 UIDs (26653 to 27306)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 80 rows
+Some cases of last unit being short in month:
+       NUID       month  unit   index  size
+0     26657  1981-05-01  12.0  1521.0   2.0
+1666  26657  1981-05-01  17.0  1966.0  27.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 24527. Took: 0:02:59.034440
+Beginning panel creation at 25125
+Generating panel data. May take a few minutes.
+Generating panel data took 4 seconds.
+Writing panel #43 with 598 UIDs (27307 to 27964)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 58 rows
+Some cases of last unit being short in month:
+        NUID       month   unit    index  size
+6      27477  1985-01-01    2.0  53009.0   2.0
+52688  27477  1985-01-01  176.0  53010.0  27.0
+9      27517  1986-03-01    2.0  65512.0   2.0
+65122  27517  1986-03-01    4.0  65513.0  27.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 25125. Took: 0:02:24.309360
+Beginning panel creation at 25723
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #44 with 598 UIDs (27965 to 28613)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 58 rows
+Some cases of last unit being short in month:
+         NUID       month  unit     index  size
+26      28550  1986-06-01  13.0  177896.0   2.0
+177000  28550  1986-06-01  50.0  178090.0  26.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 25723. Took: 0:01:53.605727
+Beginning panel creation at 26321
+Generating panel data. May take a few minutes.
+Generating panel data took 5 seconds.
+Writing panel #45 with 598 UIDs (28614 to 29249)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 72 rows
+Some cases of last unit being short in month:
+        NUID       month   unit    index  size
+12     28745  1984-05-01   15.0  38767.0   8.0
+38739  28745  1984-05-01  124.0  39359.0  15.0
+15     28793  1983-02-01   11.0  48107.0   2.0
+47793  28793  1983-02-01   12.0  48108.0  24.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 26321. Took: 0:01:59.295804
+Beginning panel creation at 26919
+Generating panel data. May take a few minutes.
+Generating panel data took 4 seconds.
+Writing panel #46 with 599 UIDs (29250 to 29887)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 76 rows
+Some cases of last unit being short in month:
+         NUID       month   unit     index  size
+30      29719  1976-01-01   20.0  122037.0   2.0
+121279  29719  1976-01-01  121.0  122138.0  27.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 26919. Took: 0:02:34.439063
+Beginning panel creation at 27518
+Generating panel data. May take a few minutes.
+Generating panel data took 3 seconds.
+Writing panel #47 with 598 UIDs (29888 to 30538)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 72 rows
+Some cases of last unit being short in month:
+         NUID       month   unit     index  size
+31      30391  1980-04-01   73.0  157320.0   2.0
+156363  30391  1980-04-01  132.0  157321.0  26.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 27518. Took: 0:01:58.629532
+Beginning panel creation at 28116
+Generating panel data. May take a few minutes.
+Generating panel data took 3 seconds.
+Writing panel #48 with 598 UIDs (30539 to 31191)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 52 rows
+Some cases of last unit being short in month:
+        NUID       month   unit    index  size
+9      30697  1985-03-01  184.0  51182.0   2.0
+50896  30697  1985-03-01   45.0  51181.0  27.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 28116. Took: 0:02:24.957624
+Beginning panel creation at 28714
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #49 with 598 UIDs (31192 to 31841)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 68 rows
+Some cases of last unit being short in month:
+        NUID       month   unit    index  size
+4      31280  1981-05-01  142.0  28050.0   2.0
+27847  31280  1981-05-01    5.0  28048.0  27.0
+6      31296  1980-04-01   22.0  33356.0   2.0
+32693  31296  1980-04-01    6.0  32915.0  26.0
+10     31377  1978-04-01  147.0  55176.0   2.0
+54804  31377  1978-04-01   81.0  54974.0  26.0
+14     31519  1985-03-01   16.0  92998.0   2.0
+92406  31519  1985-03-01   50.0  93403.0  27.0
+15     31520  2013-02-01  620.0  93628.0  13.0
+93008  31520  2013-02-01  477.0  93627.0   2.0
+Taking most common over last.
+Done aggregating to months, monthly panels appended
+Finished panel creation at 28714. Took: 0:01:22.664224
+Beginning panel creation at 29312
+Generating panel data. May take a few minutes.
+Generating panel data took 2 seconds.
+Writing panel #50 with 599 UIDs (31842 to 32440)
+Aggregating by most common unit in month
+Some UID/UNIT/month combos with same size. 88 rows
+Done aggregating to months, monthly panels appended
+Finished panel creation at 29312. Took: 0:01:00.081112
+Adding unit_durations... this also may take a while
+Adding unit_durations... Done.
+Writing data with 4862688 rows to output/monthly-panel_unit-history_2002-2016.csv.gz
+Writing data with 3415266 rows to output/monthly-panel_unit-history_1985-2001.csv.gz
+Writing data with 1385150 rows to output/monthly-panel_unit-history_1965-1984.csv.gz
