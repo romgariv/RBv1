@@ -1,0 +1,9 @@
+running src/create-panel-data.py
+Beginning import_data from file(s): input/TRR-member-actions_2004-2018_2018-08.csv.gz
+Data shape = 414074 rows, 25 columns
+Beginning import_data from file(s): input/TRR-main_2004-2018_2018-08.csv.gz
+Data shape = 75759 rows, 50 columns
+Keeping column(s): ['trr_id', 'NUID', 'trr_date', 'injured', 'sub_injured']
+0 pre-clean NAs, 0 post-clean NAs
+Keeping column(s): ['trr_id', 'NUID', 'injured', 'sub_injured', 'month']
+Writing data with 68762 rows to output/monthly-panel_TRR_2004-2018.csv.gz
