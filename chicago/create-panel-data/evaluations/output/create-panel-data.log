@@ -1,0 +1,12 @@
+running src/create-panel-data.py
+Beginning import_data from file(s): input/evaluations-officers_2009-2017_2017-04.csv.gz
+Data shape = 70252 rows, 18 columns
+Keeping column(s): ['ROWID', 'assigned_date', 'NUID', 'evaluation_year']
+assigned_date -> po_assigned_date , NUID -> po_NUID
+Beginning import_data from file(s): input/evaluations-supervisors_2009-2017_2017-04.csv.gz
+Data shape = 70252 rows, 16 columns
+Keeping column(s): ['ROWID', 'assigned_date', 'NUID']
+assigned_date -> sup_assigned_date , NUID -> sup_NUID
+Keeping column(s): ['po_assigned_date', 'po_NUID', 'evaluation_year', 'sup_assigned_date', 'sup_NUID', 'month']
+Adding column by exec("self._data["redacted_sup"] = self._data["sup_NUID"].isnull().astype(int)")
+Writing data with 796596 rows to output/monthly-panel_evaluations_2009-2017.csv.gz
