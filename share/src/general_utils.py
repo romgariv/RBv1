@@ -429,8 +429,7 @@ class FormatData:
         ON_counts = self._data\
             .groupby(["NEW", old_col], as_index=False)\
             .size()\
-            .reset_index()\
-            .rename(columns={"index":"counts"})
+            .rename(columns={"size":"counts"})
 
         log_str = '\n'.join(
             ['%d changes: "%s -> %s' % (C, O, N)
