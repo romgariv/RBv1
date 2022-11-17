@@ -1,0 +1,67 @@
+running src/create-panel-data.py
+Beginning import_data from file(s): input/arrest-info_2001-2017_2017-07.csv.gz
+Data shape = 2579836 rows, 36 columns
+1754751 rows dropped by filter query: year >= 2010
+Keeping column(s): ['arrest_date', 'crime_code', 'cb_no', 'year']
+0 pre-clean NAs, 0 post-clean NAs
+0 rows dropped by filter query: month == month
+0 rows dropped by filter query: cb_no == cb_no & year == year
+Dummy cols generated:
+Name = arrest_MCC, N = 38429
+Name = arrest_other, N = 205498
+Name = arrest_property, N = 101363
+Name = arrest_TRF, N = 55845
+Name = arrest_violent, N = 127268
+Name = arrest_drug, N = 193995
+Name = arrest_WRT, N = 10268
+Creating new column: 'arrest_any' with value: 1
+Keeping column(s): ['cb_no', 'year', 'month', 'arrest_MCC', 'arrest_other', 'arrest_property', 'arrest_TRF', 'arrest_violent', 'arrest_drug', 'arrest_WRT', 'arrest_any']
+Beginning import_data from file(s): input/arrests_2001-2018_2018-12.csv.gz
+Data shape = 4887729 rows, 14 columns
+Keeping column(s): ['NUID', 'cb_no', 'year']
+3084473 rows dropped by filter query: year >= 2010
+1938 rows dropped by filter query: NUID == NUID
+0 rows dropped by filter query: cb_no == cb_no & year == year
+822448 CBs matched out of 825084 in info and 914947 in officers
+Writing data with 419120 rows to output/monthly-panel_arrests_2010-2017.csv.gz
+Beginning import_data from file(s): input/arrest-info_2001-2017_2017-07.csv.gz
+Data shape = 2579836 rows, 36 columns
+1261887 rows dropped by filter query: year >= 2007
+Keeping column(s): ['released_date', 'crime_code', 'cb_no', 'year']
+5 pre-clean NAs, 5 post-clean NAs
+Some issues, converted to NA or incorrect length: 1647192   NaT
+2323769   NaT
+2397720   NaT
+2447390   NaT
+2467610   NaT
+Name: released_date, dtype: datetime64[ns]
+5 rows dropped by filter query: month == month
+0 rows dropped by filter query: cb_no == cb_no & year == year
+Dummy cols generated:
+Name = released_other, N = 344359
+Name = released_WRT, N = 159498
+Name = released_drug, N = 315628
+Name = released_property, N = 159583
+Name = released_violent, N = 196918
+Name = released_MCC, N = 65411
+Name = released_TRF, N = 7654
+Creating new column: 'released_any' with value: 1
+Keeping column(s): ['cb_no', 'year', 'month', 'released_other', 'released_WRT', 'released_drug', 'released_property', 'released_violent', 'released_MCC', 'released_TRF', 'released_any']
+Beginning import_data from file(s): input/arrests_2001-2018_2018-12.csv.gz
+Data shape = 4887729 rows, 14 columns
+Keeping column(s): ['NUID', 'cb_no', 'year']
+2120002 rows dropped by filter query: year >= 2007
+3767 rows dropped by filter query: NUID == NUID
+0 rows dropped by filter query: cb_no == cb_no & year == year
+1313715 CBs matched out of 1317943 in info and 1409558 in officers
+Writing data with 618172 rows to output/monthly-panel_arrests-released_2007-2017.csv.gz
+Beginning import_data from file(s): input/arrest-info_2001-2017_2017-07.csv.gz
+Data shape = 2579836 rows, 36 columns
+Keeping column(s): ['arrest_date', 'released_date', 'bond_date', 'crime_code', 'cb_no', 'year']
+0 rows dropped by filter query: cb_no == cb_no & year == year
+Beginning import_data from file(s): input/arrests_2001-2018_2018-12.csv.gz
+Data shape = 4887729 rows, 14 columns
+Keeping column(s): ['NUID', 'cb_no', 'year']
+8071 rows dropped by filter query: NUID == NUID
+0 rows dropped by filter query: cb_no == cb_no & year == year
+Writing data with 4665694 rows to output/arrests-mindate_2001-2017.csv.gz
