@@ -1,0 +1,59 @@
+running src/create-panel-data.py
+Beginning import_data from file(s): input/complaints-accused_2000-2016_2016-11.csv.gz
+Data shape = 125581 rows, 25 columns
+Keeping column(s): ['cr_id', 'NUID', 'complaint_type', 'final_finding']
+Recoding final_finding to final_finding
+32704 changes: "NAF -> noaff
+8454 changes: "EX -> nonsust
+47 changes: "NC -> nonsust
+39672 changes: "NS -> nonsust
+28920 changes: "UN -> nonsust
+12 changes: "DIS -> sust
+8142 changes: "SU -> sust
+7630 values in final_finding now NA
+Unique data size = 125581
+Beginning import_data from file(s): input/complaints-complaints_2000-2016_2016-11.csv.gz
+Data shape = 131142 rows, 12 columns
+Keeping column(s): ['cr_id', 'incident_date', 'closed_date']
+Unique data size = 109339
+0 pre-clean NAs, 0 post-clean NAs
+1949 pre-clean NAs, 1949 post-clean NAs
+Some issues, converted to NA or incorrect length: 8184     NaT
+14613    NaT
+16921    NaT
+21315    NaT
+24358    NaT
+          ..
+131137   NaT
+131138   NaT
+131139   NaT
+131140   NaT
+131141   NaT
+Name: closed_date, Length: 1949, dtype: datetime64[ns]
+Keeping column(s): ['cr_id', 'month', 'closed_month']
+Complaints between (months) 2000-01-01 00:00:00 and 2016-06-01 00:00:00
+Getting witness data
+Getting outcomes data
+Total complaints in master data: N = 125581, Civ = 111850, PO = 13731, Constitutional = 73122, FPS = 23209, was_witness = 27242
+Writing data with 138544 rows to output/monthly-panel_complaints_2000-2016.csv.gz
+Writing data with 234509 rows to output/monthly-panel_complaints-outcomes_2000-2016.csv.gz
+Now creating Daily complaints
+Beginning import_data from file(s): input/complaints-accused_2000-2016_2016-11.csv.gz
+Data shape = 125581 rows, 25 columns
+Keeping column(s): ['cr_id', 'NUID', 'complaint_type', 'final_finding']
+2002 NA values in complaint_type filled with Missin
+Recoding final_finding to final_finding
+32704 changes: "NAF -> noaff
+8454 changes: "EX -> nonsust
+47 changes: "NC -> nonsust
+39672 changes: "NS -> nonsust
+28920 changes: "UN -> nonsust
+12 changes: "DIS -> sust
+8142 changes: "SU -> sust
+7630 values in final_finding now NA
+Unique data size = 125581
+Beginning import_data from file(s): input/complaints-complaints_2000-2016_2016-11.csv.gz
+Data shape = 131142 rows, 12 columns
+Keeping column(s): ['cr_id', 'incident_date']
+Unique data size = 109339
+Writing data with 125581 rows to output/compalints-clean_2000-2016_2016-11.csv.gz
