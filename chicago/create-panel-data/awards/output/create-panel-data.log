@@ -1,0 +1,8 @@
+running src/create-panel-data.py
+Beginning import_data from file(s): input/awards_1967-2017_2017-08.csv.gz
+Data shape = 699912 rows, 29 columns
+Keeping columns: ['NUID', 'award_type', 'award_request_date', 'current_award_status']
+43796 rows dropped by filter query: NUID == NUID
+0 pre-clean NAs, 0 post-clean NAs
+Summing by award type by month
+Writing data with 453690 rows to output/monthly-panel_awards_1967-2017.csv.gz
