@@ -1,5 +1,5 @@
 *.pyc
-chicago/raw_data/*
+chicago/raw_data/*/*
 share/tests/*.log
 share/hand/storage/*
 chicago/format/*/output/*.csv.gz
