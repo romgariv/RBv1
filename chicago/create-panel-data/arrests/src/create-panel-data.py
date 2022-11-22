@@ -121,7 +121,7 @@ for c in ['arrest_date', 'released_date', 'bond_date']:
     ai[c] = pd.to_datetime(ai[c], errors='coerce').dt.date
 
 ai['date'] = ai['arrest_date']
-ai['min_date'] = ai[['released_date', 'bond_date']].apply(pd.to_datetime).apply(np.nanmin, axis=1).dt.date
+ai['min_date'] = ai[['released_date', 'bond_date']].apply(pd.to_datetime).min(axis=1).dt.date
 ai.loc[ai.date.isnull(), 'date'] = ai.loc[ai.date.isnull(), 'min_date']
 
 assert keep_duplicates(ai, ['cb_no', 'year']).empty
