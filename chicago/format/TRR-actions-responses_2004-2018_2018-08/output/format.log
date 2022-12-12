@@ -1,5 +1,5 @@
 running src/format.py
-Beginning import_data from file(s): input/P456008 13094-FOIA-P456008-TRRdata Responsive Record Produced By R&A.xlsx
+Beginning import_data from file(s): input/P456008 13094-FOIA-P456008-TRRdata Responsive Record Produced By R&A_sterilized.xlsx
 Data shape = 587538 rows, 5 columns
 TRR_REPORT_ID -> trr_id , PERSON -> person , Resistance Type -> resistance_type , ACTION -> action , OTHERDESCR -> other_description
 ROWID column inserted
@@ -14,18 +14,18 @@ Writing data with 587538 rows to output/TRR-actions-responses_2004-2018_2018-08.
 5 rows dropped by filter query: person == person
 303362 rows dropped by filter query: person == "Subject Action"
 Recoding resistance_type to resistance_type
-0 changes: "Active Resister -> active
-1 changes: "Assailant Assault -> assault
-2 changes: "Assailant Battery -> battery
-3 changes: "Assailant Deadly Force -> deadly
-4 changes: "Passive Resister -> passive
+100231 changes: "Active Resister -> active
+36011 changes: "Assailant Assault -> assault
+29289 changes: "Assailant Battery -> battery
+4336 changes: "Assailant Deadly Force -> deadly
+114304 changes: "Passive Resister -> passive
 0 values in resistance_type now NA
 Recoding resistance_type to resistance_level
-0 changes: "passive -> 0
-1 changes: "active -> 1
-2 changes: "battery -> 2
-3 changes: "assault -> 3
-4 changes: "deadly -> 4
+114304 changes: "passive -> 0
+100231 changes: "active -> 1
+29289 changes: "battery -> 2
+36011 changes: "assault -> 3
+4336 changes: "deadly -> 4
 0 values in resistance_level now NA
 Dummy cols generated:
 Name = resistance_active, N = 100231
@@ -39,66 +39,66 @@ Beginning import_data from file(s): hand/trr_force_2018.csv
 Data shape = 43 rows, 4 columns
 284171 rows dropped by filter query: person == "Member Action"
 Recoding action to force_level_6
-0 changes: "MEMBER PRESENCE -> 1.0
-1 changes: "VERBAL COMMANDS -> 1.0
-2 changes: "ARMBAR -> 2.0
-3 changes: "CONTROL INSTRUMENT -> 2.0
-4 changes: "ESCORT HOLDS -> 2.0
-5 changes: "O.C./CHEMICAL WEAPON -> 2.0
-6 changes: "O.C./CHEMICAL WEAPON W/AUTHORIZATION -> 2.0
-7 changes: "PRESSURE SENSITIVE AREAS -> 2.0
-8 changes: "WRISTLOCK -> 2.0
-9 changes: "CANINE -> 3.0
-10 changes: "OPEN HAND STRIKE -> 3.0
-11 changes: "TAKE DOWN/EMERGENCY HANDCUFFING -> 3.0
-12 changes: "TASER (CONTACT STUN) -> 4.0
-13 changes: "TASER (LASER TARGETED) -> 4.0
-14 changes: "TASER (PROBE DISCHARGE) -> 4.0
-15 changes: "TASER (SPARK DISPLAYED) -> 4.0
-16 changes: "CLOSED HAND STRIKE/PUNCH -> 5.0
-17 changes: "ELBOW STRIKE -> 5.0
-18 changes: "IMPACT MUNITION (DESCRIBE IN ADDITIONAL INFO) -> 5.0
-19 changes: "IMPACT WEAPON (DESCRIBE IN ADDITIONAL INFO) -> 5.0
-20 changes: "KICKS -> 5.0
-21 changes: "KNEE STRIKE -> 5.0
-22 changes: "FIREARM -> 6.0
+66812 changes: "MEMBER PRESENCE -> 1.0
+69832 changes: "VERBAL COMMANDS -> 1.0
+14750 changes: "ARMBAR -> 2.0
+651 changes: "CONTROL INSTRUMENT -> 2.0
+24132 changes: "ESCORT HOLDS -> 2.0
+3775 changes: "O.C./CHEMICAL WEAPON -> 2.0
+116 changes: "O.C./CHEMICAL WEAPON W/AUTHORIZATION -> 2.0
+4721 changes: "PRESSURE SENSITIVE AREAS -> 2.0
+21267 changes: "WRISTLOCK -> 2.0
+108 changes: "CANINE -> 3.0
+11931 changes: "OPEN HAND STRIKE -> 3.0
+50972 changes: "TAKE DOWN/EMERGENCY HANDCUFFING -> 3.0
+1200 changes: "TASER (CONTACT STUN) -> 4.0
+705 changes: "TASER (LASER TARGETED) -> 4.0
+4673 changes: "TASER (PROBE DISCHARGE) -> 4.0
+94 changes: "TASER (SPARK DISPLAYED) -> 4.0
+5754 changes: "CLOSED HAND STRIKE/PUNCH -> 5.0
+1489 changes: "ELBOW STRIKE -> 5.0
+10 changes: "IMPACT MUNITION (DESCRIBE IN ADDITIONAL INFO) -> 5.0
+1610 changes: "IMPACT WEAPON (DESCRIBE IN ADDITIONAL INFO) -> 5.0
+1066 changes: "KICKS -> 5.0
+3097 changes: "KNEE STRIKE -> 5.0
+1069 changes: "FIREARM -> 6.0
 13528 values in force_level_6 now NA
 Recoding action to force_level_28
-0 changes: "MEMBER PRESENCE -> 1
-1 changes: "VERBAL COMMANDS -> 2
-2 changes: "ESCORT HOLDS -> 9
-3 changes: "WRISTLOCK -> 10
-4 changes: "ARMBAR -> 11
-5 changes: "CONTROL INSTRUMENT -> 12
-6 changes: "PRESSURE SENSITIVE AREAS -> 13
-7 changes: "OPEN HAND STRIKE -> 15
-8 changes: "TAKE DOWN/EMERGENCY HANDCUFFING -> 16
-9 changes: "ELBOW STRIKE -> 17
-10 changes: "CLOSED HAND STRIKE/PUNCH -> 18
-11 changes: "KNEE STRIKE -> 19
-12 changes: "KICKS -> 20
-13 changes: "O.C./CHEMICAL WEAPON -> 21
-14 changes: "O.C./CHEMICAL WEAPON W/AUTHORIZATION -> 22
-15 changes: "TASER (ARC CYLCLE) -> 24
-16 changes: "TASER (ARC CYLCLE) 1 -> 24
-17 changes: "TASER (ARC CYLCLE) 2 -> 24
-18 changes: "TASER (ARC CYLCLE) 3 -> 24
-19 changes: "TASER (CONTACT STUN) -> 24
-20 changes: "TASER (CONTACT STUN) 1 -> 24
-21 changes: "TASER (CONTACT STUN) 2 -> 24
-22 changes: "TASER (CONTACT STUN) 3 -> 24
-23 changes: "TASER (LASER TARGETED) -> 24
-24 changes: "TASER (PROBE DISCHARGE) -> 24
-25 changes: "TASER (PROBE DISCHARGE) 1 -> 24
-26 changes: "TASER (PROBE DISCHARGE) 2 -> 24
-27 changes: "TASER (PROBE DISCHARGE) 3 -> 24
-28 changes: "TASER (SPARK DISPLAYED) -> 24
-29 changes: "TASER (SPARK DISPLAYED) 1 -> 24
-30 changes: "CANINE -> 25
-31 changes: "IMPACT WEAPON (DESCRIBE IN ADDITIONAL INFO) -> 26
-32 changes: "IMPACT MUNITION (DESCRIBE IN ADDITIONAL INFO) -> 27
-33 changes: "FIREARM -> 28
-34 changes: "OTHER (SPECIFY) -> OTHER (SPECIFY)
+66812 changes: "MEMBER PRESENCE -> 1
+69832 changes: "VERBAL COMMANDS -> 2
+24132 changes: "ESCORT HOLDS -> 9
+21267 changes: "WRISTLOCK -> 10
+14750 changes: "ARMBAR -> 11
+651 changes: "CONTROL INSTRUMENT -> 12
+4721 changes: "PRESSURE SENSITIVE AREAS -> 13
+11931 changes: "OPEN HAND STRIKE -> 15
+50972 changes: "TAKE DOWN/EMERGENCY HANDCUFFING -> 16
+1489 changes: "ELBOW STRIKE -> 17
+5754 changes: "CLOSED HAND STRIKE/PUNCH -> 18
+3097 changes: "KNEE STRIKE -> 19
+1066 changes: "KICKS -> 20
+3775 changes: "O.C./CHEMICAL WEAPON -> 21
+116 changes: "O.C./CHEMICAL WEAPON W/AUTHORIZATION -> 22
+49 changes: "TASER (ARC CYLCLE) -> 24
+62 changes: "TASER (ARC CYLCLE) 1 -> 24
+36 changes: "TASER (ARC CYLCLE) 2 -> 24
+14 changes: "TASER (ARC CYLCLE) 3 -> 24
+1200 changes: "TASER (CONTACT STUN) -> 24
+15 changes: "TASER (CONTACT STUN) 1 -> 24
+13 changes: "TASER (CONTACT STUN) 2 -> 24
+10 changes: "TASER (CONTACT STUN) 3 -> 24
+705 changes: "TASER (LASER TARGETED) -> 24
+4673 changes: "TASER (PROBE DISCHARGE) -> 24
+181 changes: "TASER (PROBE DISCHARGE) 1 -> 24
+131 changes: "TASER (PROBE DISCHARGE) 2 -> 24
+4 changes: "TASER (PROBE DISCHARGE) 3 -> 24
+94 changes: "TASER (SPARK DISPLAYED) -> 24
+3 changes: "TASER (SPARK DISPLAYED) 1 -> 24
+108 changes: "CANINE -> 25
+1610 changes: "IMPACT WEAPON (DESCRIBE IN ADDITIONAL INFO) -> 26
+10 changes: "IMPACT MUNITION (DESCRIBE IN ADDITIONAL INFO) -> 27
+1069 changes: "FIREARM -> 28
+13010 changes: "OTHER (SPECIFY) -> OTHER (SPECIFY)
 0 values in force_level_28 now NA
 Recoding missing/Other actions using other_description
 Recoding 582 of 13010 rows to level 2 with strings that contain: LRAD|ESCORT HOLD|ARMBAR|ARM BAR|WRISTLOCK|CONTROL INSTRUMENT|TAKE DWN
@@ -108,13 +108,13 @@ Recoding 828 of 8935 rows to level 5 with strings that contain: CLOSED HAND|FIST
 Recoding 221 of 8107 rows to level 6 with strings that contain: FIREARM|SEMI AUTO|CALIBER|GUN|FIRE|REVOLVER|RIFLE|PISTOL
 8404 NA values in force_level_6 filled with 
 Recoding force_level_6 to type_of_force_6
-0 changes: "6.0 -> firearm
-1 changes: "3.0 -> intermediate
-2 changes: "5.0 -> major
-3 changes: "2.0 -> minor
-4 changes: "0.0 -> missing
-5 changes: "1.0 -> none
-6 changes: "4.0 -> taser
+1290 changes: "6.0 -> firearm
+65888 changes: "3.0 -> intermediate
+13854 changes: "5.0 -> major
+69994 changes: "2.0 -> minor
+8404 changes: "0.0 -> missing
+136644 changes: "1.0 -> none
+7288 changes: "4.0 -> taser
 0 values in type_of_force_6 now NA
 Recoding Other actions using other_description
 166 null rows of other recoded to 0
@@ -123,28 +123,28 @@ Cleaning OTHER (SPECIFY) force types
 Imputing actions where possible
 Beginning import_data from file(s): hand/trr_unclassified_actions_2018.csv
 Data shape = 4047 rows, 2 columns
-Executing: <function <lambda> at 0x7fa430864560> on action
+Executing: <function <lambda> at 0x7ff348e634d0> on action
 0 NA values before, now 0
 3421 rows dropped by filter query: action != 'OTHER DESCRIPTION'
 action -> action_imputed
 Recoding action_imputed to force_level_28
-0 changes: "MEMBER PRESENCE -> 1
-1 changes: "VERBAL COMMANDS -> 2
-2 changes: "ESCORT HOLDS -> 9
-3 changes: "CONTROL INSTRUMENT -> 12
-4 changes: "PRESSURE SENSITIVE AREAS -> 13
-5 changes: "OPEN HAND STRIKE -> 15
-6 changes: "TAKE DOWN/EMERGENCY HANDCUFFING -> 16
-7 changes: "ELBOW STRIKE -> 17
-8 changes: "KNEE STRIKE -> 19
-9 changes: "O.C./CHEMICAL WEAPON -> 21
-10 changes: "TASER (PROBE DISCHARGE) -> 24
-11 changes: "CANINE -> 25
-12 changes: "IMPACT WEAPON (DESCRIBE IN ADDITIONAL INFO) -> 26
-13 changes: "FIREARM -> 28
+192 changes: "MEMBER PRESENCE -> 1
+2 changes: "VERBAL COMMANDS -> 2
+10 changes: "ESCORT HOLDS -> 9
+1 changes: "CONTROL INSTRUMENT -> 12
+5 changes: "PRESSURE SENSITIVE AREAS -> 13
+6 changes: "OPEN HAND STRIKE -> 15
+1 changes: "TAKE DOWN/EMERGENCY HANDCUFFING -> 16
+2 changes: "ELBOW STRIKE -> 17
+3 changes: "KNEE STRIKE -> 19
+1 changes: "O.C./CHEMICAL WEAPON -> 21
+1 changes: "TASER (PROBE DISCHARGE) -> 24
+2 changes: "CANINE -> 25
+2 changes: "IMPACT WEAPON (DESCRIBE IN ADDITIONAL INFO) -> 26
+33 changes: "FIREARM -> 28
 365 values in force_level_28 now NA
 Values of force_level_28 copied to imputed_action
-Executing: <function <lambda> at 0x7fa4308648c0> on imputed_action
+Executing: <function <lambda> at 0x7ff348e63950> on imputed_action
 365 NA values before, now 0
 Recoding 0 rows in imputed data to level 28 with strings that contain: FIREARM|SEMI AUTO|SEMI-AUTO|CALIBER|GUN|FIRE|REVOLVER|RIFLE|PISTOL|SHOTGUN
 Recoding 235 rows in non-imputed data to level 28 with strings that contain: FIREARM|SEMI AUTO|SEMI-AUTO|CALIBER|GUN|FIRE|REVOLVER|RIFLE|PISTOL|SHOTGUN
