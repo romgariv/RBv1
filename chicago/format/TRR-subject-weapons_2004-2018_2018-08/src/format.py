@@ -12,7 +12,7 @@ from general_utils import FormatData
 def get_setup():
     script_path = __main__.__file__
     args = {
-        'input_file' : 'input/P456008 13094-FOIA-P456008-TRRdata Responsive Record Produced By R&A.xlsx',
+        'input_file' : 'input/P456008 13094-FOIA-P456008-TRRdata Responsive Record Produced By R&A_sterilized.xlsx',
         'output_file' : 'output/TRR-subject-weapons_2004-2018_2018-08.csv.gz',
         'sheet' : 'SubjectWeapons',
         'column_names_key': 'TRR-subject-weapons_2004-2018_2018-08'
