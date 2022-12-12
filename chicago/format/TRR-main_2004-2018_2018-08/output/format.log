@@ -1,14 +1,11 @@
 running src/format.py
-Beginning import_data from file(s): input/P456008 13094-FOIA-P456008-TRRdata Responsive Record Produced By R&A.xlsx
-Data shape = 75759 rows, 44 columns
-TRR_REPORT_ID -> trr_id , RD_NO -> rd_no , CR_NO_OBTAINED -> cr_id , SUBJECT_CB_NO -> cb_no , EVENT_NO -> event_no , BEAT -> beat , BLK -> block , DIR -> direction , STN -> street , LOC -> location , DTE -> trr_date , TMEMIL -> trr_time , INDOOR_OR_OUTDOOR -> indoor_or_outdoor , LIGHTING_CONDITION -> lighting_condition , WEATHER_CONDITION -> weather_condition , NOTIFY_OEMC -> notify_OEMC , NOTIFY_DIST_SERGEANT -> notify_district_sergeant , NOTIFY_OP_COMMAND -> notify_OP_command , NOTIFY_DET_DIV -> notify_DET_division , NUMBER_OF_WEAPONS_DISCHARGED -> number_of_weapons_discharged , PARTY_FIRED_FIRST -> party_fired_first , POLAST -> last_name , POFIRST -> first_name , POGNDR -> gender , PORACE -> race , POAGE -> age , APPOINTED_DATE -> appointed_date , UNITASSG -> unit , UNITDETAIL -> unit_detail , ASSGNBEAT -> assigned_beat , RANK -> rank , DUTYSTATUS -> duty_status , POINJURED -> injured , MEMBER_IN_UNIFORM -> in_uniform , SUBGNDR -> sub_gender , SUBRACE -> sub_race , SUBAGE -> sub_age , SUBYEARDOB -> sub_birth_year , SUBJECT_ARMED -> sub_armed , SUBJECT_INJURED -> sub_injured , SUBJECT_ALLEGED_INJURY -> sub_alleged_injury , LAST_NME -> ln_drop , FIRST_NME -> fn_drop , CPD_STAR_NO -> current_star
+Beginning import_data from file(s): input/P456008 13094-FOIA-P456008-TRRdata Responsive Record Produced By R&A_sterilized.xlsx
+Data shape = 75759 rows, 41 columns
+TRR_REPORT_ID -> trr_id , EVENT_NO -> event_no , BEAT -> beat , BLK -> block , DIR -> direction , STN -> street , LOC -> location , DTE -> trr_date , TMEMIL -> trr_time , INDOOR_OR_OUTDOOR -> indoor_or_outdoor , LIGHTING_CONDITION -> lighting_condition , WEATHER_CONDITION -> weather_condition , NOTIFY_OEMC -> notify_OEMC , NOTIFY_DIST_SERGEANT -> notify_district_sergeant , NOTIFY_OP_COMMAND -> notify_OP_command , NOTIFY_DET_DIV -> notify_DET_division , NUMBER_OF_WEAPONS_DISCHARGED -> number_of_weapons_discharged , PARTY_FIRED_FIRST -> party_fired_first , POLAST -> last_name , POFIRST -> first_name , POGNDR -> gender , PORACE -> race , POAGE -> age , APPOINTED_DATE -> appointed_date , UNITASSG -> unit , UNITDETAIL -> unit_detail , ASSGNBEAT -> assigned_beat , RANK -> rank , DUTYSTATUS -> duty_status , POINJURED -> injured , MEMBER_IN_UNIFORM -> in_uniform , SUBGNDR -> sub_gender , SUBRACE -> sub_race , SUBAGE -> sub_age , SUBYEARDOB -> sub_birth_year , SUBJECT_ARMED -> sub_armed , SUBJECT_INJURED -> sub_injured , SUBJECT_ALLEGED_INJURY -> sub_alleged_injury , LAST_NME -> ln_drop , FIRST_NME -> fn_drop , CPD_STAR_NO -> current_star
 ROWID column inserted
-Keeping column(s): ['ROWID', 'trr_id', 'rd_no', 'cr_id', 'cb_no', 'event_no', 'beat', 'block', 'direction', 'street', 'location', 'trr_date', 'trr_time', 'indoor_or_outdoor', 'lighting_condition', 'weather_condition', 'notify_OEMC', 'notify_district_sergeant', 'notify_OP_command', 'notify_DET_division', 'number_of_weapons_discharged', 'party_fired_first', 'last_name', 'first_name', 'gender', 'race', 'age', 'appointed_date', 'unit', 'unit_detail', 'assigned_beat', 'rank', 'duty_status', 'injured', 'in_uniform', 'sub_gender', 'sub_race', 'sub_age', 'sub_birth_year', 'sub_armed', 'sub_injured', 'sub_alleged_injury', 'current_star']
+Keeping column(s): ['ROWID', 'trr_id', 'event_no', 'beat', 'block', 'direction', 'street', 'location', 'trr_date', 'trr_time', 'indoor_or_outdoor', 'lighting_condition', 'weather_condition', 'notify_OEMC', 'notify_district_sergeant', 'notify_OP_command', 'notify_DET_division', 'number_of_weapons_discharged', 'party_fired_first', 'last_name', 'first_name', 'gender', 'race', 'age', 'appointed_date', 'unit', 'unit_detail', 'assigned_beat', 'rank', 'duty_status', 'injured', 'in_uniform', 'sub_gender', 'sub_race', 'sub_age', 'sub_birth_year', 'sub_armed', 'sub_injured', 'sub_alleged_injury', 'current_star']
 Column 'ROWID' was not cleaned.
 Column 'trr_id' was not cleaned.
-Column 'rd_no' was not cleaned.
-Column 'cr_id' was not cleaned.
-Column 'cb_no' was not cleaned.
 Column 'event_no' was not cleaned.
 Column 'beat' was not cleaned.
 Column 'block' was not cleaned.
@@ -49,35 +46,11 @@ Column 'sub_injured' was not cleaned.
 Column 'sub_alleged_injury' was not cleaned.
 Column 'current_star' cleaned as star using GeneralCleaners.
 Column(s) '('last_name', 'first_name')' cleaned as name(s) using NameCleaners.
-Columns dropped due to all NA values: ('second_name', 'human_name', 'full_name', 'middle_name')
+Columns dropped due to all NA values: ('human_name', 'middle_name', 'full_name', 'second_name')
 Total rows: 75759
 Unique id + conflict rows: 11915
 Conflict rows: 0
 Resolved conflcit UID count: 0
 Total unique ids: 11915
 
-3893 NA values in cb_no filled with 99
-Executing: <function <lambda> at 0x7fcf389544d0> on cb_no
-0 NA values before, now 0
-Executing: <function <lambda> at 0x7fcf389544d0> on cb_no
-0 NA values before, now 0
-Executing: <function <lambda> at 0x7fcf389544d0> on cb_no
-0 NA values before, now 0
-Executing: <function <lambda> at 0x7fcf389544d0> on cb_no
-0 NA values before, now 5039
-Executing: <function <lambda> at 0x7fcf389544d0> on cb_no
-5039 NA values before, now 5039
-36 NA values in event_no filled with 99
-Executing: <function <lambda> at 0x7fcef8714200> on event_no
-0 NA values before, now 0
-Executing: <function <lambda> at 0x7fcef8714200> on event_no
-0 NA values before, now 0
-Executing: <function <lambda> at 0x7fcef8714200> on event_no
-0 NA values before, now 0
-Executing: <function <lambda> at 0x7fcef8714200> on event_no
-0 NA values before, now 40
-Executing: <function <lambda> at 0x7fcef8714200> on event_no
-40 NA values before, now 40
-Executing: <function <lambda> at 0x7fcef8714200> on rd_no
-15 NA values before, now 15
 Writing data with 75759 rows to output/TRR-main_2004-2018_2018-08.csv.gz

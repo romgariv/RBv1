@@ -13,7 +13,7 @@ import re
 def get_setup():
     script_path = __main__.__file__
     args = {
-        'input_file' : 'input/P456008 13094-FOIA-P456008-TRRdata Responsive Record Produced By R&A.xlsx',
+        'input_file' : 'input/P456008 13094-FOIA-P456008-TRRdata Responsive Record Produced By R&A_sterilized.xlsx',
         'output_file' : 'output/TRR-main_2004-2018_2018-08.csv.gz',
         'sheets' : ['Sheet1', 'Star #'],
         'column_names_key': 'TRR-main_2004-2018_2018-08',
@@ -43,22 +43,6 @@ trr = FormatData(log=log)\
     .dcolumn(['ln_drop', 'fn_drop'])\
     .clean()\
     .assign_unique_ids(cons.ID, auid_args_dict=cons.auid_args)\
-    .fillna('cb_no', 999)\
-    .map('cb_no', lambda x: str(x).replace('-', ''))\
-    .map('cb_no', lambda x: x if not str(x).startswith('0.') else str(x).replace('0.', ''))\
-    .map('cb_no', lambda x: int(float(x)))\
-    .map('cb_no', lambda x: np.nan if x in [999, 99999999, 0, 12345678, 11111111, 1] else x)\
-    .map('cb_no', lambda x: float(x))\
-    .fillna('event_no', 999)\
-    .map('event_no', lambda x: str(x).replace('-', ''))\
-    .map('event_no', lambda x: x if not str(x).startswith('0.') else str(x).replace('0.', ''))\
-    .map('event_no', lambda x: int(float(x)))\
-    .map('event_no', lambda x: np.nan if x in [999, 99999999, 0, 12345678, 11111111, 1] else x)\
-    .map('event_no', lambda x: float(x))\
-    .map('rd_no', lambda x: x if pd.isnull(x) else re.sub('\W', '', x))\
     .data
-
-# log.info("Creating group union from %s" % (['rd_no', 'cb_no', 'cr_id']))
-# trr = union_group(trr, 'prd_no', cols=['rd_no', 'cb_no', 'cr_id'])
 
 FormatData(trr, log=log).write_data(cons.output_file)
