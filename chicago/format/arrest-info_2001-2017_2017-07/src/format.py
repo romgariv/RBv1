@@ -16,23 +16,23 @@ def get_setup():
     script_path = __main__.__file__
     args = {
         'input_files': [
-            "input/12181-FOIA-P058944-Arrests2001-StecklowRubeinstein.xlsx",
-            "input/12181-FOIA-P058944-Arrests2002-StecklowRubeinstein.xlsx",
-            "input/12181-FOIA-P058944-Arrests2003-StecklowRubeinstein.xlsx",
-            "input/12181-FOIA-P058944-Arrests2004-StecklowRubeinstein.xlsx",
-            "input/12181-FOIA-P058944-Arrests2005-StecklowRubeinstein.xlsx",
-            "input/12181-FOIA-P058944-Arrests2006-StecklowRubeinstein.xlsx",
-            "input/12181-FOIA-P058944-Arrests2007-StecklowRubeinstein.xlsx",
-            "input/12181-FOIA-P058944-Arrests2008-StecklowRubeinstein.xlsx",
-            "input/12181-FOIA-P058944-Arrests2009-StecklowRubeinstein.xlsx",
-            "input/2010 arrests export-rev.csv",
-            "input/2011 arrests export.csv",
-            "input/2012 arrests export.csv",
-            "input/2013 arrests export.csv",
-            "input/2014 arrests export.csv",
-            "input/2015 arrests export.csv",
-            "input/2016 arrests export.csv",
-            "input/2017 arrests export.csv",
+            "input/12181-FOIA-P058944-Arrests2001-StecklowRubeinstein_sterilized.xlsx",
+            "input/12181-FOIA-P058944-Arrests2002-StecklowRubeinstein_sterilized.xlsx",
+            "input/12181-FOIA-P058944-Arrests2003-StecklowRubeinstein_sterilized.xlsx",
+            "input/12181-FOIA-P058944-Arrests2004-StecklowRubeinstein_sterilized.xlsx",
+            "input/12181-FOIA-P058944-Arrests2005-StecklowRubeinstein_sterilized.xlsx",
+            "input/12181-FOIA-P058944-Arrests2006-StecklowRubeinstein_sterilized.xlsx",
+            "input/12181-FOIA-P058944-Arrests2007-StecklowRubeinstein_sterilized.xlsx",
+            "input/12181-FOIA-P058944-Arrests2008-StecklowRubeinstein_sterilized.xlsx",
+            "input/12181-FOIA-P058944-Arrests2009-StecklowRubeinstein_sterilized.xlsx",
+            "input/2010 arrests export-rev_sterilized.csv",
+            "input/2011 arrests export_sterilized.csv",
+            "input/2012 arrests export_sterilized.csv",
+            "input/2013 arrests export_sterilized.csv",
+            "input/2014 arrests export_sterilized.csv",
+            "input/2015 arrests export_sterilized.csv",
+            "input/2016 arrests export_sterilized.csv",
+            "input/2017 arrests export_sterilized.csv"
             ],
         'output_file': 'output/arrest-info_2001-2017_2017-07.csv.gz',
         'column_names_key': 'arrest-info_2001-2017_2017-07',
@@ -50,57 +50,10 @@ def get_setup():
 
 cons, log = get_setup()
 
-# Write data into 9999 increments and create bash script
-def curl_address(file_num):
-    import os
-    import datetime
-    curl_string = ("curl --form addressFile=@output/addresses_%d.csv "
-                  "--form benchmark=Public_AR_Current "
-                  "https://geocoding.geo.census.gov/geocoder/locations/addressbatch "
-                  "--output output/geocoderesult_%d.csv"
-                  % (file_num,file_num))
-    print(curl_string)
-    start = datetime.datetime.now()
-    os.system(curl_string)
-    elasped = round((datetime.datetime.now()-start).total_seconds()/60)
-    print("Completed Task#%d in %d minutes" % (file_num, elasped))
-    return 0
-
-def geocode_address(address):
-  base_url = ("https://geocoding.geo.census.gov/geocoder/locations/address?"
-              "street={}&city=Chicago&state=IL&"
-              "benchmark=9&format=json")
-  results = requests.get(url=base_url.format(address)).json()
-  try:
-    results = results['result']['addressMatches']
-    if type(results)==list:
-        results = results[0]['coordinates']
-    else:
-        results = results['coordinates']
-    print("Success %s" % address)
-    return results
-  except Exception as e:
-    print("Failed: %s" % address)
-    print(e)
-    return {'x' : np.nan, 'y' : np.nan}
-
-def geocode_address_list(l):
-    ID, ad1, ad2 = l
-    r1 = geocode_address(ad1)
-    if pd.isnull(r1['x']):
-        r2 = geocode_address(ad2)
-        r2['ID'] = ID
-        r2['full_address'] = ad2
-        return r2
-    else:
-        r1['ID'] = ID
-        r1['full_address'] = ad1
-        return r1
-
 full_data = pd.DataFrame()
 for in_file in cons.input_files:
     if in_file.startswith("input/12181"):
-        year = int(in_file[len(in_file)-29:len(in_file)-25])
+        year = int(in_file[32:36])
     else:
         year = int(in_file[6:10])
 
@@ -128,7 +81,12 @@ for in_file in cons.input_files:
     full_data = full_data.append(fd.data)
 
 log.info("Export data")
-FormatData(full_data, log=log)\
+fd = FormatData(full_data, log=log)\
     .map('cb_no', lambda x: pd.to_numeric(x, errors='coerce'))\
     .qfilter("cb_no==cb_no")\
+    .dropna({'axis':1,'how':'all'})
+
+assert set(("first_name", "last_name", "first_name_NS", "last_name_NS")) & set(fd.columns) == set()
+
+fd\
     .write_data(cons.output_file)
