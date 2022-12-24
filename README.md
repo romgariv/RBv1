@@ -21,7 +21,7 @@ Workflow is highly similar to that of https://github.com/invinst/chicago-police-
 
 1. Install python and the relevant modules
 2. Download or clone this repository
-3. If you wish to complete full replication, obtain all the relevant `raw_data/` files.
+3. If you wish to complete full replication, obtain all the relevant `raw_data/` files. Names of required but missing files due to data sharing agreement are listed in `missing_files.txt` within `raw_data/` subdirectories.
 4. Repair any broken symlinks
 5. Repair any symlinks in the `input` folders within each subdirectory. In each subdirectory in `format/`, run `python src/format.py`
 6. Repair any symlinks in the `input` folders within each subdirectory. Following the designated order in `merge-officers/ORDER`, in each subdirectory in `merge-officers/`, run `python src/format.py`
