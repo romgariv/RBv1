@@ -1,0 +1,17 @@
+12181-FOIA-P058944-Arrests2001-StecklowRubeinstein_sterilized.xlsx
+12181-FOIA-P058944-Arrests2002-StecklowRubeinstein_sterilized.xlsx
+12181-FOIA-P058944-Arrests2003-StecklowRubeinstein_sterilized.xlsx
+12181-FOIA-P058944-Arrests2004-StecklowRubeinstein_sterilized.xlsx
+12181-FOIA-P058944-Arrests2005-StecklowRubeinstein_sterilized.xlsx
+12181-FOIA-P058944-Arrests2006-StecklowRubeinstein_sterilized.xlsx
+12181-FOIA-P058944-Arrests2007-StecklowRubeinstein_sterilized.xlsx
+12181-FOIA-P058944-Arrests2008-StecklowRubeinstein_sterilized.xlsx
+12181-FOIA-P058944-Arrests2009-StecklowRubeinstein_sterilized.xlsx
+2010 arrests export-rev_sterilized.csv
+2011 arrests export_sterilized.csv
+2012 arrests export_sterilized.csv
+2013 arrests export_sterilized.csv
+2014 arrests export_sterilized.csv
+2015 arrests export_sterilized.csv
+2016 arrests export_sterilized.csv
+2017 arrests export_sterilized.csv
