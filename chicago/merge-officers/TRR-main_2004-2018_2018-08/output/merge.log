@@ -2,7 +2,7 @@ running src/merge.py
 Beginning import_data from file(s): input/officer-reference.csv.gz
 Data shape = 241619 rows, 37 columns
 Beginning import_data from file(s): input/TRR-main_2004-2018_2018-08.csv.gz
-Data shape = 75759 rows, 49 columns
+Data shape = 75759 rows, 46 columns
 343 rows dropped by filter query: rank != ["DETENTION AIDE", "9122"]
 Unique data size = 11756
 Adding column by exec("self._data["star"]=self._data["current_star"]")
