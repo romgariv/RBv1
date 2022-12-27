@@ -1,6 +1,6 @@
 running src/create-panel-data.py
 Beginning import_data from file(s): input/arrest-info_2001-2017_2017-07.csv.gz
-Data shape = 2579836 rows, 36 columns
+Data shape = 2579836 rows, 28 columns
 1754751 rows dropped by filter query: year >= 2010
 Keeping column(s): ['arrest_date', 'crime_code', 'cb_no', 'year']
 0 pre-clean NAs, 0 post-clean NAs
@@ -25,7 +25,7 @@ Keeping column(s): ['NUID', 'cb_no', 'year']
 822448 CBs matched out of 825084 in info and 914947 in officers
 Writing data with 419120 rows to output/monthly-panel_arrests_2010-2017.csv.gz
 Beginning import_data from file(s): input/arrest-info_2001-2017_2017-07.csv.gz
-Data shape = 2579836 rows, 36 columns
+Data shape = 2579836 rows, 28 columns
 1261887 rows dropped by filter query: year >= 2007
 Keeping column(s): ['released_date', 'crime_code', 'cb_no', 'year']
 5 pre-clean NAs, 5 post-clean NAs
@@ -56,7 +56,7 @@ Keeping column(s): ['NUID', 'cb_no', 'year']
 1313715 CBs matched out of 1317943 in info and 1409558 in officers
 Writing data with 618172 rows to output/monthly-panel_arrests-released_2007-2017.csv.gz
 Beginning import_data from file(s): input/arrest-info_2001-2017_2017-07.csv.gz
-Data shape = 2579836 rows, 36 columns
+Data shape = 2579836 rows, 28 columns
 Keeping column(s): ['arrest_date', 'released_date', 'bond_date', 'crime_code', 'cb_no', 'year']
 0 rows dropped by filter query: cb_no == cb_no & year == year
 Beginning import_data from file(s): input/arrests_2001-2018_2018-12.csv.gz
