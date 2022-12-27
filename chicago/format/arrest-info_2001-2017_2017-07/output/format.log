@@ -35,7 +35,7 @@ Column 'bond_date' cleaned as date using DateTimeCleaners.
 Column 'crime_code' cleaned as crime using GeneralCleaners.
 [nan] values not in crime_types.yaml file. 11 cases replaced with 'nan'
 Column(s) '('first_name', 'last_name', 'middle_initial')' cleaned as name(s) using NameCleaners.
-Columns dropped due to all NA values: ('middle_name', 'first_name_NS', 'second_name', 'suffix_name', 'age', 'released_date', 'last_name_NS', 'last_name', 'full_name', 'human_name', 'middle_initial2', 'middle_initial', 'first_name')
+Columns dropped due to all NA values: ('age', 'middle_initial', 'second_name', 'suffix_name', 'middle_name', 'middle_initial2', 'first_name_NS', 'last_name', 'human_name', 'released_date', 'full_name', 'last_name_NS', 'first_name')
 Adding column by exec("self._data["year"] = 2001")
 11 rows dropped by dropna: {'thresh': 7}
 Beginning import_data from file(s): input/12181-FOIA-P058944-Arrests2002-StecklowRubeinstein_sterilized.xlsx
@@ -74,7 +74,7 @@ Column 'bond_date' cleaned as date using DateTimeCleaners.
 Column 'crime_code' cleaned as crime using GeneralCleaners.
 [nan] values not in crime_types.yaml file. 11 cases replaced with 'nan'
 Column(s) '('first_name', 'last_name', 'middle_initial')' cleaned as name(s) using NameCleaners.
-Columns dropped due to all NA values: ('middle_name', 'first_name_NS', 'second_name', 'suffix_name', 'age', 'released_date', 'last_name_NS', 'last_name', 'full_name', 'human_name', 'middle_initial2', 'middle_initial', 'first_name')
+Columns dropped due to all NA values: ('age', 'middle_initial', 'second_name', 'suffix_name', 'middle_name', 'middle_initial2', 'first_name_NS', 'last_name', 'human_name', 'released_date', 'full_name', 'last_name_NS', 'first_name')
 Adding column by exec("self._data["year"] = 2002")
 11 rows dropped by dropna: {'thresh': 7}
 Beginning import_data from file(s): input/12181-FOIA-P058944-Arrests2003-StecklowRubeinstein_sterilized.xlsx
@@ -114,7 +114,7 @@ Column 'bond_date' cleaned as date using DateTimeCleaners.
 Column 'crime_code' cleaned as crime using GeneralCleaners.
 [nan] values not in crime_types.yaml file. 10 cases replaced with 'nan'
 Column(s) '('first_name', 'last_name', 'middle_initial')' cleaned as name(s) using NameCleaners.
-Columns dropped due to all NA values: ('middle_name', 'first_name_NS', 'second_name', 'suffix_name', 'age', 'last_name_NS', 'last_name', 'full_name', 'human_name', 'middle_initial2', 'first_name')
+Columns dropped due to all NA values: ('age', 'second_name', 'suffix_name', 'middle_name', 'middle_initial2', 'first_name_NS', 'last_name', 'human_name', 'full_name', 'last_name_NS', 'first_name')
 Adding column by exec("self._data["year"] = 2003")
 10 rows dropped by dropna: {'thresh': 7}
 Beginning import_data from file(s): input/12181-FOIA-P058944-Arrests2004-StecklowRubeinstein_sterilized.xlsx
@@ -153,7 +153,7 @@ Column 'bond_date' cleaned as date using DateTimeCleaners.
 Column 'crime_code' cleaned as crime using GeneralCleaners.
 [nan] values not in crime_types.yaml file. 8 cases replaced with 'nan'
 Column(s) '('first_name', 'last_name', 'middle_initial')' cleaned as name(s) using NameCleaners.
-Columns dropped due to all NA values: ('middle_name', 'first_name_NS', 'second_name', 'suffix_name', 'age', 'last_name_NS', 'last_name', 'full_name', 'human_name', 'middle_initial2', 'middle_initial', 'first_name')
+Columns dropped due to all NA values: ('age', 'middle_initial', 'second_name', 'suffix_name', 'middle_name', 'middle_initial2', 'first_name_NS', 'last_name', 'human_name', 'full_name', 'last_name_NS', 'first_name')
 Adding column by exec("self._data["year"] = 2004")
 8 rows dropped by dropna: {'thresh': 7}
 Beginning import_data from file(s): input/12181-FOIA-P058944-Arrests2005-StecklowRubeinstein_sterilized.xlsx
@@ -192,7 +192,7 @@ Column 'bond_date' cleaned as date using DateTimeCleaners.
 Column 'crime_code' cleaned as crime using GeneralCleaners.
 [nan] values not in crime_types.yaml file. 7 cases replaced with 'nan'
 Column(s) '('first_name', 'last_name', 'middle_initial')' cleaned as name(s) using NameCleaners.
-Columns dropped due to all NA values: ('middle_name', 'first_name_NS', 'second_name', 'suffix_name', 'age', 'last_name_NS', 'last_name', 'full_name', 'human_name', 'middle_initial2', 'first_name')
+Columns dropped due to all NA values: ('age', 'second_name', 'suffix_name', 'middle_name', 'middle_initial2', 'first_name_NS', 'last_name', 'human_name', 'full_name', 'last_name_NS', 'first_name')
 Adding column by exec("self._data["year"] = 2005")
 7 rows dropped by dropna: {'thresh': 7}
 Beginning import_data from file(s): input/12181-FOIA-P058944-Arrests2006-StecklowRubeinstein_sterilized.xlsx
@@ -231,7 +231,7 @@ Column 'bond_date' cleaned as date using DateTimeCleaners.
 Column 'crime_code' cleaned as crime using GeneralCleaners.
 [nan] values not in crime_types.yaml file. 1665 cases replaced with 'nan'
 Column(s) '('first_name', 'last_name', 'middle_initial')' cleaned as name(s) using NameCleaners.
-Columns dropped due to all NA values: ('middle_name', 'first_name_NS', 'second_name', 'suffix_name', 'age', 'last_name_NS', 'last_name', 'full_name', 'human_name', 'middle_initial2', 'middle_initial', 'first_name')
+Columns dropped due to all NA values: ('age', 'middle_initial', 'second_name', 'suffix_name', 'middle_name', 'middle_initial2', 'first_name_NS', 'last_name', 'human_name', 'full_name', 'last_name_NS', 'first_name')
 Adding column by exec("self._data["year"] = 2006")
 10 rows dropped by dropna: {'thresh': 7}
 Beginning import_data from file(s): input/12181-FOIA-P058944-Arrests2007-StecklowRubeinstein_sterilized.xlsx
@@ -270,7 +270,7 @@ Column 'bond_date' cleaned as date using DateTimeCleaners.
 Column 'crime_code' cleaned as crime using GeneralCleaners.
 [nan] values not in crime_types.yaml file. 10 cases replaced with 'nan'
 Column(s) '('first_name', 'last_name', 'middle_initial')' cleaned as name(s) using NameCleaners.
-Columns dropped due to all NA values: ('middle_name', 'first_name_NS', 'second_name', 'suffix_name', 'age', 'last_name_NS', 'last_name', 'full_name', 'human_name', 'middle_initial2', 'middle_initial', 'first_name')
+Columns dropped due to all NA values: ('age', 'middle_initial', 'second_name', 'suffix_name', 'middle_name', 'middle_initial2', 'first_name_NS', 'last_name', 'human_name', 'full_name', 'last_name_NS', 'first_name')
 Adding column by exec("self._data["year"] = 2007")
 10 rows dropped by dropna: {'thresh': 7}
 Beginning import_data from file(s): input/12181-FOIA-P058944-Arrests2008-StecklowRubeinstein_sterilized.xlsx
@@ -309,7 +309,7 @@ Column 'bond_date' cleaned as date using DateTimeCleaners.
 Column 'crime_code' cleaned as crime using GeneralCleaners.
 [nan] values not in crime_types.yaml file. 10 cases replaced with 'nan'
 Column(s) '('first_name', 'last_name', 'middle_initial')' cleaned as name(s) using NameCleaners.
-Columns dropped due to all NA values: ('middle_name', 'first_name_NS', 'second_name', 'suffix_name', 'age', 'last_name_NS', 'last_name', 'full_name', 'human_name', 'middle_initial2', 'middle_initial', 'first_name')
+Columns dropped due to all NA values: ('age', 'middle_initial', 'second_name', 'suffix_name', 'middle_name', 'middle_initial2', 'first_name_NS', 'last_name', 'human_name', 'full_name', 'last_name_NS', 'first_name')
 Adding column by exec("self._data["year"] = 2008")
 10 rows dropped by dropna: {'thresh': 7}
 Beginning import_data from file(s): input/12181-FOIA-P058944-Arrests2009-StecklowRubeinstein_sterilized.xlsx
@@ -348,7 +348,7 @@ Column 'bond_date' cleaned as date using DateTimeCleaners.
 Column 'crime_code' cleaned as crime using GeneralCleaners.
 [nan] values not in crime_types.yaml file. 10 cases replaced with 'nan'
 Column(s) '('first_name', 'last_name', 'middle_initial')' cleaned as name(s) using NameCleaners.
-Columns dropped due to all NA values: ('middle_name', 'first_name_NS', 'second_name', 'suffix_name', 'age', 'last_name_NS', 'last_name', 'full_name', 'human_name', 'middle_initial2', 'middle_initial', 'first_name')
+Columns dropped due to all NA values: ('age', 'middle_initial', 'second_name', 'suffix_name', 'middle_name', 'middle_initial2', 'first_name_NS', 'last_name', 'human_name', 'full_name', 'last_name_NS', 'first_name')
 Adding column by exec("self._data["year"] = 2009")
 10 rows dropped by dropna: {'thresh': 7}
 Beginning import_data from file(s): input/2010 arrests export-rev_sterilized.csv
@@ -388,7 +388,7 @@ Column 'arrest_total' was not cleaned.
 Column 'crime_code' cleaned as crime using GeneralCleaners.
 [nan] values not in crime_types.yaml file. 13 cases replaced with 'nan'
 Column(s) '('last_name', 'first_name', 'middle_initial')' cleaned as name(s) using NameCleaners.
-Columns dropped due to all NA values: ('middle_name', 'first_name_NS', 'second_name', 'suffix_name', 'age', 'last_name_NS', 'last_name', 'full_name', 'human_name', 'middle_initial2', 'middle_initial', 'first_name')
+Columns dropped due to all NA values: ('age', 'middle_initial', 'second_name', 'suffix_name', 'middle_name', 'middle_initial2', 'first_name_NS', 'last_name', 'human_name', 'full_name', 'last_name_NS', 'first_name')
 Adding column by exec("self._data["year"] = 2010")
 13 rows dropped by dropna: {'thresh': 7}
 Beginning import_data from file(s): input/2011 arrests export_sterilized.csv
@@ -428,7 +428,7 @@ Column 'arrest_total' was not cleaned.
 Column 'crime_code' cleaned as crime using GeneralCleaners.
 [nan] values not in crime_types.yaml file. 13 cases replaced with 'nan'
 Column(s) '('last_name', 'first_name', 'middle_initial')' cleaned as name(s) using NameCleaners.
-Columns dropped due to all NA values: ('middle_name', 'first_name_NS', 'second_name', 'suffix_name', 'age', 'last_name_NS', 'last_name', 'full_name', 'human_name', 'middle_initial2', 'first_name')
+Columns dropped due to all NA values: ('age', 'second_name', 'suffix_name', 'middle_name', 'middle_initial2', 'first_name_NS', 'last_name', 'human_name', 'full_name', 'last_name_NS', 'first_name')
 Adding column by exec("self._data["year"] = 2011")
 13 rows dropped by dropna: {'thresh': 7}
 Beginning import_data from file(s): input/2012 arrests export_sterilized.csv
@@ -468,7 +468,7 @@ Column 'arrest_total' was not cleaned.
 Column 'crime_code' cleaned as crime using GeneralCleaners.
 [nan] values not in crime_types.yaml file. 13 cases replaced with 'nan'
 Column(s) '('last_name', 'first_name', 'middle_initial')' cleaned as name(s) using NameCleaners.
-Columns dropped due to all NA values: ('middle_name', 'first_name_NS', 'second_name', 'suffix_name', 'age', 'last_name_NS', 'last_name', 'full_name', 'human_name', 'middle_initial2', 'middle_initial', 'first_name')
+Columns dropped due to all NA values: ('age', 'middle_initial', 'second_name', 'suffix_name', 'middle_name', 'middle_initial2', 'first_name_NS', 'last_name', 'human_name', 'full_name', 'last_name_NS', 'first_name')
 Adding column by exec("self._data["year"] = 2012")
 13 rows dropped by dropna: {'thresh': 7}
 Beginning import_data from file(s): input/2013 arrests export_sterilized.csv
@@ -523,7 +523,7 @@ Column 'arrest_total' was not cleaned.
 Column 'crime_code' cleaned as crime using GeneralCleaners.
 [nan] values not in crime_types.yaml file. 13 cases replaced with 'nan'
 Column(s) '('last_name', 'first_name', 'middle_initial')' cleaned as name(s) using NameCleaners.
-Columns dropped due to all NA values: ('middle_name', 'first_name_NS', 'second_name', 'suffix_name', 'age', 'last_name_NS', 'last_name', 'full_name', 'human_name', 'middle_initial2', 'middle_initial', 'first_name')
+Columns dropped due to all NA values: ('age', 'middle_initial', 'second_name', 'suffix_name', 'middle_name', 'middle_initial2', 'first_name_NS', 'last_name', 'human_name', 'full_name', 'last_name_NS', 'first_name')
 Adding column by exec("self._data["year"] = 2013")
 13 rows dropped by dropna: {'thresh': 7}
 Beginning import_data from file(s): input/2014 arrests export_sterilized.csv
@@ -563,7 +563,7 @@ Column 'arrest_total' was not cleaned.
 Column 'crime_code' cleaned as crime using GeneralCleaners.
 [nan] values not in crime_types.yaml file. 13 cases replaced with 'nan'
 Column(s) '('last_name', 'first_name', 'middle_initial')' cleaned as name(s) using NameCleaners.
-Columns dropped due to all NA values: ('middle_name', 'first_name_NS', 'second_name', 'suffix_name', 'age', 'last_name_NS', 'last_name', 'full_name', 'human_name', 'middle_initial2', 'middle_initial', 'first_name')
+Columns dropped due to all NA values: ('age', 'middle_initial', 'second_name', 'suffix_name', 'middle_name', 'middle_initial2', 'first_name_NS', 'last_name', 'human_name', 'full_name', 'last_name_NS', 'first_name')
 Adding column by exec("self._data["year"] = 2014")
 13 rows dropped by dropna: {'thresh': 7}
 Beginning import_data from file(s): input/2015 arrests export_sterilized.csv
@@ -603,7 +603,7 @@ Column 'arrest_total' was not cleaned.
 Column 'crime_code' cleaned as crime using GeneralCleaners.
 [nan] values not in crime_types.yaml file. 14 cases replaced with 'nan'
 Column(s) '('last_name', 'first_name', 'middle_initial')' cleaned as name(s) using NameCleaners.
-Columns dropped due to all NA values: ('middle_name', 'first_name_NS', 'second_name', 'suffix_name', 'age', 'full_name', 'human_name', 'middle_initial2', 'middle_initial', 'first_name')
+Columns dropped due to all NA values: ('age', 'middle_initial', 'second_name', 'suffix_name', 'middle_name', 'middle_initial2', 'first_name_NS', 'human_name', 'full_name', 'first_name')
 Adding column by exec("self._data["year"] = 2015")
 14 rows dropped by dropna: {'thresh': 7}
 street_name -> street_number , street_number -> street_name
@@ -644,7 +644,7 @@ Column 'arrest_total' was not cleaned.
 Column 'crime_code' cleaned as crime using GeneralCleaners.
 [nan] values not in crime_types.yaml file. 15 cases replaced with 'nan'
 Column(s) '('last_name', 'first_name', 'middle_initial')' cleaned as name(s) using NameCleaners.
-Columns dropped due to all NA values: ('middle_name', 'first_name_NS', 'second_name', 'suffix_name', 'age', 'full_name', 'human_name', 'middle_initial2', 'middle_initial', 'first_name')
+Columns dropped due to all NA values: ('age', 'middle_initial', 'second_name', 'suffix_name', 'middle_name', 'middle_initial2', 'first_name_NS', 'human_name', 'full_name', 'first_name')
 Adding column by exec("self._data["year"] = 2016")
 15 rows dropped by dropna: {'thresh': 7}
 Beginning import_data from file(s): input/2017 arrests export_sterilized.csv
@@ -684,12 +684,12 @@ Column 'arrest_total' was not cleaned.
 Column 'crime_code' cleaned as crime using GeneralCleaners.
 [nan] values not in crime_types.yaml file. 13 cases replaced with 'nan'
 Column(s) '('last_name', 'first_name', 'middle_initial')' cleaned as name(s) using NameCleaners.
-Columns dropped due to all NA values: ('middle_name', 'first_name_NS', 'second_name', 'suffix_name', 'age', 'last_name_NS', 'last_name', 'full_name', 'human_name', 'middle_initial2', 'middle_initial', 'first_name')
+Columns dropped due to all NA values: ('age', 'middle_initial', 'second_name', 'suffix_name', 'middle_name', 'middle_initial2', 'first_name_NS', 'last_name', 'human_name', 'full_name', 'last_name_NS', 'first_name')
 Adding column by exec("self._data["year"] = 2017")
 13 rows dropped by dropna: {'thresh': 7}
 street_name -> street_number , street_number -> street_name
 Export data
-Executing: <function <lambda> at 0x7fdc18ab6c20> on cb_no
+Executing: <function <lambda> at 0x7fc389a4fef0> on cb_no
 1 NA values before, now 1
 1 rows dropped by filter query: cb_no==cb_no
 0 rows dropped by dropna: {'axis': 1, 'how': 'all'}

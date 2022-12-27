@@ -33,7 +33,7 @@ Column 'penalty_narrative' was not cleaned.
 Column 'IAD_OPS' was not cleaned.
 Column 'cr_required' was not cleaned.
 Column(s) '('first_name', 'last_name', 'middle_initial')' cleaned as name(s) using NameCleaners.
-Columns dropped due to all NA values: ('second_name', 'human_name', 'full_name', 'middle_name')
+Columns dropped due to all NA values: ('human_name', 'second_name', 'full_name', 'middle_name')
 1275 resolved conflicts. 6 unresolved conflicts
 Total rows: 279961
 Unique id + conflict rows: 17107

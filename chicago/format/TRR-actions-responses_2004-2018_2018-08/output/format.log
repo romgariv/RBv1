@@ -123,7 +123,7 @@ Cleaning OTHER (SPECIFY) force types
 Imputing actions where possible
 Beginning import_data from file(s): hand/trr_unclassified_actions_2018.csv
 Data shape = 4047 rows, 2 columns
-Executing: <function <lambda> at 0x7ff348e634d0> on action
+Executing: <function <lambda> at 0x7fa4f080e4d0> on action
 0 NA values before, now 0
 3421 rows dropped by filter query: action != 'OTHER DESCRIPTION'
 action -> action_imputed
@@ -144,7 +144,7 @@ Recoding action_imputed to force_level_28
 33 changes: "FIREARM -> 28
 365 values in force_level_28 now NA
 Values of force_level_28 copied to imputed_action
-Executing: <function <lambda> at 0x7ff348e63950> on imputed_action
+Executing: <function <lambda> at 0x7fa4f080e950> on imputed_action
 365 NA values before, now 0
 Recoding 0 rows in imputed data to level 28 with strings that contain: FIREARM|SEMI AUTO|SEMI-AUTO|CALIBER|GUN|FIRE|REVOLVER|RIFLE|PISTOL|SHOTGUN
 Recoding 235 rows in non-imputed data to level 28 with strings that contain: FIREARM|SEMI AUTO|SEMI-AUTO|CALIBER|GUN|FIRE|REVOLVER|RIFLE|PISTOL|SHOTGUN

@@ -46,7 +46,7 @@ Column 'sub_injured' was not cleaned.
 Column 'sub_alleged_injury' was not cleaned.
 Column 'current_star' cleaned as star using GeneralCleaners.
 Column(s) '('last_name', 'first_name')' cleaned as name(s) using NameCleaners.
-Columns dropped due to all NA values: ('human_name', 'middle_name', 'full_name', 'second_name')
+Columns dropped due to all NA values: ('human_name', 'second_name', 'full_name', 'middle_name')
 Total rows: 75759
 Unique id + conflict rows: 11915
 Conflict rows: 0

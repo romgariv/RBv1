@@ -14,7 +14,7 @@ Column 'race' cleaned as race using GeneralCleaners.
 Column 'age' cleaned as age using GeneralCleaners.
 Column 'appointed_date' cleaned as date using DateTimeCleaners.
 Column(s) '('first_name', 'last_name')' cleaned as name(s) using NameCleaners.
-Columns dropped due to all NA values: ('middle_name', 'second_name', 'human_name', 'full_name')
+Columns dropped due to all NA values: ('full_name', 'second_name', 'middle_name', 'human_name')
 2702 resolved conflicts. 24 unresolved conflicts
 Total rows: 201401
 Unique id + conflict rows: 13060

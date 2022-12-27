@@ -47,7 +47,7 @@ Column 'sr_no' was not cleaned.
 Column 'se_no' was not cleaned.
 Column 'current_star' cleaned as star using GeneralCleaners.
 Column(s) '('last_name', 'first_name')' cleaned as name(s) using NameCleaners.
-Columns dropped due to all NA values: ('second_name', 'full_name', 'middle_name', 'human_name')
+Columns dropped due to all NA values: ('middle_name', 'second_name', 'human_name', 'full_name')
 Total rows: 67019
 Unique id + conflict rows: 10926
 Conflict rows: 0

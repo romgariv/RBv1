@@ -330,7 +330,7 @@ Conflict rows: 24
 Resolved conflcit UID count: 20
 Total unique ids: 19756.0
 
-Executing: <function <lambda> at 0x7fa60140cb00> on cb_no
+Executing: <function <lambda> at 0x7fb0693d79e0> on cb_no
 0 NA values before, now 216
 216 rows dropped by filter query: cb_no==cb_no
 Writing data with 4887729 rows to output/arrests_2001-2018_2018-12.csv.gz with 19753 unique UIDs

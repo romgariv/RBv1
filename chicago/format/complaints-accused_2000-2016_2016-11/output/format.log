@@ -65,7 +65,7 @@ Column 'final_finding' was not cleaned.
 Column 'final_discipline' was not cleaned.
 Column 'complaint_type' was not cleaned.
 Column(s) '('full_name',)' cleaned as name(s) using NameCleaners.
-Columns dropped due to all NA values: ('middle_name', 'human_name', 'second_name')
+Columns dropped due to all NA values: ('human_name', 'middle_name', 'second_name')
 4 resolved conflicts. 0 unresolved conflicts
 Total rows: 125581
 Unique id + conflict rows: 16022

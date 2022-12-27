@@ -14,18 +14,18 @@ Writing data with 523090 rows to output/TRR-actions-responses_2004-2016_2016-09.
 2 rows dropped by filter query: person == person
 271601 rows dropped by filter query: person == "Subject Action"
 Recoding resistance_type to resistance_type
-0 changes: "Active Resister -> active
-1 changes: "Assailant Assault -> assault
-2 changes: "Assailant Battery -> battery
-3 changes: "Assailant Deadly Force -> deadly
-4 changes: "Passive Resister -> passive
+88805 changes: "Active Resister -> active
+32272 changes: "Assailant Assault -> assault
+26747 changes: "Assailant Battery -> battery
+3921 changes: "Assailant Deadly Force -> deadly
+99742 changes: "Passive Resister -> passive
 0 values in resistance_type now NA
 Recoding resistance_type to resistance_level
-0 changes: "passive -> 0
-1 changes: "active -> 1
-2 changes: "battery -> 2
-3 changes: "assault -> 3
-4 changes: "deadly -> 4
+99742 changes: "passive -> 0
+88805 changes: "active -> 1
+26747 changes: "battery -> 2
+32272 changes: "assault -> 3
+3921 changes: "deadly -> 4
 0 values in resistance_level now NA
 Dummy cols generated:
 Name = resistance_active, N = 88805
@@ -36,29 +36,29 @@ Name = resistance_deadly, N = 392
 Writing data with 251487 rows to output/TRR-subject-actions_2004-2016_2016-09.csv.gz
 251487 rows dropped by filter query: person == "Member Action"
 Recoding action to type_of_force
-0 changes: "MEMBER PRESENCE -> 1.0
-1 changes: "VERBAL COMMANDS -> 1.0
-2 changes: "ARMBAR -> 2.0
-3 changes: "CONTROL INSTRUMENT -> 2.0
-4 changes: "ESCORT HOLDS -> 2.0
-5 changes: "O.C./CHEMICAL WEAPON -> 2.0
-6 changes: "O.C./CHEMICAL WEAPON W/AUTHORIZATION -> 2.0
-7 changes: "PRESSURE SENSITIVE AREAS -> 2.0
-8 changes: "WRISTLOCK -> 2.0
-9 changes: "CANINE -> 3.0
-10 changes: "OPEN HAND STRIKE -> 3.0
-11 changes: "TAKE DOWN/EMERGENCY HANDCUFFING -> 3.0
-12 changes: "TASER (CONTACT STUN) -> 4.0
-13 changes: "TASER (LASER TARGETED) -> 4.0
-14 changes: "TASER (PROBE DISCHARGE) -> 4.0
-15 changes: "TASER (SPARK DISPLAYED) -> 4.0
-16 changes: "CLOSED HAND STRIKE/PUNCH -> 5.0
-17 changes: "ELBOW STRIKE -> 5.0
-18 changes: "IMPACT MUNITION (DESCRIBE IN ADDITIONAL INFO) -> 5.0
-19 changes: "IMPACT WEAPON (DESCRIBE IN ADDITIONAL INFO) -> 5.0
-20 changes: "KICKS -> 5.0
-21 changes: "KNEE STRIKE -> 5.0
-22 changes: "FIREARM -> 6.0
+59904 changes: "MEMBER PRESENCE -> 1.0
+62858 changes: "VERBAL COMMANDS -> 1.0
+13075 changes: "ARMBAR -> 2.0
+608 changes: "CONTROL INSTRUMENT -> 2.0
+20662 changes: "ESCORT HOLDS -> 2.0
+3716 changes: "O.C./CHEMICAL WEAPON -> 2.0
+113 changes: "O.C./CHEMICAL WEAPON W/AUTHORIZATION -> 2.0
+4279 changes: "PRESSURE SENSITIVE AREAS -> 2.0
+18772 changes: "WRISTLOCK -> 2.0
+102 changes: "CANINE -> 3.0
+11403 changes: "OPEN HAND STRIKE -> 3.0
+45167 changes: "TAKE DOWN/EMERGENCY HANDCUFFING -> 3.0
+1154 changes: "TASER (CONTACT STUN) -> 4.0
+705 changes: "TASER (LASER TARGETED) -> 4.0
+4110 changes: "TASER (PROBE DISCHARGE) -> 4.0
+86 changes: "TASER (SPARK DISPLAYED) -> 4.0
+5446 changes: "CLOSED HAND STRIKE/PUNCH -> 5.0
+1420 changes: "ELBOW STRIKE -> 5.0
+10 changes: "IMPACT MUNITION (DESCRIBE IN ADDITIONAL INFO) -> 5.0
+1560 changes: "IMPACT WEAPON (DESCRIBE IN ADDITIONAL INFO) -> 5.0
+1018 changes: "KICKS -> 5.0
+2970 changes: "KNEE STRIKE -> 5.0
+996 changes: "FIREARM -> 6.0
 11467 values in type_of_force now NA
 Recoding missing/Other actions using other_description
 Recoding 11467 rows to level 2 with strings that contain: LRAD|ESCORT HOLD|ARMBAR|ARM BAR|WRISTLOCK|CONTROL INSTRUMENT|TAKE DWN
@@ -68,13 +68,13 @@ Recoding 7803 rows to level 5 with strings that contain: CLOSED HAND|FIST|PUNCH|
 Recoding 7045 rows to level 6 with strings that contain: FIREARM|SEMI AUTO|CALIBER|GUN|FIRE|REVOLVER|RIFLE|PISTOL
 6835 NA values in type_of_force filled with 
 Recoding type_of_force to force_level
-0 changes: "6.0 -> firearm
-1 changes: "3.0 -> intermediate
-2 changes: "5.0 -> major
-3 changes: "2.0 -> minor
-4 changes: "0.0 -> missing
-5 changes: "1.0 -> none
-6 changes: "4.0 -> taser
+1206 changes: "6.0 -> firearm
+59294 changes: "3.0 -> intermediate
+13182 changes: "5.0 -> major
+61755 changes: "2.0 -> minor
+6835 changes: "0.0 -> missing
+122762 changes: "1.0 -> none
+6567 changes: "4.0 -> taser
 0 values in force_level now NA
 Dummy cols generated:
 Name = poaction_intermediate, N = 59294

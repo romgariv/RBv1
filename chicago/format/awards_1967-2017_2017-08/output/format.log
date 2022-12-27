@@ -31,7 +31,7 @@ Name: award_start_date, dtype: object.
 Column 'award_end_date' cleaned as date using DateTimeCleaners.
 Column 'ceremony_date' cleaned as date using DateTimeCleaners.
 Column(s) '('last_name', 'first_name', 'middle_initial')' cleaned as name(s) using NameCleaners.
-Columns dropped due to all NA values: ('middle_name', 'human_name', 'full_name', 'second_name')
+Columns dropped due to all NA values: ('human_name', 'full_name', 'second_name', 'middle_name')
 3445 resolved conflicts. 0 unresolved conflicts
 Total rows: 699912
 Unique id + conflict rows: 32980
@@ -46,7 +46,7 @@ requester_full_name -> full_name
 Column 'ROWID' was not cleaned.
 Column 'award_request_date' cleaned as date using DateTimeCleaners.
 Column(s) '('full_name',)' cleaned as name(s) using NameCleaners.
-Columns dropped due to all NA values: ('middle_initial2', 'middle_name', 'human_name', 'second_name')
+Columns dropped due to all NA values: ('middle_initial2', 'human_name', 'second_name', 'middle_name')
 5344 rows dropped by filter query: first_name == first_name
 Total rows: 694568
 Unique id + conflict rows: 2226

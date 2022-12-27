@@ -12,7 +12,7 @@ Column 'race' cleaned as race using GeneralCleaners.
 Column 'current_rank' was not cleaned.
 Column 'current_unit' cleaned as int using GeneralCleaners.
 Column(s) '('first_name', 'middle_initial', 'last_name')' cleaned as name(s) using NameCleaners.
-Columns dropped due to all NA values: ('middle_name', 'full_name', 'human_name', 'second_name')
+Columns dropped due to all NA values: ('human_name', 'full_name', 'second_name', 'middle_name')
 Total rows: 70252
 Unique id + conflict rows: 1875
 Conflict rows: 0

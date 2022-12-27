@@ -22,7 +22,7 @@ Column 'is_sworn_officer' was not cleaned.
 Column 'current_unit' cleaned as int using GeneralCleaners.
 Column 'current_unit_detail' was not cleaned.
 Column(s) '('first_name', 'middle_initial', 'last_name')' cleaned as name(s) using NameCleaners.
-Columns dropped due to all NA values: ('second_name', 'full_name', 'human_name', 'middle_name')
+Columns dropped due to all NA values: ('second_name', 'full_name', 'middle_name', 'human_name')
 Total rows: 25390
 Unique id + conflict rows: 10424
 Conflict rows: 0
