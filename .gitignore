@@ -1,3 +1,4 @@
+zipped_data/*
 *.pyc
 chicago/raw_data/*/*
 share/tests/*.log
